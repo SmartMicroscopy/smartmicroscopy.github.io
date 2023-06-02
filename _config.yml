@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Smart Microscopy Working Group's Website
-author: Semart Microscopy Working Wroug
+author: Smart Microscopy Working Group
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
