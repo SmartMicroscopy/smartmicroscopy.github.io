@@ -7,7 +7,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Website of the Smart Microscopy Working Group &#8212; Smart Microscopy Working Group&#39;s Website</title>
   
   
@@ -318,6 +319,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mission">Mission</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compiling-the-book-locally">Compiling the book locally</a></li>
 </ul>
             </nav>
         </div>
@@ -329,15 +331,24 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="website-of-the-smart-microscopy-working-group">
+  <section class="tex2jax_ignore mathjax_ignore" id="website-of-the-smart-microscopy-working-group">
 <h1>Website of the Smart Microscopy Working Group<a class="headerlink" href="#website-of-the-smart-microscopy-working-group" title="Permalink to this headline">#</a></h1>
 <p><strong>Smart or Adaptive Feedback Microscopy</strong> aims at connecting bioimage analysis (and other algorithms) with fully motorized and computer-controlled microscopes to generate automated and adaptive imaging workflows. This strategy can also be used to manage changes in the sample’s environment (e.g. fluidic devices) and directly link the microscope to image data management systems.</p>
-<div class="section" id="mission">
+<section id="mission">
 <h2>Mission<a class="headerlink" href="#mission" title="Permalink to this headline">#</a></h2>
 <p>While several software solutions for microscopy control exist and can be used to implement smart-microscopy workflows, there is no reference specification of what functionalities are needed, or how these workflows could be implemented. To facilitate the development of smart-microscopy applications, and enable their execution across imaging-systems with similar modalities, we are working to establish such a standard specification.</p>
 <p>The working group is composed of participants from both academia and industry, meeting regularly online with the support of the Euro-BioImaging Industry Board.</p>
-</div>
-</div>
+</section>
+<section id="compiling-the-book-locally">
+<h2>Compiling the book locally<a class="headerlink" href="#compiling-the-book-locally" title="Permalink to this headline">#</a></h2>
+<p>First you need a python installation.<br />
+Then you need to install jupyter-book, either with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">jupyter-book</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">jupyter-book</span></code>.<br />
+Clone this repository locally (or download the repo as a zip from <a class="reference external" href="http://github.com">github.com</a>).<br />
+In the repository root directory, open a command prompt (on windows, type <code class="docutils literal notranslate"><span class="pre">cmd</span></code> in the address bar).<br />
+In the command prompt, type <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">.</span></code>, the final dot instructs to look for the book files in the current directory.</p>
+<p>Note : If you get a message like <em>jupyter-book is not a recognized command</em>, make sure the directory containing the <code class="docutils literal notranslate"><span class="pre">jupyter-book.exe</span></code> is on your PATH. (On windows see environment variables).</p>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -389,6 +400,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mission">Mission</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compiling-the-book-locally">Compiling the book locally</a></li>
 </ul>
   </nav></div>
 
