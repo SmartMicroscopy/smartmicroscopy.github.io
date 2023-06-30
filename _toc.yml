@@ -5,5 +5,8 @@ format: jb-book
 root: index
 chapters:
 - file: members
+  sections:
+  - file: members/profiles/CamachoR
+  - file: members/profiles/PfanderC
 - file: notes
 - file: publications
