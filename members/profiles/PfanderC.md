@@ -1,7 +1,7 @@
 # Claudia Pfander
 
 <p align="center">
-![alt text](https://github.com/SmartMicroscopy/smartmicroscopy.github.io/members/profiles/C_Pfander.jpg)
+<img src=https://avatars.githubusercontent.com/u/135008017?v=4 alt="drawing" width="100"/>
 <p/>
 
 Claudia Pfander is the Coordinator of the [Euro-BioImaging Industry Board](https://www.eurobioimaging-industryboard.com/) and organizer of the 2022 Smart Microscopy Workshop at Euro-BioImaging. Generally interested in the topic of adaptive feedback microscopy, open software and hardware and improving imaging-related services for researchers. Facilitator of links to industry and co-administrator of this working group. 
