@@ -12,4 +12,4 @@ We are in the process of updating the website, the following is not a complete l
 * Schaden, H. - Carl Zeiss Microscopy GmbH, Germany
 * Sisamakis, E. - PicoQuant GmbH, Rudower Chaussee 29, 12489 Berlin, Germany
 * Tewinkel, M. - Evident Europe GmbH, Germany
-* Thomas, L. - ACQUIFER Imaging GmbH, Bruker NANO, Heidelberg, Germany
+* [Thomas, L.](../members/profiles/ThomasL.md) - ACQUIFER Imaging GmbH, Bruker NANO, Heidelberg, Germany
