@@ -1,7 +1,63 @@
+---
+jupytext:
+  text_representation:
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  name: python3
+---
+
 # Available solutions
 
-This page references smart-microscopy implementations for different manufacturers : 
+This page references smart-microscopy implementations for different manufacturers and academic labs.
 
-## ACQUIFER - Imaging Machine
-See https://github.com/Luxendo/Acquifer-Python-API/tree/master/examples/prescreen_rescreen for an example of prescreen/rescreen (low to high magnification imaging) workflow with an ACQUIFER Imaging Machine.  
-The workflow is orchestrated by a python script, and using template matching for object detection.   
+## Academic implementations
+```{list-table}
+:header-rows: 1
+* - Project overview
+  - Repo
+  - Institution
+  - Contact
+* - [Automated optogenetic targeting](./implementations/academic/unibe.md)
+  - https://github.com/hinderling/rtm-pymmcore/settings
+  - [UNIBE](https://www.izb.unibe.ch/research/prof_dr_olivier_pertz/index_eng.html)
+  - [Lucien Hinderling](mailto:lucien.hinderling@unibe.ch)
+* - Re-usable workflows on different microscope brands
+  -
+  - EMBL-ALMF
+  - 
+* - [Outcome-driven microscopy to guide cell biology](./implementations/academic/uu.md)
+  - https://github.com/UU-cellbiology/UU_SmartMicroscopy
+  - [UU](https://cellbiology.science.uu.nl/research-groups/lukas-kapitein-biophysics/)
+  - [Alfredo Rates](mailto:a.ratessoriano@uu.nl)
+* - [Smart Microscopy as a Service](./implementations/academic/cci-ug.md)
+  - 
+  - [CCI-UG](https://www.gu.se/en/core-facilities/infrastructure-at-core-facilities/centre-for-cellular-imaging)
+  - [Rafael Calacho](./members/profiles/CamachoR.md)
+```
+
+## Industry implementations
+```{list-table}
+:header-rows: 1
+* - Product overview
+  - Repo
+  - Brand
+  - Contact
+* - Product overview
+  - [GitHub](https://github.com/Luxendo/Acquifer-Python-API/tree/master/examples/prescreen_rescreen)
+  - LUXENDO
+  - [Thomas Laurent](./members/profiles/ThomasL.md)
+* - Product overview
+  - Repo
+  - Brand
+  - Contact
+* - Product overview
+  - Repo
+  - Brand
+  - Contact
+```
+
+## Compatibility Matrix
+
+```{include} implementations/_compatibility.md
+```
