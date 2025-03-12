@@ -12,7 +12,11 @@ def csv_to_markdown(csv_file, md_file):
         f.write(md_table)
 
 if __name__ == "__main__":
-    csv_file = 'implementations/compatibility.csv'
-    md_file = 'implementations/_compatibility.md'
+    csv_file = 'implementations/compatibility_hardware.csv'
+    md_file = 'implementations/_compatibility_hardware.md'
+    csv_to_markdown(csv_file, md_file)
+    print(f"Markdown table has been written to {md_file}")
+    csv_file = 'implementations/compatibility_software.csv'
+    md_file = 'implementations/_compatibility_software.md'
     csv_to_markdown(csv_file, md_file)
     print(f"Markdown table has been written to {md_file}")

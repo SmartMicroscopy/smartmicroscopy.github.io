@@ -6,9 +6,10 @@ kernelspec:
   display_name: Python 3
   name: python3
 ---
-
+```{important}
+Page under development (2025-03-12)
+```
 # Available solutions
-
 This page references smart-microscopy implementations for different manufacturers and academic labs.
 
 ## Academic implementations
@@ -57,7 +58,12 @@ This page references smart-microscopy implementations for different manufacturer
   - Contact
 ```
 
-## Compatibility Matrix
+## Hardware Compatibility Matrix
 
-```{include} implementations/_compatibility.md
+```{include} implementations/_compatibility_hardware.md
+```
+
+## Software Compatibility Matrix
+
+```{include} implementations/_compatibility_software.md
 ```
