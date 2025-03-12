@@ -13,6 +13,6 @@ First you need a python installation.
 Then you need to install jupyter-book, either with `pip install -U jupyter-book` or `conda install -c conda-forge jupyter-book`.  
 Clone this repository locally (or download the repo as a zip from github.com).  
 In the repository root directory, open a command prompt (on windows, type `cmd` in the address bar).  
-In the command prompt, type `jupyter-book build .`, the final dot instructs to look for the book files in the current directory.  
+In the command prompt, type `./build_book.sh`, to run all the build scripts.
 
 Note : If you get a message like *jupyter-book is not a recognized command*, make sure the directory containing the `jupyter-book.exe` is on your PATH. (On windows see environment variables).  
