@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Smart Microscopy as a Service &#8212; Smart Microscopy Working Group&#39;s Website</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'implementations/academic/cci-ug';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Outcome-driven microscopy to guide cell biology" href="uu.html" />
+    <link rel="prev" title="Automation of optogenetic targeting" href="unibe.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Smart Microscopy Working Group's Website - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Smart Microscopy Working Group's Website - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Smart Microscopy Working Group
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../members.html">Members of the Group</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/CamachoR.html">Rafael Camacho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/PfanderC.html">Claudia Pfander</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/ThomasL.html">Laurent Thomas</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../implementations.html">Available solutions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="unibe.html">Automation of optogenetic targeting</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Smart Microscopy as a Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uu.html">Outcome-driven microscopy to guide cell biology</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes.html">Public Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../publications.html">Publications &amp; Outreach</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/SmartMicroscopy/smartmicroscopy.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/implementations/academic/cci-ug.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Smart Microscopy as a Service</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach-to-smart-microscopy">Approach to smart microscopy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-implementation-details">Methodology, Implementation details</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features-and-innovations">Key features and innovations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-that-could-contribute-to-interoperability">Contributions that could contribute to interoperability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#current-bottlenecks-roadmap">Current bottlenecks, Roadmap</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="smart-microscopy-as-a-service">
+<h1>Smart Microscopy as a Service<a class="headerlink" href="#smart-microscopy-as-a-service" title="Link to this heading">#</a></h1>
+<p><strong>Rafael Camacho</strong>, Centre for Cellular Imaging, University of Gothenburg</p>
+<section id="approach-to-smart-microscopy">
+<h2>Approach to smart microscopy<a class="headerlink" href="#approach-to-smart-microscopy" title="Link to this heading">#</a></h2>
+<p>At the Centre for Cellular Imaging (CCI), Smart Microscopy is developed within a fee-for-service model, where users are trained to operate commercially available microscopy equipment from vendors such as ZEISS and Thermo Fisher. This approach prioritizes accessibility and reproducibility, ensuring that automation strategies remain compatible with vendor-provided microscope control software.
+Smart Microscopy at CCI is implemented with a holistic perspective, addressing not only adaptive feedback microscopy—where acquisition parameters are adjusted dynamically based on real-time sample analysis—but also downstream processes such as image processing, quality control monitoring, and data management. By considering the entire imaging pipeline from acquisition to analysis and integration, we aim to enhance efficiency, reproducibility, and scalability within a research infrastructure setting.</p>
+</section>
+<section id="methodology-implementation-details">
+<h2>Methodology, Implementation details<a class="headerlink" href="#methodology-implementation-details" title="Link to this heading">#</a></h2>
+<p>At CCI, we implement Smart Microscopy through automated feedback loops that connect image analysis with hardware control. Our workflows leverage machine learning-based object detection and segmentation to enable real-time adaptive imaging, adjusting acquisition parameters based on sample characteristics.</p>
+<ol class="arabic simple">
+<li><p>Light Microscopy, vendor ZEISS
+We utilize Open Application Development (OAD), a framework within ZEISS ZEN Blue that integrates an Iron Python script editor to automate microscopy workflows. OAD enables responsive imaging strategies, processing real-time image analysis cues from both internal algorithms (running within ZEN) and external tools such as Python scripts and ImageJ/FIJI plugins. Our primary efforts have focused on:</p>
+<ul class="simple">
+<li><p><strong>Targeted Imaging</strong>: Adaptive imaging routines that prioritize specific sample features.</p></li>
+<li><p><strong>Object Tracking</strong>: Automated tracking of dynamic structures in live-cell imaging applications.</p></li>
+</ul>
+</li>
+<li><p>Electron Microscopy (ZEISS SEM &amp; Thermo Fisher TEM)
+ZEISS SEM systems lack an efficient API for direct hardware communication (an issue currently being addressed). As a result, we have concentrated on:</p>
+<ul class="simple">
+<li><p><strong>On-the-Fly Image Analysis and Quality Control</strong>: Implementing real-time image evaluation workflows to detect acquisition anomalies and improve data reliability.</p></li>
+<li><p><strong>Data Standardization</strong>: Developing pipelines for converting complex vendor-specific image data structures (e.g., multi-image projects with proprietary metadata) into OME-Zarr, an open, cloud-compatible image format.
+For TEM workflows, we emphasize data format standardization to ensure interoperability with downstream analysis tools, particularly through the adoption of OME-Zarr.</p></li>
+</ul>
+</li>
+<li><p>Data Management Infrastructure
+As of early 2025, CCI has deployed an <strong>OMERO-based image data management system</strong> that streamlines data flow across all facility microscopes. This infrastructure facilitates seamless data transfer from acquisition systems to computational analysis servers, and  supports integration with users’ own storage solutions, working towards ensuring FAIR (Findable, Accessible, Interoperable, Reusable) data principles.</p></li>
+</ol>
+</section>
+<section id="key-features-and-innovations">
+<h2>Key features and innovations<a class="headerlink" href="#key-features-and-innovations" title="Link to this heading">#</a></h2>
+<p>The Smart Microscopy implementation at CCI integrates advanced automation strategies across diverse imaging modalities, ensuring seamless operation within a fee-for-service core facility model. Our key innovations focus on adaptive imaging, interoperability, and data standardization, enhancing both image acquisition and post-processing workflows to improve efficiency and reproducibility.
+Adaptive imaging and automated feedback loops enhance real-time decision-making, enabling more precise and efficient imaging workflows. Targeted imaging on light microscopes leverages machine learning-based object detection within ZEISS ZEN Blue’s Open Application Development (OAD) framework, dynamically selecting regions of interest (ROI) based on sample characteristics. This also facilitates object tracking for live-cell studies, though current research is focused on improving feedback speed for faster adaptive responses. In electron microscopy, on-the-fly image analysis for SEM workflows enables real-time quality assessment and anomaly detection, optimizing acquisition efficiency in high-throughput environments. These innovations create a more responsive, automated, and reproducible microscopy workflow, reducing manual intervention while enhancing data quality and throughput.
+CCI’s Smart Microscopy implementation also enhances interoperability and scalability, ensuring seamless integration across imaging modalities and research infrastructures. Standardized data conversion to OME-Zarr facilitates compatibility across light, SEM, and TEM workflows, ensuring structured data handling and long-term accessibility. Multi-software integration maintains flexibility, enabling workflows that connect ZEISS ZEN, FIJI/ImageJ, and Python-based analysis tools while preserving vendor compatibility. The deployment of an OMERO-based data management system further supports automated image transfer, metadata structuring, and remote access, streamlining data handling from acquisition to analysis.
+Designed for <strong>open-access imaging facilities and research environments</strong>, CCI’s Smart Microscopy solutions lower the technical barrier for advanced imaging automation, making cutting-edge workflows more accessible to a broader user base. The infrastructure is optimized for scalability and interoperability, allowing workflows to be shared, adapted, and deployed across multiple research institutions.</p>
+</section>
+<section id="contributions-that-could-contribute-to-interoperability">
+<h2>Contributions that could contribute to interoperability<a class="headerlink" href="#contributions-that-could-contribute-to-interoperability" title="Link to this heading">#</a></h2>
+<p>All Smart Microscopy developments at CCI are designed with open software and interoperability as core principles, ensuring seamless integration across imaging platforms and analysis tools. By adopting standardized data formats such as OME-Zarr and implementing OMERO-based data management, we facilitate structured, vendor-independent data handling. Our multi-software integration strategy ensures compatibility with ZEISS ZEN, FIJI/ImageJ, and Python-based analysis workflows, enabling flexible automation while maintaining vendor compatibility. These efforts lay the foundation for scalable, shareable, and adaptable imaging workflows, with interoperability remaining a key focus for future developments (see roadmap for details).</p>
+</section>
+<section id="current-bottlenecks-roadmap">
+<h2>Current bottlenecks, Roadmap<a class="headerlink" href="#current-bottlenecks-roadmap" title="Link to this heading">#</a></h2>
+<p>While CCI’s Smart Microscopy implementation has made significant progress in automation, interoperability, and data standardization, several challenges remain in fully realizing the potential of adaptive microscopy workflows.
+One of the main bottlenecks is limited access to vendor APIs, particularly for electron microscopy systems. While ZEISS light microscopes support automation through the Open Application Development (OAD) framework, EM platforms lack efficient software interfaces for direct hardware communication. This limitation prevents real-time adaptive feedback loops, requiring workarounds such as post-acquisition quality control rather than live adjustments. We are actively collaborating with industry partners to explore solutions that enable deeper automation and integration within these systems.
+Another challenge is the speed and efficiency of real-time feedback microscopy, particularly in live-cell imaging. While targeted imaging and object tracking are already implemented, response times remain constrained by latency in processing real-time image analysis outputs and sending commands back to the microscope. Further optimization of computational workflows and hardware-software communication is needed to improve the responsiveness of adaptive imaging, ensuring that real-time decision-making can keep pace with dynamic biological processes.
+In terms of data management and interoperability, we have successfully deployed an OMERO-based infrastructure, but ensuring seamless integration across different imaging modalities and user storage solutions remains an ongoing effort. The conversion of complex, vendor-specific data structures into standardized formats such as OME-Zarr is progressing, but further development is needed to refine metadata extraction, enhance compatibility with emerging image analysis pipelines, streamline large-scale data transfers, and integrate computational resources such as national CPU and GPU clusters for scalable analysis.
+Looking ahead, our roadmap prioritizes the development of a Python-based Smart Microscopy Workflow Manager, designed to act as a user-level interface that allows researchers to define imaging workflows independent of the underlying microscope hardware. This system will abstract communication with different microscopes—even from different vendors—ensuring a unified approach to controlling diverse imaging platforms. Additionally, it will provide flexibility in image analysis execution, seamlessly integrating processing across Java, Python, or proprietary software environments, enabling users to focus on scientific insights rather than software compatibility.
+By addressing these challenges, we aim to make Smart Microscopy at CCI more robust, accessible, and scalable, ensuring that our workflows continue to support cutting-edge research in imaging sciences while paving the way for broader adoption across research infrastructures.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./implementations/academic"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="unibe.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Automation of optogenetic targeting</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="uu.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Outcome-driven microscopy to guide cell biology</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach-to-smart-microscopy">Approach to smart microscopy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-implementation-details">Methodology, Implementation details</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features-and-innovations">Key features and innovations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-that-could-contribute-to-interoperability">Contributions that could contribute to interoperability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#current-bottlenecks-roadmap">Current bottlenecks, Roadmap</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Smart Microscopy Working Group
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

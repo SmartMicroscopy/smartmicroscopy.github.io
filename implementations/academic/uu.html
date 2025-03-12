@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Outcome-driven microscopy to guide cell biology &#8212; Smart Microscopy Working Group&#39;s Website</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'implementations/academic/uu';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Public Notes" href="../../notes.html" />
+    <link rel="prev" title="Smart Microscopy as a Service" href="cci-ug.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Smart Microscopy Working Group's Website - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Smart Microscopy Working Group's Website - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Smart Microscopy Working Group
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../members.html">Members of the Group</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/CamachoR.html">Rafael Camacho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/PfanderC.html">Claudia Pfander</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/ThomasL.html">Laurent Thomas</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../implementations.html">Available solutions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="unibe.html">Automation of optogenetic targeting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cci-ug.html">Smart Microscopy as a Service</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Outcome-driven microscopy to guide cell biology</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes.html">Public Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../publications.html">Publications &amp; Outreach</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/SmartMicroscopy/smartmicroscopy.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/implementations/academic/uu.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Outcome-driven microscopy to guide cell biology</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outcome-driven-microscopy">Outcome-driven microscopy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modular-python-platform-for-smart-microscopy">Modular Python platform for smart microscopy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demonstration-of-outcome-driven-microscopy-using-optogenetics">Demonstration of outcome-driven microscopy using optogenetics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-outlook">Limitations and outlook</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="outcome-driven-microscopy-to-guide-cell-biology">
+<h1>Outcome-driven microscopy to guide cell biology<a class="headerlink" href="#outcome-driven-microscopy-to-guide-cell-biology" title="Link to this heading">#</a></h1>
+<p><strong>Alfredo Rates, Josiah B Passmore, Lukas C Kapiten</strong>, Utrecht University</p>
+<section id="outcome-driven-microscopy">
+<h2>Outcome-driven microscopy<a class="headerlink" href="#outcome-driven-microscopy" title="Link to this heading">#</a></h2>
+<p>Smart microscopes take microscopy automation to the next level by adapting and optimizing the acquisition <strong>based on the experiment in progress</strong>. Thanks to information about the sample, either by user input, previous experiments, or defined strategies, with smart microscopy it is possible to get as much information as possible, while reducing sample damage. But smart microscopy is not limited to observation, it can also be expanded to have <strong>control over the biology</strong> thanks to <strong>outcome-driven microscopy</strong>.
+Outcome-driven microscopy is a smart microscopy strategy where the automation of the microscope is not only to change the acquisition parameters, but also to interact with the sample using the microscope hardware. As it is known, parameters such as temperature, flow, illumination power or color are inputs that affect biological samples. If this effect is controlled and known, it can be used to <strong>drive the biological processes to desired states</strong>. Indeed, this is possible with optogenetics. In optogenetics, photo-controllable proteins are used to activate processes at the subcellular level when illuminated with particular wavelengths. These proteins are not only sensitive to wavelength but also to light intensity and spatial patterning. Thus, by controlling these parameters, <strong>optogenetics has the power to precisely control the biology of cells</strong>.</p>
+</section>
+<section id="modular-python-platform-for-smart-microscopy">
+<h2>Modular Python platform for smart microscopy<a class="headerlink" href="#modular-python-platform-for-smart-microscopy" title="Link to this heading">#</a></h2>
+<p>To achieve outcome-driven microscopy, we combine smart microscopy with optogenetics, changing the optogenetic signal on the fly, and having a feedback loop between the (cell) biology and the (microscope) hardware. For this, we developed a modular software architecture in Python.</p>
+<p>We developed a Python-based platform to perform automated, outcome-driven experiments. Our platform is organized into multiple modules, as described in Fig. XXX. The platform has specific modules for user interface, image analysis (e.g., cell segmentation [XXX]), control strategy (e.g., PID controller [XXX]), microscope communication (for specific hardware, e.g., Micromanager [XXX] or Zen Blue [XXX]), and outcome-driven strategy, where the algorithm for the specific experiment is defined (e.g., control cell expression to certain levels [XXX]).
+The user interacts with the platform through a <code class="docutils literal notranslate"><span class="pre">main.py</span></code> script and a graphical user interface (GUI). The main connects to the rest of the modules, including the GUI (see Fig. XXX), and runs three parallel, asynchronous loops. The three loops consist of the interface loop, the analysis loop, and the control loop.</p>
+<p>The modules are imported to the main as external libraries based on the user input. Each module is structured as a class with an abstract class as a parent, meaning that they must have a list of functions and variables in order to communicate correctly with the rest of the platform. In case the user needs to develop a custom module, they can easily do it as long as the custom module includes these functions and variables.
+When running an experiment, the platform exports 4 main results. The first result is the time series acquisition, including channels and z-stacks, if previously defined. In addition, the platform exports the cell segmentation for each time step, the controller data (e.g., error, setpoint, laser power) as a .csv file, and the metadata of the experiment as a .json file.</p>
+</section>
+<section id="demonstration-of-outcome-driven-microscopy-using-optogenetics">
+<h2>Demonstration of outcome-driven microscopy using optogenetics<a class="headerlink" href="#demonstration-of-outcome-driven-microscopy-using-optogenetics" title="Link to this heading">#</a></h2>
+<p>To demonstrate the power of outcome-driven microscopy, we applied our platform to directed single-cell migration, using an optogenetic construct to recruit the RAC1 effector TIAM1 to the plasma membrane. With outcome-driven microscopy, we adapt on the fly the area of the illumination within the cell, changing where the TIAM1 is recruited and thus drive migration in a specific direction. We change the illumination area of the optogenetic light using a digital micromirror device (DMD).
+For this implementation, the control module is based on a trajectory tracking controller based on the cell centroid relative to a path made up of setpoints, and the image analysis module uses the pre-trained AI segmentation method Segment Anything Model (SAM) [XXX] with a custom extension of its interface to track the cell.
+Thanks to our stable cell line and the outcome-driven platform, we could reliably guide cells around a specific path  for many hours, maintaining a relatively consistent speed. Fig. XXX shows the cell migration path over the defined circle. This experiment was carried out in a Nikon Ti dual-turret inverted microscope and a Mightex Polygon 400 DMD, all controlled via Micromanager.
+Figure 3. Cell migration Micromanager
+Thanks to our modular approach for the microscope bridge, we were able to adapt our communication scheme from a Micromanager-controlled microscope to a Zeiss microscope controlled by ZenBlue. We used an LSM-980 with AiryScan2 module, and instead of modulating the optogenetic light with a DMD, we adapted the region of interest (ROIs) of the confocal scanning. The results of the confocal-based cell migration is shown in Fig. XXX.</p>
+</section>
+<section id="limitations-and-outlook">
+<h2>Limitations and outlook<a class="headerlink" href="#limitations-and-outlook" title="Link to this heading">#</a></h2>
+<p>The advantage of modularity is not only that modules are exchangeable, but also that the platform is easily upgraded and improved. Among the improvements planned to the platform, we first intend to <strong>separate further the bridge module with the strategy module</strong>. In particular, the platform is structured around the multi-dimensional acquisition process of Micromanager. This structure is ideal for our outcome-driven experiments and can be translated to other microscopes easily, but it limits experiments to having a constant acquisition configuration, such as time step and number of Z-stack layers. To make our platform flexible, we plan to follow the structure offered by the <a class="reference external" href="https://github.com/pymmcore-plus/pymmcore-plus"><em>pymmcore-plus</em></a> library. <em>pymmcore-plus</em> is an alternative to Pycromanager to control Micromanager-compatible hardware, and is based around a  <strong>queue of events</strong> instead of the multi-dimensional acquisition, i.e., a list of orders to give to the microscope.
+Furthermore, we plan to <strong>make a new interface based</strong> on the <a class="reference external" href="https://napari.org/stable/">Napari</a> library. Napari is an extensive visualization library, widely used for microscope data. This new interface offers more functionalities and interaction with the user, and it is also compatible with <em>pymmcore-plus</em>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./implementations/academic"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="cci-ug.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Smart Microscopy as a Service</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../notes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Public Notes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outcome-driven-microscopy">Outcome-driven microscopy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modular-python-platform-for-smart-microscopy">Modular Python platform for smart microscopy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demonstration-of-outcome-driven-microscopy-using-optogenetics">Demonstration of outcome-driven microscopy using optogenetics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-outlook">Limitations and outlook</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Smart Microscopy Working Group
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

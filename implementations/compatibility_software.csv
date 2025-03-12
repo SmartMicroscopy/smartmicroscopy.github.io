@@ -1,7 +1,0 @@
-Software,Commercial/open source,GUI or coding required,Interacting with other software,Capacity to customize workflows,Compatible hardware
-Zeiss ZenBlue OAD, , , , , 
-Nikon NIS-Elements Jobs module/macro language,commercial,both,no,yes,Nikon microscopes
-Leica LAS-X,commercial,GUI,no,no,Leica microscopes
-Inscoper,commercial,GUI and coding (API),yes,yes,[All devices supported by Inscoper](https://www.inscoper.com/supported-devices/)
-[AutoMicTools package](https://git.embl.de/halavaty/AutoMicTools), , , , , 
-[pymmcore-plus](https://pymmcore-plus.github.io/pymmcore-plus/),open source,coding,yes,yes,[All devices with uManager drivers](https://micro-manager.org/Device_Support)
