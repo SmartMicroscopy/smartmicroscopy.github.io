@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+- file: members
+  sections:
+  - file: members/profiles/CamachoR
+  - file: members/profiles/PfanderC
+  - file: members/profiles/ThomasL
+- file: implementations
+  sections:
+  - file: implementations/academic/unibe
+  - file: implementations/academic/cci-ug.md
+  - file: implementations/academic/uu.md
+- file: notes
+- file: publications
