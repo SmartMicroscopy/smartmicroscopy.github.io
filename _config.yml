@@ -30,3 +30,14 @@ repository:
 html:
   #use_issues_button: true
   use_repository_button: true
+
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.bibtex
+  config:
+    bibtex_bibfiles: ["references.bib"]
+    bibtex_reference_style: author_year
+  myst_enable_extensions:
+      - colon_fence
+      - dollarmath
+  myst_url_schemes: [mailto, http, https]
