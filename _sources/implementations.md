@@ -9,7 +9,7 @@ kernelspec:
 ```{important}
 Page under development (2025-03-12)
 ```
-# Available solutions
+# Available implementations
 This page references smart-microscopy implementations for different manufacturers and academic labs.
 
 ## Academic implementations
@@ -46,7 +46,7 @@ This page references smart-microscopy implementations for different manufacturer
   - Contact
 * - Product overview
   - [GitHub](https://github.com/Luxendo/Acquifer-Python-API/tree/master/examples/prescreen_rescreen)
-  - LUXENDO
+  - [LUXENDO](https://www.bruker.com/en/products-and-solutions/fluorescence-microscopy/light-sheet-microscopes.html)
   - [Thomas Laurent](./members/profiles/ThomasL.md)
 * - Product overview
   - Repo
@@ -58,12 +58,17 @@ This page references smart-microscopy implementations for different manufacturer
   - Contact
 ```
 
-## Hardware Compatibility Matrix
+## Hardware / Software compatibility
+These tables provide a more general overview, also linking to projectes not yet represented in the working group.
+An overview of relevant software can also be found here: https://smartmicroscopy.org/resources/ 
+
+
+### Hardware compatibility matrix
 
 ```{include} implementations/_compatibility_hardware.md
 ```
 
-## Software Compatibility Matrix
+### Software compatibility matrix
 
 ```{include} implementations/_compatibility_software.md
 ```

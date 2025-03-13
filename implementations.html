@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Available solutions &#8212; Smart Microscopy Working Group&#39;s Website</title>
+    <title>Available implementations &#8212; Smart Microscopy Working Group&#39;s Website</title>
   
   
   
@@ -186,7 +186,7 @@
 <li class="toctree-l2"><a class="reference internal" href="members/profiles/ThomasL.html">Laurent Thomas</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Available solutions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Available implementations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="implementations/academic/unibe.html">Automation of optogenetic targeting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="implementations/academic/cci-ug.html">Smart Microscopy as a Service</a></li>
 <li class="toctree-l2"><a class="reference internal" href="implementations/academic/uu.html">Outcome-driven microscopy to guide cell biology</a></li>
@@ -347,7 +347,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Available solutions</h1>
+    <h1>Available implementations</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -359,8 +359,11 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#academic-implementations">Academic implementations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#industry-implementations">Industry implementations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware-compatibility-matrix">Hardware Compatibility Matrix</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-compatibility-matrix">Software Compatibility Matrix</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware-software-compatibility">Hardware / Software compatibility</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware-compatibility-matrix">Hardware compatibility matrix</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#software-compatibility-matrix">Software compatibility matrix</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -376,8 +379,8 @@ document.write(`
 <p class="admonition-title">Important</p>
 <p>Page under development (2025-03-12)</p>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="available-solutions">
-<h1>Available solutions<a class="headerlink" href="#available-solutions" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="available-implementations">
+<h1>Available implementations<a class="headerlink" href="#available-implementations" title="Link to this heading">#</a></h1>
 <p>This page references smart-microscopy implementations for different manufacturers and academic labs.</p>
 <section id="academic-implementations">
 <h2>Academic implementations<a class="headerlink" href="#academic-implementations" title="Link to this heading">#</a></h2>
@@ -427,7 +430,7 @@ document.write(`
 <tbody>
 <tr class="row-even"><td><p>Product overview</p></td>
 <td><p><a class="reference external" href="https://github.com/Luxendo/Acquifer-Python-API/tree/master/examples/prescreen_rescreen">GitHub</a></p></td>
-<td><p>LUXENDO</p></td>
+<td><p><a class="reference external" href="https://www.bruker.com/en/products-and-solutions/fluorescence-microscopy/light-sheet-microscopes.html">LUXENDO</a></p></td>
 <td><p><a class="reference internal" href="members/profiles/ThomasL.html"><span class="std std-doc">Thomas Laurent</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Product overview</p></td>
@@ -444,15 +447,19 @@ document.write(`
 </table>
 </div>
 </section>
+<section id="hardware-software-compatibility">
+<h2>Hardware / Software compatibility<a class="headerlink" href="#hardware-software-compatibility" title="Link to this heading">#</a></h2>
+<p>These tables provide a more general overview, also linking to projectes not yet represented in the working group.
+An overview of relevant software can also be found here: <a class="reference external" href="https://smartmicroscopy.org/resources/">https://smartmicroscopy.org/resources/</a></p>
 <section id="hardware-compatibility-matrix">
-<h2>Hardware Compatibility Matrix<a class="headerlink" href="#hardware-compatibility-matrix" title="Link to this heading">#</a></h2>
+<h3>Hardware compatibility matrix<a class="headerlink" href="#hardware-compatibility-matrix" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>System/brand</p></th>
-<th class="head text-left"><p>Internal workflow/scripting support</p></th>
+<tr class="row-odd"><th class="head text-left"><p>System</p></th>
+<th class="head text-left"><p>Scripting support</p></th>
 <th class="head text-left"><p>Interfacing with external software</p></th>
-<th class="head text-left"><p>API/Dedicated package for external software</p></th>
-<th class="head text-left"><p>Compatibility with open source solutions</p></th>
+<th class="head text-left"><p>API</p></th>
+<th class="head text-left"><p>Open source compatibility</p></th>
 <th class="head text-left"><p>Examples provided</p></th>
 <th class="head text-left"><p>Behind paid-for licence</p></th>
 </tr>
@@ -527,31 +534,37 @@ document.write(`
 </div>
 </section>
 <section id="software-compatibility-matrix">
-<h2>Software Compatibility Matrix<a class="headerlink" href="#software-compatibility-matrix" title="Link to this heading">#</a></h2>
+<h3>Software compatibility matrix<a class="headerlink" href="#software-compatibility-matrix" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Software</p></th>
 <th class="head text-left"><p>Commercial/open source</p></th>
-<th class="head text-left"><p>GUI or coding required</p></th>
+<th class="head text-left"><p>GUI or API</p></th>
 <th class="head text-left"><p>Interacting with other software</p></th>
-<th class="head text-left"><p>Capacity to customize workflows</p></th>
+<th class="head text-left"><p>Custom workflows</p></th>
 <th class="head text-left"><p>Compatible hardware</p></th>
+<th class="head text-left"><p>Repo</p></th>
+<th class="head text-left"><p>Paper</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p>Zeiss ZenBlue OAD</p></td>
+<td class="text-left"><p>commercial</p></td>
+<td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Nikon NIS-Elements Jobs module/macro language</p></td>
+<tr class="row-odd"><td class="text-left"><p>Nikon NIS-Elements Jobs module / macro language</p></td>
 <td class="text-left"><p>commercial</p></td>
-<td class="text-left"><p>both</p></td>
+<td class="text-left"><p>GUI and API</p></td>
 <td class="text-left"><p>no</p></td>
 <td class="text-left"><p>yes</p></td>
 <td class="text-left"><p>Nikon microscopes</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Leica LAS-X</p></td>
 <td class="text-left"><p>commercial</p></td>
@@ -559,15 +572,21 @@ document.write(`
 <td class="text-left"><p>no</p></td>
 <td class="text-left"><p>no</p></td>
 <td class="text-left"><p>Leica microscopes</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Inscoper</p></td>
 <td class="text-left"><p>commercial</p></td>
-<td class="text-left"><p>GUI and coding (API)</p></td>
+<td class="text-left"><p>GUI and API</p></td>
 <td class="text-left"><p>yes</p></td>
 <td class="text-left"><p>yes</p></td>
 <td class="text-left"><p><a class="reference external" href="https://www.inscoper.com/supported-devices/">All devices supported by Inscoper</a></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><a class="reference external" href="https://git.embl.de/halavaty/AutoMicTools">AutoMicTools package</a></p></td>
+<td class="text-left"><p>open source</p></td>
+<td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
@@ -576,14 +595,80 @@ document.write(`
 </tr>
 <tr class="row-odd"><td class="text-left"><p><a class="reference external" href="https://pymmcore-plus.github.io/pymmcore-plus/">pymmcore-plus</a></p></td>
 <td class="text-left"><p>open source</p></td>
-<td class="text-left"><p>coding</p></td>
+<td class="text-left"><p>API</p></td>
 <td class="text-left"><p>yes</p></td>
 <td class="text-left"><p>yes</p></td>
 <td class="text-left"><p><a class="reference external" href="https://micro-manager.org/Device_Support">All devices with uManager drivers</a></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Navigate</p></td>
+<td class="text-left"><p>open source</p></td>
+<td class="text-left"><p>GUI and API</p></td>
+<td class="text-left"><p>yes</p></td>
+<td class="text-left"><p>yes</p></td>
+<td class="text-left"><p><a class="reference external" href="https://thedeanlab.github.io/navigate/user_guide/hardware/hardware_home.html">All devices with uManager drivers and more</a></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p><a class="reference external" href="http://dx.doi.org/10.1038/s41592-024-02413-4">link</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference external" href="https://imswitch.readthedocs.io/en/stable/">ImSwitch</a></p></td>
+<td class="text-left"><p>open source</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p><a class="github reference external" href="https://github.com/ImSwitch/ImSwitch">ImSwitch/ImSwitch</a></p></td>
+<td class="text-left"><p><a class="reference external" href="https://doi.org/10.21105/joss.03394">link</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><a class="reference external" href="https://pycro-manager.readthedocs.io/en/latest/">Pycro-Manager</a></p></td>
+<td class="text-left"><p>open source</p></td>
+<td class="text-left"><p>API</p></td>
+<td class="text-left"><p>Integrates with Micro-Manager</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p><a class="reference external" href="https://micro-manager.org/Device_Support">All devices with uManager drivers</a></p></td>
+<td class="text-left"><p><a class="github reference external" href="https://github.com/micro-manager/pycro-manager">micro-manager/pycro-manager</a></p></td>
+<td class="text-left"><p><a class="reference external" href="https://doi.org/10.1038/s41592-021-01087-6">link</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference external" href="https://github.com/royerlab/opensimview/tree/zebrahub_publication">OpenSIMView</a></p></td>
+<td class="text-left"><p>open source</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Custom built</p></td>
+<td class="text-left"><p><a class="github reference external" href="https://github.com/royerlab/opensimview">royerlab/opensimview</a></p></td>
+<td class="text-left"><p><a class="reference external" href="https://doi.org/10.1038/nbt.3708">link</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>iSpim-Control</p></td>
+<td class="text-left"><p>open source</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference external" href="https://drive.google.com/file/d/1JdwWS2R9wiSySzWAMmta5yRB8Le9G4X2/view">AutoScanJ</a></p></td>
+<td class="text-left"><p>open source</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Integrates with ImageJ</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Leica LAS AF/X or <a class="reference external" href="https://micro-manager.org/Device_Support">devices with uManager drivers</a></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p><a class="reference external" href="https://doi.org/10.3389/fbinf.2021.627626">link</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>MicroMator</p></td>
+<td class="text-left"><p>open source</p></td>
+<td class="text-left"><p>GUI and API</p></td>
+<td class="text-left"><p>Integrates with Micro-Manager</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p><a class="reference external" href="https://micro-manager.org/Device_Support">All devices with uManager drivers</a></p></td>
+<td class="text-left"><p><a class="reference external" href="https://gitlab.inria.fr/InBio/Public/micromator/-/tree/master/MicroMator">Gitlab</a></p></td>
+<td class="text-left"><p><a class="reference external" href="https://doi.org/10.1038/s41467-022-29888-z">link</a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
+</section>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -655,8 +740,11 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#academic-implementations">Academic implementations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#industry-implementations">Industry implementations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware-compatibility-matrix">Hardware Compatibility Matrix</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-compatibility-matrix">Software Compatibility Matrix</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware-software-compatibility">Hardware / Software compatibility</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware-compatibility-matrix">Hardware compatibility matrix</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#software-compatibility-matrix">Software compatibility matrix</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
