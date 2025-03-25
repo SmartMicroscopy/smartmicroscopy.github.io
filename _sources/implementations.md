@@ -20,7 +20,7 @@ This page references smart-microscopy implementations for different manufacturer
   - Institution
   - Contact
 * - [Automated optogenetic targeting](./implementations/academic/unibe.md)
-  - https://github.com/hinderling/rtm-pymmcore
+  - https://github.com/pertzlab/rtm-pymmcore
   - [UNIBE](https://www.izb.unibe.ch/research/prof_dr_olivier_pertz/index_eng.html)
   - [Lucien Hinderling](mailto:lucien.hinderling@unibe.ch)
 * - Re-usable workflows on different microscope brands
