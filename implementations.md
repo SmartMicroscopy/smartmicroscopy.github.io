@@ -34,7 +34,7 @@ This page references smart-microscopy implementations for different manufacturer
 * - [Smart Microscopy as a Service](./implementations/academic/cci-ug.md)
   - 
   - [CCI-UG](https://www.gu.se/en/core-facilities/infrastructure-at-core-facilities/centre-for-cellular-imaging)
-  - [Rafael Calacho](./members/profiles/CamachoR.md)
+  - [Rafael Camacho](./members/profiles/CamachoR.md)
 ```
 
 ## Industry implementations
