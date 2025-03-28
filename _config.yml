@@ -25,11 +25,12 @@ repository:
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-html:
-  #use_issues_button: true
-  use_repository_button: true
+
+myst_enable_extensions:
+  - colon_fence
+  - dollarmath
+
+myst_url_schemes: [mailto, http, https]
 
 sphinx:
   extra_extensions:
@@ -37,7 +38,11 @@ sphinx:
   config:
     bibtex_bibfiles: ["references.bib"]
     bibtex_reference_style: author_year
-  myst_enable_extensions:
-      - colon_fence
-      - dollarmath
-  myst_url_schemes: [mailto, http, https]
+    numfig: false
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  #use_issues_button: true
+  use_repository_button: true
+  extra_css: ["_static/custom.css"]
