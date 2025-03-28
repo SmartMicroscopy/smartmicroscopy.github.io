@@ -17,7 +17,6 @@ We are in the process of updating the website, the following is not a complete l
 * [Norlin, N.](./members/profiles/NilsN.md) - Lund University Bioimaging Centre, Lund University, Lund, Sweden
 * [Pfander, C.](./members/profiles/PfanderC.md) - Euro-BioImaging ERIC Bio-Hub, European Molecular Biology Laboratory, EMBL Heidelberg, Germany
 * Rates, A. - University of Utrecht, Netherlands
-* Remy
 * Reymann, J. - Leica Microsystems GmbH, Germany
 * Rhodes, C. - European Molecular Biology Laboratory, EMBL Heidelberg, Germany
 * Roden, J. - Bruker NANO, Heidelberg, Germany
