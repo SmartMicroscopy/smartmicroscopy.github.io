@@ -9,10 +9,18 @@ chapters:
   - file: members/profiles/CamachoR
   - file: members/profiles/PfanderC
   - file: members/profiles/ThomasL
+  - file: members/profiles/MartinC
+  - file: members/profiles/BoucharebO
+  - file: members/profiles/DemeautisC
+  - file: members/profiles/ThomasG
+  - file: members/profiles/TorroR
+
+
 - file: implementations
   sections:
   - file: implementations/academic/unibe
   - file: implementations/academic/cci-ug.md
   - file: implementations/academic/uu.md
+  - file: implementations/industry/inscoper.md
 - file: notes
 - file: publications
