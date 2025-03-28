@@ -1,5 +1,5 @@
 #  Automation of optogenetic targeting
-**Lucien Hinderling, Benjamin Grädel, Alex Landolt, Maciej Dobrzinsky, Olivier Pertz**, 
+**Lucien Hinderling, Benjamin Grädel, Alex Landolt, Maciej Dobrzinsky, Olivier Pertz** 
 University of Bern, Institute of Cell Biology
 
 ## Specific Focus and scientific questions asked
@@ -13,8 +13,15 @@ Smart microscopy addresses these limitations by integrating optogenetics with au
 ---
 name: fig-a
 ---
-**Smart microscopy for automated subcellular targeting: A)** Cytoskeletal structures are detected with computer vision and targeted with optogenetic stimulation. Local response of the cells is measured. **B)** Cell response depends on stimulation location, highlighting subcellular heterogeneity in cellular signal processing. **C)** Overview of architecture. The user interfaces with the microscope control software via GUI, code or by using an LLM. The microscope controls live cells using optogenetics and reads their response using fluorescent biosensors.
+
 ```
+
+:::{div} figure-like
+
+![UNIBE RTM](./unibe/fig_01.png)
+
+**Fig. 1: Smart microscopy for automated subcellular targeting: A)** Cytoskeletal structures are detected with computer vision and targeted with optogenetic stimulation. Local response of the cells is measured. **B)** Cell response depends on stimulation location, highlighting subcellular heterogeneity in cellular signal processing. **C)** Overview of architecture. The user interfaces with the microscope control software via GUI, code or by using an LLM. The microscope controls live cells using optogenetics and reads their response using fluorescent biosensors.
+:::
 
 ## Key findings and innovations 
 In a recent study exploring feedback regulation between Rho and a cytoskeletal structure called focal adhesions, we demonstrated the capability of this approach {cite:p}`Heydasch2023`. Using an optogenetic actuator- biosensor circuit to activate Rho and measure Rho activity, we investigated DLC1, a regulator of Rho that localizes to focal adhesions. 
@@ -51,4 +58,5 @@ Although much of our pipeline can be tested in silico, we lack a simulator for p
 
 ```{bibliography}
 :style: plain
+:filter: docname in docnames
 ```

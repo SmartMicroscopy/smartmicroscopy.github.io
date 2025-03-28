@@ -1,0 +1,7 @@
+.figure-like p {
+    font-size: 90%;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0.5em;
+    color: var(--pst-color-text-muted, #6c757d); /* fallback to muted gray if no theme variable */
+  }
