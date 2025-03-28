@@ -1,5 +1,4 @@
 # Smart Microscopy as a Service
-
 **Rafael Camacho**, Centre for Cellular Imaging, University of Gothenburg
 
 ## Approach to smart microscopy

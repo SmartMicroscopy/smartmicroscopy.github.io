@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=0915d2f8" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -184,12 +185,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../members/profiles/CamachoR.html">Rafael Camacho</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../members/profiles/PfanderC.html">Claudia Pfander</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../members/profiles/ThomasL.html">Laurent Thomas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/MartinC.html">Célia Martin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/BoucharebO.html">Otmane Bouchareb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/DemeautisC.html">Claire Demeautis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/ThomasG.html">Thomas Guilbert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/TorroR.html">Rémy Torro</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../implementations.html">Available implementations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Automation of optogenetic targeting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cci-ug.html">Smart Microscopy as a Service</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uu.html">Outcome-driven microscopy to guide cell biology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../industry/inscoper.html">Inscoper’s Roboscope</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes.html">Public Notes</a></li>
@@ -375,8 +382,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="automation-of-optogenetic-targeting">
 <h1>Automation of optogenetic targeting<a class="headerlink" href="#automation-of-optogenetic-targeting" title="Link to this heading">#</a></h1>
-<p><strong>Lucien Hinderling, Benjamin Grädel, Alex Landolt, Maciej Dobrzinsky, Olivier Pertz</strong>,
-University of Bern, Institute of Cell Biology</p>
+<p><strong>Lucien Hinderling, Benjamin Grädel, Alex Landolt, Maciej Dobrzinsky, Olivier Pertz</strong>, University of Bern, Institute of Cell Biology</p>
 <section id="specific-focus-and-scientific-questions-asked">
 <h2>Specific Focus and scientific questions asked<a class="headerlink" href="#specific-focus-and-scientific-questions-asked" title="Link to this heading">#</a></h2>
 <p>The cytoskeleton drives key cellular functions like morphology, polarity and migration, and is regulated by Rho GTPases that act as molecular switches.  Traditionally, the Rho GTPases Rac1, Cdc42, and RhoA were thought to independently control actin polymerization, filopodia formation, and contractility in a top-down manner. Recent biosensor studies have revealed that these GTPases are however dynamically coordinated at the subcellular scale, interacting in complex signaling networks at the timescale of seconds. Feedback from cytoskeletal structures directly influences Rho GTPase activity, creating an intricate, reciprocal relationship between signaling and structure.</p>
@@ -384,10 +390,11 @@ University of Bern, Institute of Cell Biology</p>
 <p>Smart microscopy addresses these limitations by integrating optogenetics with automated imaging systems that use digital mirror devices (DMDs) or galvo mirrors to dynamically update illumination patterns. Using computer vision, these microscopes autonomously detect cytoskeletal structures and respond to cellular behavior. Adapting light stimulation patterns in real time, this approach allows to systematically probe local heterogeneity in cellular signal processing (Fig. 1A).</p>
 <figure class="align-default" id="fig-a">
 <img alt="../../_images/fig_01.png" src="../../_images/fig_01.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text"><strong>Smart microscopy for automated subcellular targeting: A)</strong> Cytoskeletal structures are detected with computer vision and targeted with optogenetic stimulation. Local response of the cells is measured. <strong>B)</strong> Cell response depends on stimulation location, highlighting subcellular heterogeneity in cellular signal processing. <strong>C)</strong> Overview of architecture. The user interfaces with the microscope control software via GUI, code or by using an LLM. The microscope controls live cells using optogenetics and reads their response using fluorescent biosensors.</span><a class="headerlink" href="#fig-a" title="Link to this image">#</a></p>
-</figcaption>
 </figure>
+<div class="figure-like docutils">
+<p><img alt="UNIBE RTM" src="../../_images/fig_01.png" /></p>
+<p><strong>Fig. 1: Smart microscopy for automated subcellular targeting: A)</strong> Cytoskeletal structures are detected with computer vision and targeted with optogenetic stimulation. Local response of the cells is measured. <strong>B)</strong> Cell response depends on stimulation location, highlighting subcellular heterogeneity in cellular signal processing. <strong>C)</strong> Overview of architecture. The user interfaces with the microscope control software via GUI, code or by using an LLM. The microscope controls live cells using optogenetics and reads their response using fluorescent biosensors.</p>
+</div>
 </section>
 <section id="key-findings-and-innovations">
 <h2>Key findings and innovations<a class="headerlink" href="#key-findings-and-innovations" title="Link to this heading">#</a></h2>
