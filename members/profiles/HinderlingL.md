@@ -13,7 +13,8 @@ Also interested in 3D printing / microfabrication {cite:p}`Hinderling2025` and i
 [Scholar](https://scholar.google.com/citations?user=ih7UZBMAAAAJ&hl=en&oi=ao) - 
 [Bluesky](https://bsky.app/profile/lhinderling.bsky.social) - 
 [Twitter](https://x.com/lhinderling) - 
-[GitHub](https://github.com/hinderling)
+[GitHub](https://github.com/hinderling) - 
+[Mail](mailto:lucien.hinderling@unibe.com)
 
 ----
 
