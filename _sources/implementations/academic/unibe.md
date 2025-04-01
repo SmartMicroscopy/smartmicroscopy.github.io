@@ -8,13 +8,6 @@ Optogenetics allows precise spatio-temporal control of Rho GTPase signaling, ena
 
 Smart microscopy addresses these limitations by integrating optogenetics with automated imaging systems that use digital mirror devices (DMDs) or galvo mirrors to dynamically update illumination patterns. Using computer vision, these microscopes autonomously detect cytoskeletal structures and respond to cellular behavior. Adapting light stimulation patterns in real time, this approach allows to systematically probe local heterogeneity in cellular signal processing (Fig. 1A). 
 
-```{figure} ./unibe/fig_01.png
----
-name: fig-a
----
-
-```
-
 :::{div} figure-like
 
 ![UNIBE RTM](./unibe/fig_01.png)
