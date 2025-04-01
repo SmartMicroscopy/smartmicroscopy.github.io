@@ -13,8 +13,8 @@ We are in the process of updating the website, the following is not a complete l
 * [Guilbert, T.](./members/profiles/GuilbertT.md) - INSCOPER SAS, Cesson-Sévigné, France
 * Gunkel, M. - Advanced Light Microscopy Facility, European Molecular Biology Laboratory, EMBL Heidelberg, Germany
 * Halavatyi, A. - Advanced Light Microscopy Facility, European Molecular Biology Laboratory, EMBL Heidelberg, Germany
-* Hinderling, L. - University of Bern, Switzerland
-* [Martin, C](./members/profiles/MartinC.md) - INSCOPER SAS, Cesson-Sévigné, France
+* [Hinderling, L.](./members/profiles/HinderlingL.md) - University of Bern, Switzerland
+* [Martin, C.](./members/profiles/MartinC.md) - INSCOPER SAS, Cesson-Sévigné, France
 * [Norlin, N.](./members/profiles/NorlinN.md) - Lund University Bioimaging Centre, Lund University, Lund, Sweden
 * [Pfander, C.](./members/profiles/PfanderC.md) - Euro-BioImaging ERIC Bio-Hub, European Molecular Biology Laboratory, EMBL Heidelberg, Germany
 * Rates, A. - University of Utrecht, Netherlands
