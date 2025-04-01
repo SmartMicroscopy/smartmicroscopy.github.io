@@ -16,3 +16,6 @@ In the repository root directory, open a command prompt (on windows, type `cmd` 
 In the command prompt, type `./build_book.sh`, to run all the build scripts.
 
 Note : If you get a message like *jupyter-book is not a recognized command*, make sure the directory containing the `jupyter-book.exe` is on your PATH. (On windows see environment variables).  
+
+## Adding a profile
+To add a new member profile, add the profile in `members/profiles/LastnameF.md`, then link the file in `members.md` & `_toc.yml`.
