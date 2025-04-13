@@ -30,10 +30,10 @@ This page references smart-microscopy implementations for different manufacturer
 * - Re-usable workflows on different microscope brands
   -
   - EMBL-ALMF
-  - 
+  -
 
 * - [Smart Microscopy as a Service](./implementations/academic/cci-ug.md)
-  - 
+  -
   - [CCI-UG](https://www.gu.se/en/core-facilities/infrastructure-at-core-facilities/centre-for-cellular-imaging)
   - [Rafael Camacho](./members/profiles/CamachoR.md)
 ```
@@ -46,13 +46,17 @@ This page references smart-microscopy implementations for different manufacturer
   - Brand
   - Contact
 * - [Inscoper's Roboscope](./implementations/industry/inscoper.md)
-  - 
+  -
   - [Inscoper](https://www.inscoper.com)
   - [Otmane Bouchareb](./members/profiles/BoucharebO.md)
 * - [Open Application Development (OAD) in Zeiss ZEN](./implementations/industry/zeiss.md)
   - https://github.com/zeiss-microscopy/OAD/tree/master
   - [ZEISS](https://www.zeiss.com/)
   - [Philipp Seidel](mailto:philipp.seidel@zeiss.com)
+* - [ImSwitch for openUC2](./implementations/industry/openuc2.md)
+  - https://github.com/openUC2/imswitch/tree/master
+  - [openUC2](https://www.openuc2.com/)
+  - [Benedict Diederich](mailto:benedict.diederich@opencu2.com)  
 * -  
   - https://github.com/Luxendo/Acquifer-Python-API/tree/master/examples/prescreen_rescreen
   - [LUXENDO](https://www.bruker.com/en/products-and-solutions/fluorescence-microscopy/light-sheet-microscopes.html)
@@ -65,7 +69,7 @@ This page references smart-microscopy implementations for different manufacturer
 
 ## Hardware / Software compatibility
 These tables provide a more general overview, also linking to projectes not yet represented in the working group.
-An overview of relevant software can also be found here: https://smartmicroscopy.org/resources/ 
+An overview of relevant software can also be found here: https://smartmicroscopy.org/resources/
 
 
 ### Hardware compatibility matrix
