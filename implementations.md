@@ -53,7 +53,7 @@ This page references smart-microscopy implementations for different manufacturer
   - https://github.com/zeiss-microscopy/OAD/tree/master
   - [ZEISS](https://www.zeiss.com/)
   - [Philipp Seidel](mailto:philipp.seidel@zeiss.com)
-* - [ImSwitch for openUC2](./implementations/industry/openuc2.md)
+* - [ImSwitch for openUC2](./implementations/industry/openUC2.md)
   - https://github.com/openUC2/imswitch/tree/master
   - [openUC2](https://www.openuc2.com/)
   - [Benedict Diederich](mailto:benedict.diederich@opencu2.com)  
