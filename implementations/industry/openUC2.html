@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ImSwitch for openUC2 &#8212; Smart Microscopy Working Group&#39;s Website</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=0915d2f8" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'implementations/industry/openUC2';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Public Notes" href="../../notes.html" />
+    <link rel="prev" title="Open Application Development (OAD) in Zeiss ZEN" href="zeiss.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Smart Microscopy Working Group's Website - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Smart Microscopy Working Group's Website - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Smart Microscopy Working Group
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../members.html">Members of the Group</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/CamachoR.html">Rafael Camacho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/PfanderC.html">Claudia Pfander</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/ThomasL.html">Laurent Thomas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/MartinC.html">Célia Martin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/BoucharebO.html">Otmane Bouchareb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/DemeautisC.html">Claire Demeautis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/GuilbertT.html">Thomas Guilbert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/TorroR.html">Rémy Torro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/NorlinN.html">Nils Norlin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/HinderlingL.html">Lucien Hinderling</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../implementations.html">Available implementations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../academic/unibe.html">Automation of optogenetic targeting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../academic/cci-ug.html">Smart Microscopy as a Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../academic/uu.html">Outcome-driven microscopy to guide cell biology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inscoper.html">Inscoper’s Roboscope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zeiss.html">Open Application Development (OAD) in Zeiss ZEN</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">ImSwitch for openUC2</a></li>
+
+
+
+
+
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes.html">Public Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../publications.html">Publications &amp; Outreach</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/SmartMicroscopy/smartmicroscopy.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/implementations/industry/openUC2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>ImSwitch for openUC2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">ImSwitch for openUC2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#specific-focus-and-scientific-questions-asked">Specific Focus and Scientific Questions Asked</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#key-findings-and-innovations">Key Findings and Innovations</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation-details">Methodology and Implementation Details</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-to-interoperability">Contributions to Interoperability</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-software-repositories-and-documentation"><strong>Core Software Repositories and Documentation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-and-os-images"><strong>Docker and OS Images</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-based-tools"><strong>Web-Based Tools</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration-and-apis"><strong>Integration and APIs</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfacing-and-extensions"><strong>Interfacing and Extensions</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-and-support"><strong>Community and Support</strong></a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="imswitch-for-openuc2">
+<h1>ImSwitch for openUC2<a class="headerlink" href="#imswitch-for-openuc2" title="Link to this heading">#</a></h1>
+<p><strong>Benedict Diederich</strong>, openUC2 GmbH</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="specific-focus-and-scientific-questions-asked">
+<h1>Specific Focus and Scientific Questions Asked<a class="headerlink" href="#specific-focus-and-scientific-questions-asked" title="Link to this heading">#</a></h1>
+<p>openUC2 integrates modular microscopy with advanced automation to explore dynamic cellular behaviors and visualize individual fluorescent objects or scan large microscopic objects, ideally making these capabilities universally accessible. Our primary goal is to support researchers who lack access to cutting-edge microscopy technology, enabling them to conduct sophisticated experiments across diverse fields, including virology and all areas of education. Leveraging Arkitekt’s integration, we aim to standardize microscopy control workflows, simplifying the setup and execution of complex imaging experiments that may also include auxiliary hardware such as robot arms or pipetting robots.</p>
+<p>We are developing a versatile platform that encompasses a broad array of tools suitable for smart experimental designs, particularly those that require more than a single image capture and benefit from combining various modules to conduct intricate experimental protocols. Our main focus lies on live-cell imaging, such as characterizing bacterial responses to bacteriophage exposure under different environmental conditions. Through this approach, we aim to systematically analyze effects related to temporal dynamics, spatial positioning, and morphological changes. Ultimately, our platform seeks to significantly lower the entry barrier for advanced microscopy experiments, democratizing access and fostering broader participation within the scientific community. This we do by providing parts that feature a lower price tag and increased simplicity by making different parts compatible with each other using the openUC2 cube-like toolbox. With this openUC2 aim to <strong>become the Raspberry Pi for optics</strong>.</p>
+<div class="figure-like docutils">
+<p><img alt="Guided_Acquisition_UI" src="../../_images/gui2.png" /></p>
+<p>Fig. 1: <strong>Standard GUI from openUC2’s ImSwitch in the browser</strong></p>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="key-findings-and-innovations">
+<h1>Key Findings and Innovations<a class="headerlink" href="#key-findings-and-innovations" title="Link to this heading">#</a></h1>
+<p>openUC2 cubes controlled through ImSwitch combined with Arkitekt provide modular, scalable microscopy setups that dynamically respond to smart events in multiscale microscopy. We took great care to make these experiments as reproducible as possible and ensure a platform independent operation. For this, we created Docker containers for the different apps such as microsocopy control, image processing and hardware interaction, while drivers for hardware control are embedded. This ensures reproducibility and standardization of microscopy environments across diverse research setups, ensuring consistent and reliable outcomes - independent from the underlying Python environment. Integration with Opentrons robots and robotic arms further expands automation beyond imaging, facilitating comprehensive experimental workflows including sample preparation, reagent addition, and plate handling. The modular nature of openUC2 significantly simplifies setup complexity, enhancing throughput and reproducibility in smart microscopy experiments.</p>
+<div class="figure-like docutils">
+<p><img alt="GUI" src="../../_images/gui.png" /></p>
+<p>Fig. 2: <strong>Different Apps in form of controllers enable more complex experiments including the visual graphical interface</strong></p>
+</div>
+<p>The operational model splits into educational and professional aspects. Educational initiatives include introductory Jupyter Notebooks and workshops designed to teach students how to build smart microscopes, capturing their first images and developing fundamental algorithms such as autofocus. Knowledge gained in educational settings is directly transferable to professional equipment, ensuring consistency as the software and hardware platforms remain uniform across both educational and professional contexts. Jupyter notebooks have full access to the hardware and can include any external python library. It can run on the same hardware as the microscopy server (e.g. Raspberry Pi) that also drives the hardware or on a remote cluster HPC if more computational power is desired.</p>
+<div class="figure-like docutils">
+<p><img alt="Jupyter" src="../../_images/jupyter.png" /></p>
+<p>Fig. 3: <strong>A Jupyter Notebook Server can offer the creation of simple smart microscopy workflows by using common image processing pipelines and direct in-browser visualisation</strong></p>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="methodology-and-implementation-details">
+<h1>Methodology and Implementation Details<a class="headerlink" href="#methodology-and-implementation-details" title="Link to this heading">#</a></h1>
+<p>openUC2 microscopes rely on the already well established ImSwitch microscopy control software that was implemented in Python. We have ensured that the Model-Viewer-Presenter scheme of the underlying architecture fully avoids the use of QT component to make it more lightweight and operatable through the web. This also makes the use inside docker container a lot easier since information can be transported through TCP/UDP packages. In collaboration with developers from the Forklift framework, we have developed a dedicated operating system based on Raspberry Pi OS, embedding all necessary drivers and software components directly onto a flashable SD card. The compilation process is fully automated through GitHub Actions, enhancing maintainability and portability.</p>
+<p>A dedicated workflowmanager inside ImSwitch can formulated complex workflows as a list of tasks, while they are first formulated and compiled into hardware instructions before they are carried out on the hardware itself. The tasks can be provided by a python dictionary of hardware (e.g. capture image, move stage) or software events (e.g. triggers, waits, image processing results) or by a list that is uploaded via the REST API.</p>
+<div class="figure-like docutils">
+<p><img alt="workflow" src="../../_images/workflow2.jpg" /></p>
+<p>Fig. 4: <strong>An example how a workflow in ImSwitch can be formulated. Every stp has a pre and post function that is exucted. The graph is build up first, before the instructions are executed in a timely manner</strong></p>
+</div>
+<p>One example to formulate this list visually is blockly. It creates a JSON object with all the necessary steps that will be interpreted by the ImSwitch backend and executed on the hardware.</p>
+<div class="figure-like docutils">
+<p><img alt="workflow" src="../../_images/workflow.png" /></p>
+<p>Fig. 5: <strong>Blokly converts the different steps into a json object that is then later interpreted by the Workflowmanager</strong></p>
+</div>
+<p>Our approach utilizes Docker containers for virtualizing software components, such as the imSwitch system, device drivers, and image processing tools. This significantly simplifies software management and ensures reproducibility across platforms. All device control commands are issued via REST APIs, signal updates are offered through a websocket connection. Instead of relying on the QT-based gui int he former ImSwitch variants, we have constructed a React-based web application that integrates seamlessly into the Arkitekt network, providing intuitive access to most available parameters and functions as defined services. Here, the microscope becomes a dedicated micro-service, that can for example offer the functionality of scanning a 2D area or vary the optical resolution by changing the objective lens. The dataflow inside Arkitekt enables image processing on dedicated hardware before a control command is back-channeled to the microscope to interact with the sample in a smart way. This not only includes microsocpes, but can be widened to include robots and alike.</p>
+<div class="figure-like docutils">
+<p><img alt="arkitekt" src="../../_images/arkitekt.jpg" /></p>
+<p>Fig. 6: <strong>The Arkitekt framework enables a simple way of creating complex workflows where multiple hard- and software components can be joined in a highly decentralized manner</strong></p>
+</div>
+<p>Data flow management relies on a microservice architecture, where data accompanied by metadata is streamed from individual nodes to a central Arkitekt server node and subsequently distributed through lazy loading to processing or storage nodes. This abstraction layer ensures compatibility with common formats such as OME-Zarr or OME-TIFF, facilitating efficient data handling and interoperability.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="contributions-to-interoperability">
+<h1>Contributions to Interoperability<a class="headerlink" href="#contributions-to-interoperability" title="Link to this heading">#</a></h1>
+<p>openUC2 is entirely open source, committed to creating a highly interoperable ecosystem where diverse components seamlessly interact through standardized interfaces. In addition to that, we have created a firmware specifically designed for the ESP32 microocontroller. This firmware is designed to control various hardware components such as lasers, LEDs, motors, and galvo scanners using a unified codebase adaptable across multiple hardware configurations. This flexibility is further enhanced through CAN and I2C interfaces, facilitating the integration and control of external components. Low-level hardware control emphasizes human-readable interoperability through JSON-based dictionaries, which simplifies adding new parameters and functionalities. To facilitate rapid testing and interaction, we developed a web application leveraging WebSerial API, enabling immediate hardware access without additional installation. This setup supports straightforward experiments, such as browser-based time-lapse imaging using standard USB and UVC webcams, further emphasizing ease-of-use and accessibility.</p>
+<div class="figure-like docutils">
+<p><img alt="arkitekt" src="../../_images/flashtool.png" /></p>
+<p>Fig. 6: <strong>To further lower the entry barrier to get starting with smart microscopy experiments, openUC2 offers the abbility to flash the firmware to the ESP32s using the openUC2 Flashing tool in the web</strong></p>
+</div>
+<div class="figure-like docutils">
+<p><img alt="arkitekt" src="../../_images/fwtest.png" /></p>
+<p>Fig. 6: <strong>The Web-serial Standard enables the use of usb serial devices without the installation of additional software</strong></p>
+</div>
+<p>A notable collaboration with FLIMLabs showcases this interoperability, where their open REST API was successfully integrated into the ImSwitch environment, enabling direct control and analysis of FLIM hardware. The combination of openUC2 and ImSwitch aims to foster an open ecosystem that allows extensive external interaction without restrictive agreements like NDAs.</p>
+<div class="figure-like docutils">
+<p><img alt="workflow" src="../../_images/rest.png" /></p>
+<p>Fig. 6: <strong>An open REST API documented through the openapi swagger schema enables a fast interaction with the ImSwitch backend through the browser</strong></p>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="limitations">
+<h1>Limitations<a class="headerlink" href="#limitations" title="Link to this heading">#</a></h1>
+<p>The development of openUC2 in the professional software domain is still relatively early-stage, making the system potentially prone to errors. However, by developing a dedicated operating system for platforms such as Raspberry Pi or Jetson Nano, we significantly reduce such vulnerabilities, as all drivers and software components are thoroughly tested and continuously integrated through GitHub Actions. In case of issues, software versions can easily be reverted to stable builds, minimizing downtime.
+Documentation remains incomplete, presenting challenges for new users integrating their interfaces with our software. We actively encourage community feedback and participation, providing resources through openUC2’s GitHub repository and forums to foster a collaborative environment for addressing questions and continuously improving our documentation.</p>
+<p>Here’s a structured list of relevant links you should consider including to make the post complete and easily navigable for readers:</p>
+<hr class="docutils" />
+<section id="core-software-repositories-and-documentation">
+<h2><strong>Core Software Repositories and Documentation</strong><a class="headerlink" href="#core-software-repositories-and-documentation" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>openUC2 GitHub organization</strong> – all related hardware and software repos  <a class="reference external" href="https://github.com/openUC2/">Github</a></p></li>
+<li><p><strong>openUC2 ImSwitch fork</strong> – if customized from the original repo</p></li>
+<li><p><strong>Firmware GitHub repository</strong> – ESP32-based controller code  <a class="reference external" href="https://github.com/youseetoo/UC2-ESP32">Github</a></p></li>
+<li><p><strong>openUC2 Docs</strong> – general documentation including assembly and setup  <a class="reference external" href="https://openuc2.github.io">GH Pages</a></p></li>
+<li><p><strong>ImSwitch documentation</strong> – architecture, modules, API references <a class="reference external" href="https://imswitch.readthedocs.io/en/stable/">Read-The-Docs</a> or <a class="reference external" href="https://openuc2.github.io/docs/ImSwitch/DahengCamera">openUC2 GH Pages</a></p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="docker-and-os-images">
+<h2><strong>Docker and OS Images</strong><a class="headerlink" href="#docker-and-os-images" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>GitHub Container Registry</strong> – Docker images for ImSwitch and drivers  <a class="reference external" href="https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-arm64">ARM64 Version</a>, <a class="reference external" href="https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-amd64">AMD64</a></p></li>
+<li><p><strong>Raspberry Pi OS (ImSwitch version)</strong> – prebuilt image with instructions  <a class="reference external" href="https://github.com/openUC2/imswitch-os/tree/main">Forklift Repo</a>, [Prebuild OS on Zenodo]</p></li>
+<li><p><strong>Documentation for Forklift Integration</strong> – <a class="reference external" href="https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/#installing-raspberry-pi-os--imswitch">GH Pages</a></p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="web-based-tools">
+<h2><strong>Web-Based Tools</strong><a class="headerlink" href="#web-based-tools" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Firmware Flash Tool (WebSerial)</strong> – browser-based firmware upload  <a class="reference external" href="https://youseetoo.github.io/">Firmware Flasher</a></p></li>
+<li><p><strong>Firmware Test Tool</strong> – live hardware interaction in the browser  <a class="reference external" href="https://youseetoo.github.io/indexWebSerialTest.html">Firmware Testing</a></p></li>
+<li><p><strong>Blockly Workflow Editor</strong> – visual workflow editor generating JSON  <a class="reference external" href="https://youseetoo.github.io/imswitch/index.html">Static ImSwitch Frontend</a></p></li>
+<li><p><strong>ImSwitch Web GUI</strong> – hosted or local version (if available for testing/demo)  <a class="reference external" href="https://imswitch.openuc2.com/imswitch/index.html">Live ImSwitch Demo hosted on AWS - it may be down</a></p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="integration-and-apis">
+<h2><strong>Integration and APIs</strong><a class="headerlink" href="#integration-and-apis" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Arkitekt project</strong> – network-based microservice control environment <a class="github reference external" href="https://github.com/arkitektio">arkitektio</a></p></li>
+<li><p><strong>Arkitekt documentation</strong> – node types, setup, integration with ImSwitch <a class="reference external" href="https://arkitekt.live/">https://arkitekt.live/</a></p></li>
+<li><p><strong>openUC2 Arkitekt Plugin</strong> – Sample implementation to expose services: <a class="github reference external" href="https://github.com/openUC2/imswitch-arkitekt-next">openUC2/imswitch-arkitekt-next</a></p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="interfacing-and-extensions">
+<h2><strong>Interfacing and Extensions</strong><a class="headerlink" href="#interfacing-and-extensions" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Jupyter Notebook Examples</strong> – smart microscopy, autofocus, time-lapse <a class="reference external" href="https://github.com/openUC2/ImSwitch/tree/master/imswitch/_data/user_defaults/imnotebook">sample implementatoins</a></p></li>
+<li><p><strong>Hardware Integration Guides</strong> – Opentrons, robotic arms, etc.  (comming soon)</p></li>
+<li><p><strong>ESP32 WebSerial interface</strong> – for external components (lasers, motors, galvos)</p></li>
+<li><p><strong>ESP32 CAN/I2C Extensions</strong> – for adding peripherals  <a class="reference external" href="https://openuc2.github.io/docs/Electronics/CANInterface/">CAN Interface</a></p></li>
+</ul>
+</section>
+<section id="community-and-support">
+<h2><strong>Community and Support</strong><a class="headerlink" href="#community-and-support" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>openUC2 Forum/Discussions</strong> – GitHub or external forum  <a class="reference external" href="https://openuc2.discourse.group/">Discourse Forum</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./implementations/industry"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="zeiss.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Open Application Development (OAD) in Zeiss ZEN</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../notes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Public Notes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">ImSwitch for openUC2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#specific-focus-and-scientific-questions-asked">Specific Focus and Scientific Questions Asked</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#key-findings-and-innovations">Key Findings and Innovations</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation-details">Methodology and Implementation Details</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-to-interoperability">Contributions to Interoperability</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-software-repositories-and-documentation"><strong>Core Software Repositories and Documentation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-and-os-images"><strong>Docker and OS Images</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-based-tools"><strong>Web-Based Tools</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration-and-apis"><strong>Integration and APIs</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfacing-and-extensions"><strong>Interfacing and Extensions</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-and-support"><strong>Community and Support</strong></a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Smart Microscopy Working Group
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
