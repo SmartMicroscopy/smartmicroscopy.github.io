@@ -8,7 +8,7 @@ We are in the process of updating the website, the following is not a complete l
 * [Camacho, R.](./members/profiles/CamachoR.md) - Center for Cellular Imaging, Core Facilities, The Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden
 * Cosenza, M. - European Molecular Biology Laboratory, EMBL Heidelberg, Germany
 * [Demeautis, C](./members/profiles/DemeautisC.md) - INSCOPER SAS, Cesson-Sévigné, France
-* Diederich, B. - Leibniz Institute of Photonic Technology, Jena, Germany
+* [Diederich, B.](./members/profiles/DiederichB.md)  - Leibniz Institute of Photonic Technology, Jena, Germany / openUC2 GmbH, Jena, Germany
 * Folkesson, A. - Center for Cellular Imaging, Core Facilities, The Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden
 * [Guilbert, T.](./members/profiles/GuilbertT.md) - INSCOPER SAS, Cesson-Sévigné, France
 * Gunkel, M. - Advanced Light Microscopy Facility, European Molecular Biology Laboratory, EMBL Heidelberg, Germany
