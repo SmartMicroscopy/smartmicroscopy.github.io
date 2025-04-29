@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Automation of optogenetic targeting &#8212; Smart Microscopy Working Group&#39;s Website</title>
+    <title>CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events &#8212; Smart Microscopy Working Group&#39;s Website</title>
   
   
   
@@ -58,11 +58,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'implementations/academic/unibe';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'implementations/academic/uow';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Smart Microscopy as a Service" href="cci-ug.html" />
-    <link rel="prev" title="Available implementations" href="../../implementations.html" />
+    <link rel="next" title="Inscoper’s Roboscope" href="../industry/inscoper.html" />
+    <link rel="prev" title="Outcome-driven microscopy to guide cell biology" href="uu.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -196,10 +196,10 @@
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../implementations.html">Available implementations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Automation of optogenetic targeting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unibe.html">Automation of optogenetic targeting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cci-ug.html">Smart Microscopy as a Service</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uu.html">Outcome-driven microscopy to guide cell biology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="uow.html">CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../industry/inscoper.html">Inscoper’s Roboscope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../industry/zeiss.html">Open Application Development (OAD) in Zeiss ZEN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../industry/openUC2.html">ImSwitch for openUC2</a></li>
@@ -281,7 +281,7 @@
       
       
       
-      <li><a href="../../_sources/implementations/academic/unibe.md" target="_blank"
+      <li><a href="../../_sources/implementations/academic/uow.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -365,7 +365,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Automation of optogenetic targeting</h1>
+    <h1>CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,8 +378,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specific-focus-and-scientific-questions-asked">Specific Focus and scientific questions asked</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-findings-and-innovations">Key findings and innovations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation-details">Methodology and implementation details</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-to-interoperability">Contributions to Interoperability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-that-could-contribute-to-interoperability">Contributions that could contribute to interoperability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bottlenecks-limitations-of-approach-specific-requests-suggestions-to-community-and-industry">Bottlenecks / limitations of approach, specific requests / suggestions to community and industry</a></li>
 </ul>
             </nav>
         </div>
@@ -391,50 +391,72 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="automation-of-optogenetic-targeting">
-<h1>Automation of optogenetic targeting<a class="headerlink" href="#automation-of-optogenetic-targeting" title="Link to this heading">#</a></h1>
-<p><strong>Lucien Hinderling, Benjamin Grädel, Alex Landolt, Maciej Dobrzinsky, Olivier Pertz</strong>, University of Bern, Institute of Cell Biology</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="celfdrive-multimodal-ai-assisted-microscopy-for-detection-of-rare-events">
+<h1>CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events<a class="headerlink" href="#celfdrive-multimodal-ai-assisted-microscopy-for-detection-of-rare-events" title="Link to this heading">#</a></h1>
+<p>Scott Brooks [1,2]
+Sara Toral-Pérez [1,2],
+David S. Corcoran [1,2],
+Nina Pučeková [1,2],
+Karl Kilborn [3],
+Brian Bodensteiner [3],
+Hella Baumann [3],
+Nigel J. Burroughs [5,2],<br />
+Andrew D. McAinsh [1,2],
+Till Bretschneider [6,2]</p>
+<p>[1]: Warwick Biomedical Sciences, Warwick Medical School, University of Warwick, Coventry, CV47AL<br />
+[2]: Centre for Mechanochemical Cell Biology, University of Warwick, Coventry, United Kingdom<br />
+[3]: Intelligent Imaging Innovations, Denver, Colorado, United States of America<br />
+[4]: Intelligent Imaging Innovations, London, United Kingdom<br />
+[5]: Zeeman Institute (SBIDER), University of Warwick, Coventry, United Kingdom<br />
+[6]: Department of Computer Science, University of Warwick, Coventry, CV47AL</p>
 <section id="specific-focus-and-scientific-questions-asked">
 <h2>Specific Focus and scientific questions asked<a class="headerlink" href="#specific-focus-and-scientific-questions-asked" title="Link to this heading">#</a></h2>
-<p>The cytoskeleton drives key cellular functions like morphology, polarity and migration, and is regulated by Rho GTPases that act as molecular switches.  Traditionally, the Rho GTPases Rac1, Cdc42, and RhoA were thought to independently control actin polymerization, filopodia formation, and contractility in a top-down manner. Recent biosensor studies have revealed that these GTPases are however dynamically coordinated at the subcellular scale, interacting in complex signaling networks at the timescale of seconds. Feedback from cytoskeletal structures directly influences Rho GTPase activity, creating an intricate, reciprocal relationship between signaling and structure.</p>
-<p>Optogenetics allows precise spatio-temporal control of Rho GTPase signaling, enabling direct causal testing of this feedback regulation, by shining light on specific cellular regions and measuring the signaling response. Applying optogenetic stimulation in live cells requires constant manual adjustment of the illuminated regions to follow cellular movements. This approach is thus time-intensive and limited in throughput, posing a challenge for studying cytoskeletal signaling in dynamic contexts.</p>
-<p>Smart microscopy addresses these limitations by integrating optogenetics with automated imaging systems that use digital mirror devices (DMDs) or galvo mirrors to dynamically update illumination patterns. Using computer vision, these microscopes autonomously detect cytoskeletal structures and respond to cellular behavior. Adapting light stimulation patterns in real time, this approach allows to systematically probe local heterogeneity in cellular signal processing (Fig. 1A).</p>
-<div class="figure-like docutils">
-<p><img alt="UNIBE RTM" src="../../_images/fig_01.png" /></p>
-<p><strong>Fig. 1: Smart microscopy for automated subcellular targeting: A)</strong> Cytoskeletal structures are detected with computer vision and targeted with optogenetic stimulation. Local response of the cells is measured. <strong>B)</strong> Cell response depends on stimulation location, highlighting subcellular heterogeneity in cellular signal processing. <strong>C)</strong> Overview of architecture. The user interfaces with the microscope control software via GUI, code or by using an LLM. The microscope controls live cells using optogenetics and reads their response using fluorescent biosensors.</p>
-</div>
+<p>The crucial physical process during mitosis is the segregation of the duplicated chromosomes into daughter cells. This depends on the kinetochore, a dynamic, multi‐protein complex that assembles on the centromere of each chromosome and forms attachments to the mitotic spindle. Advances in live cell imaging and computational analysis now permit the quantitative study of kinetochore dynamics during mitosis. This is a powerful approach to understanding how and when kinetochores move chromosomes, and what determines whether they are moved to the correct daughter cell <span id="id1">[<a class="reference internal" href="../../markdown.html#id20" title="Li Ren Kong, Komal Gupta, Andy Jialun Wu, David Perera, Roland Ivanyi-Nagy, Syed Moiz Ahmed, Tuan Zea Tan, Shawn Lu-Wen Tan, Alessandra Fuddin, Elayanambi Sundaramoorthy, Grace Shiqing Goh, Regina Tong Xin Wong, Ana S.H. Costa, Callum Oddy, Hannan Wong, C. Pawan K. Patro, Yun Suen Kho, Xiao Zi Huang, Joan Choo, Mona Shehata, Soo Chin Lee, Boon Cher Goh, Christian Frezza, Jason J. Pitt, and Ashok R. Venkitaraman. A glycolytic metabolite bypasses “two-hit” tumor suppression by brca2. Cell, 187(9):2269–2287.e16, April 2024. URL: http://dx.doi.org/10.1016/j.cell.2024.03.006, doi:10.1016/j.cell.2024.03.006.">Kong <em>et al.</em>, 2024</a>]</span>. However, a barrier to investigating kinetochore dynamics throughout mitosis is identifying cells that have not yet broken down the nuclear envelope and initiated key events i.e. spindle assembly. Finding such prophase cells is hard as they are 1) rare in a normally cycling population, and 2) can often be difficult to distinguish from interphase cells.</p>
+<p>Lattice Light Sheet Microscopy (LLSM) is a state-of-the-art technique for acquiring 3D volumes of delicate biological processes over extended periods at high temporal resolution in living cells. LLSM makes it possible to capture kinetochore dynamics from prophase to anaphase with low phototoxicity and minimal photobleaching. However, LLSM is limited to a small field of view, which can make it difficult to find rare cells of interest. Moreover, even when a cell of interest is identified, determining its exact phase can be challenging, potentially leading to wasted time and missed fleeting events. Often, this leads to large storage of redundant data and inefficient use of researcher time, preventing the generation of the large datasets we require to produce reliable quantitative insights.</p>
+<p>Smart microscopy has the power to address this “needle in a haystack” problem by rapidly detecting rare cells, minimising redundant data and accelerating high resolution imaging workflows.</p>
 </section>
 <section id="key-findings-and-innovations">
 <h2>Key findings and innovations<a class="headerlink" href="#key-findings-and-innovations" title="Link to this heading">#</a></h2>
-<p>In a recent study exploring feedback regulation between Rho and a cytoskeletal structure called focal adhesions, we demonstrated the capability of this approach <span id="id1">[<a class="reference internal" href="../../markdown.html#id3" title="Max Heydasch, Lucien Hinderling, Jakobus van Unen, Maciej Dobrzynski, and Olivier Pertz. Gtpase activating protein dlc1 spatio-temporally regulates rho signaling. eLife, December 2023. URL: http://dx.doi.org/10.7554/eLife.90305.1, doi:10.7554/elife.90305.1.">Heydasch <em>et al.</em>, 2023</a>]</span>. Using an optogenetic actuator- biosensor circuit to activate Rho and measure Rho activity, we investigated DLC1, a regulator of Rho that localizes to focal adhesions.</p>
-<p>By automatically detecting focal adhesions, we systematically analyzed cellular responses to Rho activation, probing thousands of subcellular regions across hundreds of cells in a fully automated manner (Fig. 1B). With this high-throughput approach, we found that DLC1 maintains force homeostasis at focal adhesions by locally increasing Rho activity in response to mechanical stress. With the manual low-throughput methods we used initially, the regulatory dynamics were masked by cell-to-cell variability.</p>
-<p>Together, optogenetics and smart microscopy offer a scalable, high-precision method to dissect complex feedback-driven signaling networks, providing novel insights into cytoskeletal regulation. By swapping out the optogenetic actuator and biosensor circuit, this approach can be adapted to study spatio-temporal signaling dynamics across various domains of cell biology.</p>
+<p>CelFDrive is an integrated artificial intelligence-driven platform for automated high-resolution 3D imaging across various fluorescence microscopes. It overcomes the limitations of manual imaging by applying deep learning-based cell classification to low-magnification images, converting image-based detections into precise stage coordinates. This facilitates automated repositioning for subsequent high-resolution 3D imaging modalities. CelFDrive accelerates the detection of rare events in large cell populations, such as the onset of cell division. In our example we achieve an acceleration of 34 times compared to a human expert.</p>
+<div class="figure-like docutils">
+<p><img alt="UNIBE RTM" src="../../_images/fig_011.png" /></p>
+<p><strong>Fig. 1: CelFDrive overview:</strong> The flow of data through various components of the CelFDrive. Initial search region is captured via a low magnification montage. Cells of interest are detected by a deep learning model which has been trained on time-lapse movies from the low magnification objective. Data annotation is performed using the CellClicker and CellSelector interfaces. Image coordinates are converted to physical stage locations and high-resolution 4D time-lapses are taken at the region(s) detected.</p>
+</div>
+<p>Using CelFDrive we have been able to capture vast 4D timelapse datasets with LLSM that depicts the loading of endogenous NDC80-EGFP (a kinetochore marker) onto the centromeres alongside secondary markers for the chromosomes, mitotic spindle and/or nuclear envelope. From this we use our Kinetochore Tracking software (KiT) <span id="id2">[<a class="reference internal" href="../../markdown.html#id21" title="Jonathan U Harrison, Onur Sen, Andrew D McAinsh, and Nigel J Burroughs. Kinetochore tracking in 3d from lattice light-sheet imaging data with kit. Bioinformatics, 38(12):3315–3317, May 2022. URL: http://dx.doi.org/10.1093/bioinformatics/btac330, doi:10.1093/bioinformatics/btac330.">Harrison <em>et al.</em>, 2022</a>]</span> to gain insight into kinetochore dynamics at the earliest moments of mitosis at higher temporal resolution than previously possible. These image sequences are providing new insights: 1) We revealed the relocation of TMR:HALO-NUP107 (a nucleoporin) from the nuclear envelope onto the kinetochores. This is the first reported live imaging data that captures this event directly. 2) We found that the kinetochores’ outer plate (NDC80-EGFP) is assembled before the NUP107 translocation. Thus, efficient identification of late prophase cells with CelFDrive allowed capture of the data necessary to order molecular events during early mitosis (Outer plate assembly -&gt; completion of nuclear breakdown -&gt; translocation of Nucleoporins to kinetochores). 3) We successfully used a multimodal model which supports spinning disk and widefield systems as a high throughput solution to quantify levels of expression of secondary markers within dividing cells across a whole coverslip.</p>
+<p>The broader implications of this work extend beyond the study of mitosis to diverse dynamic processes and rare events at both cell and tissue scales for potential drug discovery applications and clinical diagnostics. Our method highlights the potential of integrating artificial intelligence with modern microscopy techniques</p>
 </section>
 <section id="methodology-and-implementation-details">
 <h2>Methodology and implementation details<a class="headerlink" href="#methodology-and-implementation-details" title="Link to this heading">#</a></h2>
-<p>To control and automate the microscope we built an open-source software stack (Fig. 1C).  Our primary challenge was integrating control of all hardware devices (camera, stage, light source, DMD) within a single software environment. We build upon <a class="reference external" href="https://micro-manager.org">Micro-Manager</a>, which provides drivers for over 250 devices. For feedback logic and data analysis, we chose Python due to its rich libraries for computer vision and signal processing. Python’s accessibility and feature-rich ecosystem make it an ideal choice. We bridge Micro-Manager’s C++ device drivers to Python using <a class="reference external" href="https://github.com/micro-manager/pymmcore">PyMMCore</a>.</p>
-<p>Our smart microscopy experiments rely on complex image processing pipelines that generate diverse outputs (segmentation masks, point detections, tracks, biosensor quantification). These pipelines have to be adapted to cellular variability: cell appearance, biosensors, and morphology differ from experiment to experiment based on factors like drug treatment. Since we need real-time image processing during experiments, there is no time for extensive model training or post-acquisition parameter tuning. To address this, we built <a class="reference external" href="https://github.com/guiwitz/napari-convpaint">Convpaint</a>, an interactive pixel classifier that can be trained on a single sample image from that experiment. We use <a class="reference external" href="https://github.com/guiwitz/napari-convpaint">Napari</a>, a multimodal image viewer for Python, to preview the image processing results, facilitating on-the-fly parameter tuning before starting the experiment.</p>
-<p>Napari also allows us to create custom microscope control widgets (e.g., for previewing image analysis, calibrating the DMD, setting experimental parameters). This setup enables even complex smart microscopy experiments to be run without coding. While commercial microscope control software provides extensive GUIs for standardized experiments, custom experiments usually require scripting. With Napari, we can build GUIs to streamline accessibility even for highly customized experiments and technically complex setups. Recently a plugin has been developed (<a class="reference external" href="https://github.com/pymmcore-plus/napari-micromanager%5D">napari-micromanager</a>) that provides a GUI for all (non-smart) microscope operations.</p>
-<p>Each experiment is documented in a <a class="reference external" href="https://jupyter.org">Jupyter notebook</a>, detailing algorithms and experiment variables like the stimulation logic. This practically provides automated documentation. Re-running an experiment is as simple as re-running the notebook.</p>
-<p>To maximize experimental throughput, we use a main thread for scheduling hardware control events (move stage, acquire image, stimulate region), while image processing runs on separate threads for different fields of view.</p>
-<p>All image data and processing results are continuously stored, allowing inspection at any time during the experiment and faster iteration time when troubleshooting. From the extracted data,  we also automatically generate quality control plots (segmentation overlays, tracking statistics). At the end of each experiment, plots can be created from the microscope output data with no further processing.</p>
+<p>CelFDrive interacts with our industry partner’s (3i) software, SlideBook. SlideBook’s Conditional Capture module automates imaging workflows by triggering macro scripts directly after image capture. In the current workflow, a large field of view is imaged with an auxiliary objective and coordinates are transferred from SlideBook to Python. From here an object detection model is applied in parallel to process patches of images and determine classes and coordinates. Images are translated into physical locations using pixel spacing and an object’s image position, and if specified, a coverslip tilt is incorporated to correct the Z position. SlideBook capture scripts enable automated multi-point acquisition of cells detected in a specific phase of interest, allow the user to select cells from a list of top hits, or a user can specify that they wish to just image the top confidence cell with the most desirable class (e.g. a prophase cell).</p>
+<p>We developed a multimodal workflow that can be easily installed on a variety of 3i microscopes (Lattice Lightsheet, Marianas spinning disk confocal, widefield systems) for the detection of cells in different stages of mitosis. By training a model on different modalities, stains and magnifications we can deploy the same model to different microscopes with little to no retraining. In addition, innovative python-based user interfaces, including CellClicker and CellSelector, were developed to support efficient multi-user annotation of time series data, thereby improving the robustness of the training sets and reducing subjectivity. These interfaces allow users to apply CelFDrive to their unique imaging tasks, providing an adaptable and scalable solution. We provide an anaconda environment file to assist users with installation of the required dependencies.</p>
+<p>To detect cells of interest, we fine-tuned state-of-the-art real-time object detection models on diverse live image datasets of DNA-stained mitotic cells acquired using various magnifications of widefield microscopy and spinning disk confocal microscopy. The model architectures used are from the YOLO family and it is natively compatible from versions 5 to 12 <span id="id3">[<a class="reference internal" href="../../markdown.html#id22" title="Glenn Jocher, Jing Qiu, and Ayush Chaurasia. Ultralytics YOLO. GitHub, January 2023. URL: https://github.com/ultralytics/ultralytics.">Jocher <em>et al.</em>, 2023</a>]</span> as well as real-time detection transformer (RT-DETR) <span id="id4">[<a class="reference internal" href="../../markdown.html#id23" title="Yian Zhao, Wenyu Lv, Shangliang Xu, Jinman Wei, Guanzhong Wang, Qingqing Dang, Yi Liu, and Jie Chen. Detrs beat yolos on real-time object detection. bioRxiv, 2023. URL: https://arxiv.org/abs/2304.08069, doi:10.48550/ARXIV.2304.08069.">Zhao <em>et al.</em>, 2023</a>]</span>, however, it is easy to adapt the software to different object detections models.  The resulting generalisable model facilitates high-precision smart microscopy which is cross-platform and cross-magnification, one of the first solutions of its kind presented for live fluorescence microscopy.</p>
 </section>
-<section id="contributions-to-interoperability">
-<h2>Contributions to Interoperability<a class="headerlink" href="#contributions-to-interoperability" title="Link to this heading">#</a></h2>
-<p>Micro-Manager not only offers extensive device driver support (see <a class="reference external" href="https://micro-manager.org/Device_Support">list of supported devices</a>), making our workflow compatible with a wide range of custom microscope setups globally, but it also provides standardized interfaces for the core device types in modern microscopy. This framework ensures that our code remains hardware-agnostic; for instance, any DMD can be seamlessly integrated as long as it is implemented as a <a class="reference external" href="https://micro-manager.org/GenericSLM">genericSLM device</a> in Micro-Manager (we currently use the <a class="reference external" href="https://micro-manager.org/Mosaic3">Andor Mosaic 3</a> and <a class="reference external" href="https://micro-manager.org/MightexPolygon">Mightex Polygon 1000</a>).
-We define acquisition events in an abstract format using <a class="reference external" href="https://pymmcore-plus.github.io/useq-schema/">useq-schema</a>, which could theoretically be adapted for use with other microscope control software.</p>
+<section id="contributions-that-could-contribute-to-interoperability">
+<h2>Contributions that could contribute to interoperability<a class="headerlink" href="#contributions-that-could-contribute-to-interoperability" title="Link to this heading">#</a></h2>
+<p>This work is free to use for academic research. The pythonic nature of CelFDrive means that it can be integrated with any microscope that can trigger python commands. In addition, for the case of cell division, the model trained can be applied to most DNA-stained images of cells at different magnifications. This model can be applied to other smart microscopy methods or used as a post-acquisition analysis tool.</p>
 </section>
-<section id="limitations">
-<h2>Limitations<a class="headerlink" href="#limitations" title="Link to this heading">#</a></h2>
-<p>These abstractions are feasible due to a growing community around Micro-Manager. Sustained development and critical mass forming around its ecosystem encouraged many hardware vendors to make their devices compatible with the software. However, the current abstractions are designed for classical microscope automation without feedback components. All smart features in our pipeline remain outside any established standards.
-Currently, we rely on custom data structures to store results. We plan to implement <a class="reference external" href="https://ngff.openmicroscopy.org/latest/">OME-Zarr</a> to standardize metadata storage and processing.
-Although much of our pipeline can be tested in silico, we lack a simulator for photomanipulation. In silico testing is essential for troubleshooting and the implementation of automated testing across our pipelines.</p>
+<section id="bottlenecks-limitations-of-approach-specific-requests-suggestions-to-community-and-industry">
+<h2>Bottlenecks / limitations of approach, specific requests / suggestions to community and industry<a class="headerlink" href="#bottlenecks-limitations-of-approach-specific-requests-suggestions-to-community-and-industry" title="Link to this heading">#</a></h2>
+<p>The primary limitation of this approach is that a supervised model has been used, this means that to train a model on a new biological use case, a large quantity of data is required to produce a multimodal model. Although for a specific use case on a specific microscope, this data requirement is much lower depending on the process to be detected.</p>
+<p>In addition, CelFDrive has been optimised to work with 3i-systems Synergy module (python-based) approach, where image data and coordinate data are defined in a specific convention which may not be applicable to other systems. This may require an intermediary script to, for example, re-order image multidimensional data, convert coordinates and monitor watch file systems. This poses a question about standardisation of industry and academic microscope control software, where defining a common data structure format for smart microscopy API integration would allow for ease of implementation of different techniques across platforms and increased uptake of smart microscopy.</p>
 <hr class="docutils" />
-<div class="docutils container" id="id2">
+<div class="docutils container" id="id5">
 <div role="list" class="citation-list">
-<div class="citation" id="id3" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>Max Heydasch, Lucien Hinderling, Jakobus van Unen, Maciej Dobrzynski, and Olivier Pertz. Gtpase activating protein dlc1 spatio-temporally regulates rho signaling. <em>eLife</em>, December 2023. URL: <a class="reference external" href="http://dx.doi.org/10.7554/eLife.90305.1">http://dx.doi.org/10.7554/eLife.90305.1</a>, <a class="reference external" href="https://doi.org/10.7554/elife.90305.1">doi:10.7554/elife.90305.1</a>.</p>
+<div class="citation" id="id24" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>Jonathan U Harrison, Onur Sen, Andrew D McAinsh, and Nigel J Burroughs. Kinetochore tracking in 3d from lattice light-sheet imaging data with kit. <em>Bioinformatics</em>, 38(12):3315–3317, May 2022. URL: <a class="reference external" href="http://dx.doi.org/10.1093/bioinformatics/btac330">http://dx.doi.org/10.1093/bioinformatics/btac330</a>, <a class="reference external" href="https://doi.org/10.1093/bioinformatics/btac330">doi:10.1093/bioinformatics/btac330</a>.</p>
+</div>
+<div class="citation" id="id25" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>Glenn Jocher, Jing Qiu, and Ayush Chaurasia. Ultralytics YOLO. <em>GitHub</em>, January 2023. URL: <a class="github reference external" href="https://github.com/ultralytics/ultralytics">ultralytics/ultralytics</a>.</p>
+</div>
+<div class="citation" id="id23" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">3</a><span class="fn-bracket">]</span></span>
+<p>Li Ren Kong, Komal Gupta, Andy Jialun Wu, David Perera, Roland Ivanyi-Nagy, Syed Moiz Ahmed, Tuan Zea Tan, Shawn Lu-Wen Tan, Alessandra Fuddin, Elayanambi Sundaramoorthy, Grace Shiqing Goh, Regina Tong Xin Wong, Ana S.H. Costa, Callum Oddy, Hannan Wong, C. Pawan K. Patro, Yun Suen Kho, Xiao Zi Huang, Joan Choo, Mona Shehata, Soo Chin Lee, Boon Cher Goh, Christian Frezza, Jason J. Pitt, and Ashok R. Venkitaraman. A glycolytic metabolite bypasses “two-hit” tumor suppression by brca2. <em>Cell</em>, 187(9):2269–2287.e16, April 2024. URL: <a class="reference external" href="http://dx.doi.org/10.1016/j.cell.2024.03.006">http://dx.doi.org/10.1016/j.cell.2024.03.006</a>, <a class="reference external" href="https://doi.org/10.1016/j.cell.2024.03.006">doi:10.1016/j.cell.2024.03.006</a>.</p>
+</div>
+<div class="citation" id="id26" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>Yian Zhao, Wenyu Lv, Shangliang Xu, Jinman Wei, Guanzhong Wang, Qingqing Dang, Yi Liu, and Jie Chen. Detrs beat yolos on real-time object detection. <em>bioRxiv</em>, 2023. URL: <a class="reference external" href="https://arxiv.org/abs/2304.08069">https://arxiv.org/abs/2304.08069</a>, <a class="reference external" href="https://doi.org/10.48550/ARXIV.2304.08069">doi:10.48550/ARXIV.2304.08069</a>.</p>
 </div>
 </div>
 </div>
@@ -472,20 +494,20 @@ Although much of our pipeline can be tested in silico, we lack a simulator for p
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../../implementations.html"
+       href="uu.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Available implementations</p>
+        <p class="prev-next-title">Outcome-driven microscopy to guide cell biology</p>
       </div>
     </a>
     <a class="right-next"
-       href="cci-ug.html"
+       href="../industry/inscoper.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Smart Microscopy as a Service</p>
+        <p class="prev-next-title">Inscoper’s Roboscope</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -508,8 +530,8 @@ Although much of our pipeline can be tested in silico, we lack a simulator for p
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specific-focus-and-scientific-questions-asked">Specific Focus and scientific questions asked</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-findings-and-innovations">Key findings and innovations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation-details">Methodology and implementation details</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-to-interoperability">Contributions to Interoperability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-that-could-contribute-to-interoperability">Contributions that could contribute to interoperability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bottlenecks-limitations-of-approach-specific-requests-suggestions-to-community-and-industry">Bottlenecks / limitations of approach, specific requests / suggestions to community and industry</a></li>
 </ul>
   </nav></div>
 
