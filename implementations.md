@@ -31,11 +31,14 @@ This page references smart-microscopy implementations for different manufacturer
   -
   - EMBL-ALMF
   -
-
 * - [Smart Microscopy as a Service](./implementations/academic/cci-ug.md)
   -
   - [CCI-UG](https://www.gu.se/en/core-facilities/infrastructure-at-core-facilities/centre-for-cellular-imaging)
   - [Rafael Camacho](./members/profiles/CamachoR.md)
+* - [CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events](./implementations/academic/uow.md)
+  - https://github.com/scott-vision/CelFDrive
+  - [UoW](https://warwick.ac.uk), [3i](https://www.intelligent-imaging.com)
+  - [Scott Brooks](mailto:S.brooks.2@warwick.ac.uk)
 ```
 
 ## Industry implementations
