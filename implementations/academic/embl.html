@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Modular adaptive feedback microscopy workflows with AutoMicTools &#8212; Smart Microscopy Working Group&#39;s Website</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=0915d2f8" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'implementations/academic/embl';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Inscoper’s Roboscope" href="../industry/inscoper.html" />
+    <link rel="prev" title="CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events" href="uow.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Smart Microscopy Working Group's Website - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Smart Microscopy Working Group's Website - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Smart Microscopy Working Group
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../members.html">Members of the Group</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/CamachoR.html">Rafael Camacho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/PfanderC.html">Claudia Pfander</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/ThomasL.html">Laurent Thomas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/MartinC.html">Célia Martin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/BoucharebO.html">Otmane Bouchareb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/DemeautisC.html">Claire Demeautis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/GuilbertT.html">Thomas Guilbert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/TorroR.html">Rémy Torro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/NorlinN.html">Nils Norlin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/HeilH.html">Hannah S. Heil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/HinderlingL.html">Lucien Hinderling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/HalavatyiA.html">Aliaksandr Halavatyi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../members/profiles/DiederichB.html">Benedict Diederich</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../implementations.html">Available implementations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="unibe.html">Automation of optogenetic targeting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cci-ug.html">Smart Microscopy as a Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uu.html">Outcome-driven microscopy to guide cell biology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uow.html">CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Modular adaptive feedback microscopy workflows with AutoMicTools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../industry/inscoper.html">Inscoper’s Roboscope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../industry/zeiss.html">Open Application Development (OAD) in Zeiss ZEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../industry/openUC2.html">ImSwitch for openUC2</a></li>
+
+
+
+
+
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes.html">Public Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../publications.html">Publications &amp; Outreach</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/SmartMicroscopy/smartmicroscopy.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/implementations/academic/embl.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Modular adaptive feedback microscopy workflows with AutoMicTools</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specific-focus-and-scientific-questions-asked">Specific Focus and scientific questions asked</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-findings-and-innovations">Key findings and innovations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation-details">Methodology and implementation details</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-to-interoperability">Contributions to Interoperability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="modular-adaptive-feedback-microscopy-workflows-with-automictools">
+<h1>Modular adaptive feedback microscopy workflows with AutoMicTools<a class="headerlink" href="#modular-adaptive-feedback-microscopy-workflows-with-automictools" title="Link to this heading">#</a></h1>
+<p><strong>Aliaksandr Halavatyi, Manuel Gunkel</strong>, Advanced Light Microscopy Facility (ALMF), European Molecular Biology Laboratory (EMBL), Heidelberg Germany</p>
+<section id="specific-focus-and-scientific-questions-asked">
+<h2>Specific Focus and scientific questions asked<a class="headerlink" href="#specific-focus-and-scientific-questions-asked" title="Link to this heading">#</a></h2>
+<p>Adaptive Feedback Microscopy is used to automate and run different kinds of microscopy experiments with integrated image analysis in a high throughput manner for example detection and high-resolution imaging of certain phenotypes or different kinds of photomanipulation experiments. Applying this methodology for various kinds of experiments often requires dedicated hardware. Many systems, for example confocal laser scanning microscopes (cLSMs), are controlled by vendor proprietary software. Therefore, microscope companies need to design dedicated modules for their softwares for running smart microscopy workflows. If different image analysis and workflow management tools are used on different microscope types to automate them, microscopy facilities and other research infrastructures operating microscopes of different brands need to support many additional software tools to benefit from available hardware. Migration of workflows implemented on different microscopes becomes hardly possible, even if needed imaging modalities are available.
+To overcome these limitations, we established a toolbox called <em>AutoMicTools</em> which enables setting up, testing and running adaptive feedback microscopy workflows on several advanced systems. The implemented workflows consist of multiple interacting modules to separate image analysis routines and logics for communicating to the microscope.</p>
+<div class="figure-like docutils">
+<p><img alt="UNIBE RTM" src="../../_images/Figure_1.jpg" /></p>
+<p><strong>Fig. 1:</strong> Structure of <em>AutoMicTools</em> workflow and its interaction with external software tools.</p>
+</div>
+</section>
+<section id="key-findings-and-innovations">
+<h2>Key findings and innovations<a class="headerlink" href="#key-findings-and-innovations" title="Link to this heading">#</a></h2>
+<p>Several workflows have been designed with <em>AutoMicTools</em> toolbox and run on different confocal microscopes in our facility:</p>
+<p><strong>High resolution multicolour volumetric imaging of classified phenotypes and rare events.</strong>
+Several versions of this workflow have been established in the context of cell biology and developmental biology studies. For example, live cell cultures <span id="id1">[<a class="reference internal" href="../../markdown.html#id28" title="Tobias Kletter, Omar Muñoz, Sebastian Reusch, Abin Biswas, Aliaksandr Halavatyi, Beate Neumann, Benno Kuropka, Vasily Zaburdaev, and Simone Reber. Cell state-specific cytoplasmic material properties control spindle architecture and scaling. bioRxiv, July 2024. URL: http://dx.doi.org/10.1101/2024.07.22.604615, doi:10.1101/2024.07.22.604615.">Kletter <em>et al.</em>, 2024</a>]</span>, <span id="id2">[<a class="reference internal" href="../../markdown.html#id24" title="Andreas Brunner, Natalia Rosalía Morero, Wanlu Zhang, M. Julius Hossain, Marko Lampe, Hannah Pflaumer, Aliaksandr Halavatyi, Jan-Michael Peters, Kai S. Beckwith, and Jan Ellenberg. Quantitative imaging of loop extruders rebuilding interphase genome architecture after mitosis. Journal of Cell Biology, January 2025. URL: http://dx.doi.org/10.1083/jcb.202405169, doi:10.1083/jcb.202405169.">Brunner <em>et al.</em>, 2025</a>]</span>, have been imaged to identify and image cells in a particular stage of a cell cycle for a time period up to 72 hours. A screen of drosophila stained lines has been performed to collect high resolution data of gene expression patterns in those samples <span id="id3">[<a class="reference internal" href="../../markdown.html#id27" title="Timothy Fuqua, Jeff Jordan, Maria Elize van Breugel, Aliaksandr Halavatyi, Christian Tischer, Peter Polidoro, Namiko Abe, Albert Tsai, Richard S. Mann, David L. Stern, and Justin Crocker. Dense and pleiotropic regulatory information in a developmental enhancer. Nature, 587(7833):235–239, October 2020. URL: http://dx.doi.org/10.1038/s41586-020-2816-5, doi:10.1038/s41586-020-2816-5.">Fuqua <em>et al.</em>, 2020</a>]</span><span id="id4">[<a class="reference internal" href="../../markdown.html#id26" title="Timothy Fuqua, Jeff Jordan, Aliaksandr Halavatyi, Christian Tischer, Kerstin Richter, and Justin Crocker. An open-source semi-automated robotics pipeline for embryo immunohistochemistry. Scientific Reports, May 2021. URL: http://dx.doi.org/10.1038/s41598-021-89676-5, doi:10.1038/s41598-021-89676-5.">Fuqua <em>et al.</em>, 2021</a>]</span>.
+All projects have benefitted from the possibility to extend the workflows by integrating multiple image acquisition and analysis steps on demand. For example, an additional round of focusing has been implemented to estimate axial positions of individual cells or embryos after identifying them in 2D and automatically adjust high resolution imaging volume.</p>
+<p><strong>Automated photomanipulation.</strong></p>
+<ol class="arabic simple">
+<li><p>Fluorescence Recovery After Photobleaching (FRAP) experiments have been run automatically to measure turnover of COPII proteins at ER-exit sites (ERES). More than 500 recovery curves have been collected in each imaging session (~16 hours long), allowing to study distributions of recovery rates and correlate them with other measured parameters of target cells.</p></li>
+<li><p>Automated photo-activation has been set to enable researchers to automatically identify, fluorescently mark, sort and sequence single cells or cell populations carrying target phenotypes. The workflow has been initially established in the framework of a project aiming to study networks regulating Golgi structure <span id="id5">[<a class="reference internal" href="../../markdown.html#id30" title="Sanjana Singh, Joanna Zukowska, Aliaksandr Halavatyi, Jonathan J. M. Landry, and Rainer Pepperkok. Phenotype-based single-cell transcriptomics reveal compensatory pathways involved in golgi organization and associated transport. bioRxiv, December 2022. URL: http://dx.doi.org/10.1101/2022.12.02.518815, doi:10.1101/2022.12.02.518815.">Singh <em>et al.</em>, 2022</a>]</span>. Cells under well-defined gene knock-down conditions show heterogeneous Golgi morphology phenotypes suggesting that the different phenotypes are due to different molecular stages the cells are in. In order to address this question, it has been necessary to directly correlate the Golgi morphology phenotype with the molecular stage of the cells. The originally established protocol has been used for studying other biological phenomena by plugging in project-specific image analysis modules identifying target cells <span id="id6">[<a class="reference internal" href="../../markdown.html#id25" title="Marco Raffaele Cosenza, Alice Gaiatto, Büşra Erarslan Uysal, Álvaro Andrades Delgado, Nina Luisa Sautter, Michael Adrian Jendrusch, Sonia Zumalave Duro, Tobias Rausch, Aliaksandr Halavatyi, Eva-Maria Geissen, Patrick Hasenfeld, Isidro Cortes-Ciriano, Andreas Kulozik, Rainer Pepperkok, and Jan O. Korbel. Origins ofde novochromosome rearrangements unveiled by coupled imaging and genomics. bioRxiv, August 2024. URL: http://dx.doi.org/10.1101/2024.08.15.607890, doi:10.1101/2024.08.15.607890.">Cosenza <em>et al.</em>, 2024</a>]</span>.</p></li>
+</ol>
+</section>
+<section id="methodology-and-implementation-details">
+<h2>Methodology and implementation details<a class="headerlink" href="#methodology-and-implementation-details" title="Link to this heading">#</a></h2>
+<p>A core microscope-agnostic part of the workflow is implemented as the <em>AutoMicTools</em> library for ImageJ/Fiji containing multiple plugins. Several imaging and photomanipulation workflows are available in <em>AutoMicTools</em> as ready-to-use plugins, new workflows can be created by subclassing provided Job and JobDistributor classes using Java programming or Fiji scripting tools (Fig. 1):</p>
+<p><strong>Job:</strong> An <em>AutoMicTools</em> Job needs to be defined for each particular image analysis task. It combines functions for image analysis itself, pre- and post-processing, on-the-fly visualisation of analysis results and creating feedback commands in a microscope-agnostic manner. Project-specific analysis Jobs can be created by subclassing the Job_default base class using Java programming or Jython Scripting using provided examples as templates. Alternatively, predefined jobs accepting user-defined image analysis macros or scripts as parameters can be used. Jobs can be modified to to bridge to external applications for running image analysis (e.g. Python, Ilastik or KNIME).</p>
+<p><strong>JobDistributor:</strong> The JobDistributor module is responsible for monitoring a defined folder for the arrival of new files and - based on their name tags - executing predefined image processing tasks defined by the Job classes. An individual JobDistributor with an arbitrary number of Jobs has to be configured for each workflow by mapping the names of the image file tags to Analysis Jobs to be executed.</p>
+</section>
+<section id="contributions-to-interoperability">
+<h2>Contributions to Interoperability<a class="headerlink" href="#contributions-to-interoperability" title="Link to this heading">#</a></h2>
+<p><em>AutoMicTools</em> Fiji plugins allow to set up and debug microscope-agnostic parts of the workflow. The workflow can be simulated without access to the microscope when example images for different imaging jobs are available. The same core workflow can be run on different microscopes by using brand-specific communication tools, implemented using corresponding API layers:</p>
+<p><strong>Zeiss ZenBlue:</strong> We set up multiple <em>AutoMicTools</em>-based imaging and photomanipulation feedback microscopy workflows using Zeiss confocal microscopes, in particular LSM900 and LSM980, controlled by ZenBlue. For that we make use of the ZenBlue macro programming environment which is part of the Open Application Development (OAD) package. Established macros control acquisition loop, reuse and trigger a priori defined imaging settings based on the feedback received from image analysis [<a class="reference external" href="https://git.embl.de/grp-almf/zeiss_zenblue_automation/">code repo</a>].</p>
+<p><strong>Zeiss ZenBlack:</strong> Multiple of the above mentioned workflows we also run on the previous generation of Zeiss confocals (LSM780/880). Macro programming in this software is only possible with Visual Basic (VB), which is not commonly used these days. To link <em>AutoMicTools</em> to ZenBlack, we make use of the MyPic macro developed by Antonio Politi in the Ellenberg lab <a class="reference external" href="https://github.com/manerotoni/mypic/">current repository</a> <span id="id7">[<a class="reference internal" href="../../markdown.html#id29" title="Antonio Z Politi, Yin Cai, Nike Walther, M Julius Hossain, Birgit Koch, Malte Wachsmuth, and Jan Ellenberg. Quantitative mapping of fluorescently tagged cellular proteins using fcs-calibrated four-dimensional imaging. Nature Protocols, 13(6):1445–1464, May 2018. URL: http://dx.doi.org/10.1038/nprot.2018.040, doi:10.1038/nprot.2018.040.">Politi <em>et al.</em>, 2018</a>]</span>. MyPic has a friendly GUI to keep track of multiple acquisition/photomanipulation settings, and to define default positions; it is capable to receive a feedback from an external application (e.g. <em>AutoMicTools</em>) with computed imaging positions of photomanipulation ROIS via the Windows registry.</p>
+<p><strong>Evident(Olympus) FluoView:</strong> Software driving FluoView3000 and FluoView 4000 point scanning confocal microscopes, is equipped with an RDK module, which allows to change acquisition parameters and control some of the hardware components (e.g. stage, focus drive and objective turret) by sending XML-formatted commands from different programing languages. We have developed a Fiji plugin which makes use of this functionality and controls Acquisition settings and sample positions in <a class="reference external" href="https://git.embl.de/grp-almf/automictools-fluoview-bridge"><em>AutoMicTools</em> workflows</a>. Settings for each imaging job on the microscope are provided from a configuration file.</p>
+<p><strong>Nikon NIS Elements:</strong> The Nikon software NIS-Elements provides also a macro environment. We have written a set of macros which, when executed, wait for a specific text file containing information which experiment to run. ROIs are transferred as binary tif files via the NikonCommander in automic tools. The workflow is controlled by an additional <a class="reference external" href="https://git.embl.de/grp-almf/automictools-nikon-bridge">jython script</a>.
+Leica LMD (Leica Laser Microdissection 7)
+An image produced by the LMD system (in *.bmp format) is analysed and stored in a new path. The resulting ROIs are stored in an xml file that can be parsed by the microscope software. For synchronization a small executable is needed which is called by the LMD software and closed by automic tools. The close of the exe triggers the LMD to proceed with the next position [<a class="reference external" href="https://git.embl.de/grp-almf/automictools-leicalmd">code repo</a>].</p>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Link to this heading">#</a></h2>
+<p>Although the implemented schema has a lot of flexibility for customising and extending the workflows for project-specific needs, it has several restrictions linked to the limitations of APIs that are provided by vendors for their proprietary software. Different APIs support different functionalities, which makes generalization challenging. For example, the transfer of image data from acquisition software to our Fiji plugins currently requires saving image files, as in majority of use cases API to transfer image data in memory is currently not available. This aspect can be important for time critical applications, such as tracking of fast live samples by moving the acquisition field-of-view. Likewise, certain essential features, such as specifying arbitrary shapes of photomanipulaiton ROIs, rotation of the field of view, changing scanning area for LSM systems and changing the z-stack height, are not available for many vendor APIs:
+We collaborate with our industry partners in several formats, including Smart Microscopy Working Group, to enhance the power of provided APIs, that will contribute to flexibility of <em>AutoMicTools</em> and other packages making use of them for microscope automation.</p>
+<hr class="docutils" />
+<div class="docutils container" id="id8">
+<div role="list" class="citation-list">
+<div class="citation" id="id30" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>Andreas Brunner, Natalia Rosalía Morero, Wanlu Zhang, M. Julius Hossain, Marko Lampe, Hannah Pflaumer, Aliaksandr Halavatyi, Jan-Michael Peters, Kai S. Beckwith, and Jan Ellenberg. Quantitative imaging of loop extruders rebuilding interphase genome architecture after mitosis. <em>Journal of Cell Biology</em>, January 2025. URL: <a class="reference external" href="http://dx.doi.org/10.1083/jcb.202405169">http://dx.doi.org/10.1083/jcb.202405169</a>, <a class="reference external" href="https://doi.org/10.1083/jcb.202405169">doi:10.1083/jcb.202405169</a>.</p>
+</div>
+<div class="citation" id="id31" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">2</a><span class="fn-bracket">]</span></span>
+<p>Marco Raffaele Cosenza, Alice Gaiatto, Büşra Erarslan Uysal, Álvaro Andrades Delgado, Nina Luisa Sautter, Michael Adrian Jendrusch, Sonia Zumalave Duro, Tobias Rausch, Aliaksandr Halavatyi, Eva-Maria Geissen, Patrick Hasenfeld, Isidro Cortes-Ciriano, Andreas Kulozik, Rainer Pepperkok, and Jan O. Korbel. Origins ofde novochromosome rearrangements unveiled by coupled imaging and genomics. <em>bioRxiv</em>, August 2024. URL: <a class="reference external" href="http://dx.doi.org/10.1101/2024.08.15.607890">http://dx.doi.org/10.1101/2024.08.15.607890</a>, <a class="reference external" href="https://doi.org/10.1101/2024.08.15.607890">doi:10.1101/2024.08.15.607890</a>.</p>
+</div>
+<div class="citation" id="id32" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">3</a><span class="fn-bracket">]</span></span>
+<p>Timothy Fuqua, Jeff Jordan, Aliaksandr Halavatyi, Christian Tischer, Kerstin Richter, and Justin Crocker. An open-source semi-automated robotics pipeline for embryo immunohistochemistry. <em>Scientific Reports</em>, May 2021. URL: <a class="reference external" href="http://dx.doi.org/10.1038/s41598-021-89676-5">http://dx.doi.org/10.1038/s41598-021-89676-5</a>, <a class="reference external" href="https://doi.org/10.1038/s41598-021-89676-5">doi:10.1038/s41598-021-89676-5</a>.</p>
+</div>
+<div class="citation" id="id33" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">4</a><span class="fn-bracket">]</span></span>
+<p>Timothy Fuqua, Jeff Jordan, Maria Elize van Breugel, Aliaksandr Halavatyi, Christian Tischer, Peter Polidoro, Namiko Abe, Albert Tsai, Richard S. Mann, David L. Stern, and Justin Crocker. Dense and pleiotropic regulatory information in a developmental enhancer. <em>Nature</em>, 587(7833):235–239, October 2020. URL: <a class="reference external" href="http://dx.doi.org/10.1038/s41586-020-2816-5">http://dx.doi.org/10.1038/s41586-020-2816-5</a>, <a class="reference external" href="https://doi.org/10.1038/s41586-020-2816-5">doi:10.1038/s41586-020-2816-5</a>.</p>
+</div>
+<div class="citation" id="id34" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">5</a><span class="fn-bracket">]</span></span>
+<p>Tobias Kletter, Omar Muñoz, Sebastian Reusch, Abin Biswas, Aliaksandr Halavatyi, Beate Neumann, Benno Kuropka, Vasily Zaburdaev, and Simone Reber. Cell state-specific cytoplasmic material properties control spindle architecture and scaling. <em>bioRxiv</em>, July 2024. URL: <a class="reference external" href="http://dx.doi.org/10.1101/2024.07.22.604615">http://dx.doi.org/10.1101/2024.07.22.604615</a>, <a class="reference external" href="https://doi.org/10.1101/2024.07.22.604615">doi:10.1101/2024.07.22.604615</a>.</p>
+</div>
+<div class="citation" id="id35" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">6</a><span class="fn-bracket">]</span></span>
+<p>Antonio Z Politi, Yin Cai, Nike Walther, M Julius Hossain, Birgit Koch, Malte Wachsmuth, and Jan Ellenberg. Quantitative mapping of fluorescently tagged cellular proteins using fcs-calibrated four-dimensional imaging. <em>Nature Protocols</em>, 13(6):1445–1464, May 2018. URL: <a class="reference external" href="http://dx.doi.org/10.1038/nprot.2018.040">http://dx.doi.org/10.1038/nprot.2018.040</a>, <a class="reference external" href="https://doi.org/10.1038/nprot.2018.040">doi:10.1038/nprot.2018.040</a>.</p>
+</div>
+<div class="citation" id="id36" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">7</a><span class="fn-bracket">]</span></span>
+<p>Sanjana Singh, Joanna Zukowska, Aliaksandr Halavatyi, Jonathan J. M. Landry, and Rainer Pepperkok. Phenotype-based single-cell transcriptomics reveal compensatory pathways involved in golgi organization and associated transport. <em>bioRxiv</em>, December 2022. URL: <a class="reference external" href="http://dx.doi.org/10.1101/2022.12.02.518815">http://dx.doi.org/10.1101/2022.12.02.518815</a>, <a class="reference external" href="https://doi.org/10.1101/2022.12.02.518815">doi:10.1101/2022.12.02.518815</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./implementations/academic"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="uow.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../industry/inscoper.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Inscoper’s Roboscope</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specific-focus-and-scientific-questions-asked">Specific Focus and scientific questions asked</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-findings-and-innovations">Key findings and innovations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation-details">Methodology and implementation details</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-to-interoperability">Contributions to Interoperability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Smart Microscopy Working Group
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

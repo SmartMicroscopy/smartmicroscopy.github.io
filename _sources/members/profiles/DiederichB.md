@@ -1,4 +1,4 @@
-# Lucien Hinderling
+# Benedict Diederich
 
 <p align="center">
 <img src="https://secure.gravatar.com/avatar/7540a34aa59beb2f95abc8e96f982e97?s=500&d=mm&r=g" alt="drawing" width="100"/>
