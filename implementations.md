@@ -22,15 +22,15 @@ This page references smart-microscopy implementations for different manufacturer
 * - [Automated optogenetic targeting](./implementations/academic/unibe.md)
   - https://github.com/pertzlab/rtm-pymmcore
   - [UNIBE](https://www.izb.unibe.ch/research/prof_dr_olivier_pertz/index_eng.html)
-  - [Lucien Hinderling](mailto:lucien.hinderling@unibe.ch)
+  - [Lucien Hinderling](./members/profiles/HinderlingL.md)
 * - [Outcome-driven microscopy to guide cell biology](./implementations/academic/uu.md)
   - https://github.com/UU-cellbiology/UU_SmartMicroscopy
   - [UU](https://cellbiology.science.uu.nl/research-groups/lukas-kapitein-biophysics/)
   - [Alfredo Rates](mailto:a.ratessoriano@uu.nl)
-* - Re-usable workflows on different microscope brands
-  -
-  - EMBL-ALMF
-  -
+* - [Modular adaptive feedback microscopy workflows with AutoMicTools](./implementations/academic/embl.md)
+  - [git.embl.de/halavaty/AutoMicTools](https://git.embl.de/halavaty/AutoMicTools)
+  - [EMBL-ALMF](https://www.embl.org/groups/advanced-light-microscopy-core-facility/)
+  - [Aliaksandr Halavatyi](./members/profiles/HalavatyiA.md)
 * - [Smart Microscopy as a Service](./implementations/academic/cci-ug.md)
   -
   - [CCI-UG](https://www.gu.se/en/core-facilities/infrastructure-at-core-facilities/centre-for-cellular-imaging)
@@ -59,15 +59,11 @@ This page references smart-microscopy implementations for different manufacturer
 * - [ImSwitch for openUC2](./implementations/industry/openUC2.md)
   - https://github.com/openUC2/imswitch/tree/master
   - [openUC2](https://www.openuc2.com/)
-  - [Benedict Diederich](mailto:benedict.diederich@opencu2.com)  
+  - [Benedict Diederich](./members/profiles/DiederichB.md)  
 * -  
   - https://github.com/Luxendo/Acquifer-Python-API/tree/master/examples/prescreen_rescreen
   - [LUXENDO](https://www.bruker.com/en/products-and-solutions/fluorescence-microscopy/light-sheet-microscopes.html)
   - [Thomas Laurent](./members/profiles/ThomasL.md)
-* - Product overview
-  - Repo
-  - Brand
-  - Contact
 ```
 
 ## Hardware / Software compatibility
