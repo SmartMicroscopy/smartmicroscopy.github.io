@@ -64,6 +64,10 @@ This page references smart-microscopy implementations for different manufacturer
   - https://github.com/Luxendo/Acquifer-Python-API/tree/master/examples/prescreen_rescreen
   - [LUXENDO](https://www.bruker.com/en/products-and-solutions/fluorescence-microscopy/light-sheet-microscopes.html)
   - [Thomas Laurent](./members/profiles/ThomasL.md)
+* - [Automation of single-cell analysis with Cytely](./implementations/industry/cytely.md)
+  - 
+  - [Cytely](https://www.cytely.io/product)
+  - [Karl Johansson](mailto:info@cytely.com)
 ```
 
 ## Hardware / Software compatibility
