@@ -31,5 +31,6 @@ chapters:
   - file: implementations/industry/inscoper.md
   - file: implementations/industry/zeiss.md
   - file: implementations/industry/openUC2.md
+  - file: implementations/industry/cytely.md
 - file: notes
 - file: publications
