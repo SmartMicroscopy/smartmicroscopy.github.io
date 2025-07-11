@@ -1,3 +1,7 @@
 _build/
 implementations/_compatibility_hardware.md
 implementations/_compatibility_software.md
+/**/.DS_Store
+export_pdfs/pdf_outputs/*
+export_pdfs/tmp_md/*
+export_pdfs/build_pdfs.log
