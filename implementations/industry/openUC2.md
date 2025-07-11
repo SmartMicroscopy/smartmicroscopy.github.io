@@ -82,7 +82,7 @@ openUC2 is entirely open source, committed to creating a highly interoperable ec
 
 ![arkitekt](./openUC2/flashtool.png)
 
-Fig. 6: **To further lower the entry barrier to get starting with smart microscopy experiments, openUC2 offers the abbility to flash the firmware to the ESP32s using the openUC2 Flashing tool in the web**
+Fig. 7: **To further lower the entry barrier to get starting with smart microscopy experiments, openUC2 offers the abbility to flash the firmware to the ESP32s using the openUC2 Flashing tool in the web**
 :::
 
 
@@ -90,7 +90,7 @@ Fig. 6: **To further lower the entry barrier to get starting with smart microsco
 
 ![arkitekt](./openUC2/fwtest.png)
 
-Fig. 6: **The Web-serial Standard enables the use of usb serial devices without the installation of additional software**
+Fig. 8: **The Web-serial Standard enables the use of usb serial devices without the installation of additional software**
 :::
 
 A notable collaboration with FLIMLabs showcases this interoperability, where their open REST API was successfully integrated into the ImSwitch environment, enabling direct control and analysis of FLIM hardware. The combination of openUC2 and ImSwitch aims to foster an open ecosystem that allows extensive external interaction without restrictive agreements like NDAs.
@@ -99,7 +99,7 @@ A notable collaboration with FLIMLabs showcases this interoperability, where the
 
 ![workflow](./openUC2/rest.png)
 
-Fig. 6: **An open REST API documented through the openapi swagger schema enables a fast interaction with the ImSwitch backend through the browser**
+Fig. 9: **An open REST API documented through the openapi swagger schema enables a fast interaction with the ImSwitch backend through the browser**
 :::
 
 # Limitations
