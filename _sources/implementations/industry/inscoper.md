@@ -58,37 +58,6 @@ Our acquisition solution includes a device controller and software that is compa
 Also, using the agnostic [useq-schema](https://pymmcore-plus.github.io/useq-schema/) to describe the main sequence and its various dependencies is easy to implement in our Inscoper’s Roboscope.
 Finally, Inscoper is thinking about its acquisition workflows and machine learning training in terms of open source availability, with the aim of forming a community ready to exchange, share and populate a database enabling each user to lift their technological barriers.
 
-#### Current bottlenecks, Roadmap
-We want to apply our approach to more biological applications and systems. We will soon integrate a new microscopy modality (photomanipulation) into smart microscopy. 
-
-### Python script call module
-
-Within the Inscoper Imaging Software (IIS), we have developed a dedicated module that allows users to integrate custom Python scripts to perform smart microscopy tasks. This module, incorporated into our Multidimensional Acquisition (MDA) sequence builder, is triggered upon image reception. It enables adaptive-feedback microscopy: real-time adjustments to device parameters based on outcomes from image analysis. Additionally, it enables users to write metadata about the image content and dynamically display informative visualizations during acquisitions. 
-
-#### Methodology, Implementation details
-
-As part of the IIS framework, we bundle a Python distribution pre-installed with commonly used libraries for image analysis. We enable users to switch to their system python installation or one of their custom environments so that they can use the libraries they are familiar with and benefit from any hardware-specific installation, such as GPU-optimized libraries. To streamline the scripting process, we provide a utility library that simplifies conversions between image space and hardware space (for instance, converting pixel displacement into lateral X and Y stage displacements), writing custom image metadata, and transmitting figures (generated using matplotlib, seaborn, or plotly) directly into the IIS interface.
-
-Code-wise, users define two functions:
-* **Image-provider function**: Uses metadata from the most recently received image to check the current the acquisition context and select images requiring processing. Typically, this selection may be empty in scenarios such as mid-stack Z-plane captures or initial channel acquisitions within a multi-channel sequence, effectively preventing unnecessary computations.
-* **Processing function**: Accepts the image selection identified by the image-provider function and performs analytical operations. The outputs from this function can include:
-    - Updated device parameters for adaptive feedback
-    - Quantitative image metadata entries
-    - Saved files (e.g., cropped images, segmentation masks, image reconstructions)
-    - Real-time visualizations displayed within IIS (dashboard-like)
-    - Any combination thereof
-
-Graphically, users import their custom Python script (*.py* file) into the Python script module and associate the defined image-provider and processing functions. Initially, all function arguments and outputs are explicitly matched by type and value. Users can subsequently save presets, retaining only adjustable arguments that are not tied to specific hardware parameters.
-
-## Contributions that could contribute to interoperability
-
-Our acquisition system includes a device controller and software compatible with nearly all camera-based microscope setups and associated devices ([supported device list](https://www.inscoper.com/supported-devices/)).
-
-We are actively rolling out support for the [useq-schema](https://pymmcore-plus.github.io/useq-schema/) standard to describe acquisition sequences, promoting greater interoperability.
-
-The Roboscope enables users to retrain a versatile classification model with a GUI, following a no-code approach. Our custom Python scripting approach offers a flexible yet structured framework, welcoming users with a minimum of training. While Python coding and image analysis expertise is essential for developing new applications, our utility library provides pre-built scripting blocks that less experienced users can adapt to their needs. 
-
-
 ## Current bottlenecks, Roadmap
 
 Real-time device updates currently affect acquisition performance, creating limitations for certain optimizations with our Inscoper hardware. In general, fully unrestricted adaptive microscopy—where every device parameter can be adjusted at any time—may lead to suboptimal system efficiency. To mitigate this, pre-defining which devices and acquisition structures are modifiable helps maintain performance and stability. The Roboscope addresses this challenge by pre-configuring successive acquisition sequences tailored to specific applications. 
