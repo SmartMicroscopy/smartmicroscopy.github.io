@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Inscoper’s Roboscope &#8212; Smart Microscopy Working Group&#39;s Website</title>
+    <title>Inscoper &#8212; Smart Microscopy Working Group&#39;s Website</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=0915d2f8" />
@@ -203,7 +203,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../academic/uu.html">Outcome-driven microscopy to guide cell biology</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../academic/uow.html">CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../academic/embl.html">Modular adaptive feedback microscopy workflows with AutoMicTools</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Inscoper’s Roboscope</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Inscoper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="zeiss.html">Open Application Development (OAD) in Zeiss ZEN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="openUC2.html">ImSwitch for openUC2</a></li>
 
@@ -369,7 +369,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Inscoper’s Roboscope</h1>
+    <h1>Inscoper</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -379,11 +379,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach-to-smart-microscopy">Approach to smart microscopy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-implementation-details">Methodology, Implementation details</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features-and-innovations">Key features and innovations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-that-could-contribute-to-interoperability">Contributions that could contribute to interoperability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#current-bottlenecks-roadmap">Current bottlenecks, Roadmap</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approaches-to-smart-microscopy">Approaches to smart microscopy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#roboscope-methodology-implementation-details">1. Roboscope: methodology, implementation details</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-call-module-methodology-implementation-details">2. Python script call module:  methodology, implementation details</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-that-could-contribute-to-interoperability">Contributions that could contribute to interoperability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#current-bottlenecks-roadmap">Current bottlenecks, Roadmap</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-call-module">Python script call module</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-implementation-details">Methodology, Implementation details</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contributions that could contribute to interoperability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Current bottlenecks, Roadmap</a></li>
 </ul>
             </nav>
         </div>
@@ -395,25 +405,22 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="inscoper-s-roboscope">
-<h1>Inscoper’s Roboscope<a class="headerlink" href="#inscoper-s-roboscope" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="inscoper">
+<h1>Inscoper<a class="headerlink" href="#inscoper" title="Link to this heading">#</a></h1>
 <p><strong>Claire Demeautis, Célia Martin, Rémy Torro, Thomas Guilbert, Otmane Bouchareb</strong>
 INSCOPER SAS, Cesson-Sévigné, France</p>
-<section id="approach-to-smart-microscopy">
-<h2>Approach to smart microscopy<a class="headerlink" href="#approach-to-smart-microscopy" title="Link to this heading">#</a></h2>
+<section id="approaches-to-smart-microscopy">
+<h2>Approaches to smart microscopy<a class="headerlink" href="#approaches-to-smart-microscopy" title="Link to this heading">#</a></h2>
+<p>Smart microscopy stands at the forefront of our R&amp;D initiatives, with innovative applications continually emerging. In this context, we introduce two of our advanced solutions, each designed to address specific application requirements: the <strong>Roboscope</strong>, optimized for the detection of rare cellular events, leveraging sequence interruption, and the <strong>Python script call module</strong>, seamlessly incorporated within our image acquisition software.</p>
+<section id="roboscope-methodology-implementation-details">
+<h3>1. Roboscope: methodology, implementation details<a class="headerlink" href="#roboscope-methodology-implementation-details" title="Link to this heading">#</a></h3>
 <p>Our approach focuses on developing an innovative software solution to make microscopes smarter and more autonomous. The software combines light microscopy experiment acquisitions, advanced analysis algorithms, sequence interruption and deep learning integration to enable custom event-driven acquisition. The system is adaptable to various experimental workflows, enabling the capture of transient events while minimizing data consumption.</p>
-</section>
-<section id="methodology-implementation-details">
-<h2>Methodology, Implementation details<a class="headerlink" href="#methodology-implementation-details" title="Link to this heading">#</a></h2>
-<p>We designed an automation technique capable of interrupting a main sequence to start a new one, based on the outcome of an image analysis workflow over the image stream. The new sequence may also be interrupted, repeating this pattern as needed. Exemplary, the Roboscope is able to  screen a sample at low magnification looking for an Event Of Interest (EOI, ie. Mitosis here). Upon detection of such an EOI by the image analysis workflow, the main screening sequence is interrupted and a new sequence at higher magnification takes over, using parameters returned by the image analysis workflow. This solution requires an Inscoper device controller, the Inscoper Imaging Suite and a CPU. A graphical processing unit (GPU) is recommended to increase the computation speed in deep learning applications but not required. While the device controller runs the sequence, the images are analysed through the CPU and GPU. As soon as an EOI is detected, the running sequence is interrupted, new acquisition parameters are calculated and sent to the device controller.
-Users can design workflows for their specific applications, defining the targeted event and the consequential actions. The workflow is set up graphically via an ergonomic user interface (Fig. 1). Theoretically, new model training takes less than 30 minutes on a Nvidia GeForce RTX 2080Ti GPU.</p>
+<p>We designed an automation technique capable of interrupting a main sequence to start a new one, based on the outcome of an image analysis workflow over the image stream. The new sequence may also be interrupted, repeating this pattern as needed. The Roboscope is able to  screen a sample at low magnification looking for an <em>Event Of Interest</em> (EOI, <em>i.e.</em> mitosis here). Upon detection of such an EOI by the image analysis workflow, the main screening sequence is interrupted and a new sequence at higher magnification takes over, using parameters returned by the image analysis workflow. This solution requires an Inscoper device controller, the Inscoper Imaging Software and a CPU. A graphical processing unit (GPU) is recommended to increase the computation speed in deep learning applications but not required. While the device controller runs the sequence, the images are analysed through the CPU and GPU. As soon as an EOI is detected, the running sequence is interrupted, new acquisition parameters are calculated and sent to the device controller.</p>
+<p>Users can design workflows for their specific applications, defining the targeted event and the consequential actions. The workflow is set up graphically  via an ergonomic user interface (Figure 1). Theoretically, new model training takes less than 30 minutes on a Nvidia GeForce RTX 2080Ti GPU.</p>
 <div class="figure-like docutils">
 <p><img alt="Roboscope GUI" src="../../_images/fig_012.png" /></p>
 <p>Fig. 1: <strong>Roboscope GUI</strong></p>
 </div>
-</section>
-<section id="key-features-and-innovations">
-<h2>Key features and innovations<a class="headerlink" href="#key-features-and-innovations" title="Link to this heading">#</a></h2>
 <p>The key innovation of our development is the interruption sequence during a sequence. With this method, the user doesn’t miss an interesting event.
 The main features of our approach are :</p>
 <ul class="simple">
@@ -423,17 +430,75 @@ The main features of our approach are :</p>
 <li><p><strong>Parsimonious</strong>, by limiting photobleaching and phototoxicity and only sending qualified events to the computer. This considerably reduces the amount of data generated and saved.</p></li>
 </ul>
 </section>
+<section id="python-script-call-module-methodology-implementation-details">
+<h3>2. Python script call module:  methodology, implementation details<a class="headerlink" href="#python-script-call-module-methodology-implementation-details" title="Link to this heading">#</a></h3>
+<p>Within the Inscoper Imaging Software (IIS), we have developed a module that allows users to integrate custom Python scripts to perform smart microscopy tasks. This module, incorporated into our Multidimensional Acquisition (MDA) sequence builder, is triggered upon image reception. It enables adaptive-feedback microscopy: real-time adjustments to device parameters based on outcomes from image analysis. Additionally, it enables users to write metadata about the image content and dynamically display informative visualizations during acquisitions.</p>
+<div class="figure-like docutils">
+<p><img alt="Real-time visualizations from a Python script in IIS" src="../../_images/fig_02.png" /></p>
+<p>Fig. 2: <strong>Real-time visualizations from a Python script in IIS</strong></p>
+</div>
+<p>As part of the IIS framework, we bundle a Python distribution pre-installed with commonly used libraries for image analysis. We enable users to switch to their system python installation or one of their custom environments so that they can use the libraries they are familiar with and benefit from any hardware-specific installation, such as GPU-optimized libraries. To streamline the scripting process, we provide a utility library that simplifies conversions between image space and hardware space (for instance, converting pixel displacement into lateral X and Y stage displacements), writing custom image metadata, and transmitting figures (generated using <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>, or <code class="docutils literal notranslate"><span class="pre">plotly</span></code>) directly into the IIS interface.</p>
+<p>Code-wise, users define two functions:</p>
+<ul class="simple">
+<li><p>Image-provider function: Uses metadata from the most recently received image to check the current acquisition context and select images requiring processing. Typically, this selection may be empty in scenarios such as mid-stack Z-plane captures or initial channel acquisitions within a multi-channel sequence, effectively preventing unnecessary computations.</p></li>
+<li><p>Processing function: Accepts the image selection identified by the image-provider function and performs analytical operations. The outputs from this function can include:</p>
+<ul>
+<li><p>Updated device parameters for adaptive feedback</p></li>
+<li><p>Quantitative image metadata entries</p></li>
+<li><p>Saved files (e.g., cropped images, segmentation masks, image reconstructions)</p></li>
+<li><p>Real-time visualizations displayed within IIS (dashboard-like)</p></li>
+<li><p>Any combination of the above</p></li>
+</ul>
+</li>
+</ul>
+<p>Graphically, users import their custom Python script (<code class="docutils literal notranslate"><span class="pre">.py</span></code> file) into the Python script module and associate the defined image-provider and processing functions. Initially, all function arguments and outputs are explicitly matched by type and value. Users can subsequently save presets, retaining only adjustable arguments that are not tied to specific hardware parameters.</p>
+</section>
+</section>
 <section id="contributions-that-could-contribute-to-interoperability">
 <h2>Contributions that could contribute to interoperability<a class="headerlink" href="#contributions-that-could-contribute-to-interoperability" title="Link to this heading">#</a></h2>
 <p>Our acquisition solution includes a device controller and software that is compatible with almost all camera-based microscope setups and all their associated devices on the market (<a class="reference external" href="https://www.inscoper.com/supported-devices/">supported device list</a>).
 Also, using the agnostic <a class="reference external" href="https://pymmcore-plus.github.io/useq-schema/">useq-schema</a> to describe the main sequence and its various dependencies is easy to implement in our Inscoper’s Roboscope.
 Finally, Inscoper is thinking about its acquisition workflows and machine learning training in terms of open source availability, with the aim of forming a community ready to exchange, share and populate a database enabling each user to lift their technological barriers.</p>
-</section>
 <section id="current-bottlenecks-roadmap">
-<h2>Current bottlenecks, Roadmap<a class="headerlink" href="#current-bottlenecks-roadmap" title="Link to this heading">#</a></h2>
+<h3>Current bottlenecks, Roadmap<a class="headerlink" href="#current-bottlenecks-roadmap" title="Link to this heading">#</a></h3>
 <p>We want to apply our approach to more biological applications and systems. We will soon integrate a new microscopy modality (photomanipulation) into smart microscopy.</p>
+</section>
+<section id="python-script-call-module">
+<h3>Python script call module<a class="headerlink" href="#python-script-call-module" title="Link to this heading">#</a></h3>
+<p>Within the Inscoper Imaging Software (IIS), we have developed a dedicated module that allows users to integrate custom Python scripts to perform smart microscopy tasks. This module, incorporated into our Multidimensional Acquisition (MDA) sequence builder, is triggered upon image reception. It enables adaptive-feedback microscopy: real-time adjustments to device parameters based on outcomes from image analysis. Additionally, it enables users to write metadata about the image content and dynamically display informative visualizations during acquisitions.</p>
+<section id="methodology-implementation-details">
+<h4>Methodology, Implementation details<a class="headerlink" href="#methodology-implementation-details" title="Link to this heading">#</a></h4>
+<p>As part of the IIS framework, we bundle a Python distribution pre-installed with commonly used libraries for image analysis. We enable users to switch to their system python installation or one of their custom environments so that they can use the libraries they are familiar with and benefit from any hardware-specific installation, such as GPU-optimized libraries. To streamline the scripting process, we provide a utility library that simplifies conversions between image space and hardware space (for instance, converting pixel displacement into lateral X and Y stage displacements), writing custom image metadata, and transmitting figures (generated using matplotlib, seaborn, or plotly) directly into the IIS interface.</p>
+<p>Code-wise, users define two functions:</p>
+<ul class="simple">
+<li><p><strong>Image-provider function</strong>: Uses metadata from the most recently received image to check the current the acquisition context and select images requiring processing. Typically, this selection may be empty in scenarios such as mid-stack Z-plane captures or initial channel acquisitions within a multi-channel sequence, effectively preventing unnecessary computations.</p></li>
+<li><p><strong>Processing function</strong>: Accepts the image selection identified by the image-provider function and performs analytical operations. The outputs from this function can include:</p>
+<ul>
+<li><p>Updated device parameters for adaptive feedback</p></li>
+<li><p>Quantitative image metadata entries</p></li>
+<li><p>Saved files (e.g., cropped images, segmentation masks, image reconstructions)</p></li>
+<li><p>Real-time visualizations displayed within IIS (dashboard-like)</p></li>
+<li><p>Any combination thereof</p></li>
+</ul>
+</li>
+</ul>
+<p>Graphically, users import their custom Python script (<em>.py</em> file) into the Python script module and associate the defined image-provider and processing functions. Initially, all function arguments and outputs are explicitly matched by type and value. Users can subsequently save presets, retaining only adjustable arguments that are not tied to specific hardware parameters.</p>
+</section>
+</section>
+</section>
+<section id="id1">
+<h2>Contributions that could contribute to interoperability<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Our acquisition system includes a device controller and software compatible with nearly all camera-based microscope setups and associated devices (<a class="reference external" href="https://www.inscoper.com/supported-devices/">supported device list</a>).</p>
+<p>We are actively rolling out support for the <a class="reference external" href="https://pymmcore-plus.github.io/useq-schema/">useq-schema</a> standard to describe acquisition sequences, promoting greater interoperability.</p>
+<p>The Roboscope enables users to retrain a versatile classification model with a GUI, following a no-code approach. Our custom Python scripting approach offers a flexible yet structured framework, welcoming users with a minimum of training. While Python coding and image analysis expertise is essential for developing new applications, our utility library provides pre-built scripting blocks that less experienced users can adapt to their needs.</p>
+</section>
+<section id="id2">
+<h2>Current bottlenecks, Roadmap<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>Real-time device updates currently affect acquisition performance, creating limitations for certain optimizations with our Inscoper hardware. In general, fully unrestricted adaptive microscopy—where every device parameter can be adjusted at any time—may lead to suboptimal system efficiency. To mitigate this, pre-defining which devices and acquisition structures are modifiable helps maintain performance and stability. The Roboscope addresses this challenge by pre-configuring successive acquisition sequences tailored to specific applications.</p>
+<p>We aim to enhance virtual device simulations to better replicate real-world acquisition and smart microscopy scenarios. For example, a virtual camera could simulate image acquisition by cropping from a larger mosaic image, where adjustments to X and Y parameters effectively shift the crop region, emulating believable microscopy interactions.</p>
+<p>We want to apply our approaches to more biological applications and systems. We will soon integrate a new microscopy modality (photomanipulation) into our smart microscopy products.</p>
 <hr class="docutils" />
-<span class="target" id="id1"></span></section>
+<span class="target" id="id3"></span></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -500,11 +565,21 @@ Finally, Inscoper is thinking about its acquisition workflows and machine learni
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach-to-smart-microscopy">Approach to smart microscopy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-implementation-details">Methodology, Implementation details</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features-and-innovations">Key features and innovations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-that-could-contribute-to-interoperability">Contributions that could contribute to interoperability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#current-bottlenecks-roadmap">Current bottlenecks, Roadmap</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approaches-to-smart-microscopy">Approaches to smart microscopy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#roboscope-methodology-implementation-details">1. Roboscope: methodology, implementation details</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-call-module-methodology-implementation-details">2. Python script call module:  methodology, implementation details</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-that-could-contribute-to-interoperability">Contributions that could contribute to interoperability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#current-bottlenecks-roadmap">Current bottlenecks, Roadmap</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-call-module">Python script call module</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-implementation-details">Methodology, Implementation details</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contributions that could contribute to interoperability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Current bottlenecks, Roadmap</a></li>
 </ul>
   </nav></div>
 
