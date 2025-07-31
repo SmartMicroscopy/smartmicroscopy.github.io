@@ -4,8 +4,8 @@ Nikon NIS-Elements Jobs module / macro language,commercial,GUI and API,no,yes,Ni
 Leica LAS-X,commercial,GUI,no,no,Leica microscopes, , 
 Inscoper,commercial,GUI and API,yes,yes,[All devices supported by Inscoper](https://www.inscoper.com/supported-devices/), , 
 [AutoMicTools package](https://git.embl.de/halavaty/AutoMicTools),open source, , , ,, , 
-[pymmcore-plus](https://pymmcore-plus.github.io/pymmcore-plus/),open source,API,yes,yes,[All devices with uManager drivers and more](https://micro-manager.org/Device_Support), , 
-[pymmcore-widgets](https://pymmcore-plus.github.io/pymmcore-widgets/)/[pymmcore-gui](https://github.com/pymmcore-plus/pymmcore-gui),open source,GUI and API,yes,yes,[All devices with uManager drivers and more](https://micro-manager.org/Device_Support), , 
+[pymmcore-plus](https://pymmcore-plus.github.io/pymmcore-plus/),open source,API,yes,yes,[All devices with uManager drivers and more](https://micro-manager.org/Device_Support),https://github.com/pymmcore-plus/pymmcore-plus, 
+[pymmcore-widgets](https://pymmcore-plus.github.io/pymmcore-widgets/)/[pymmcore-gui](https://github.com/pymmcore-plus/pymmcore-gui),open source,GUI and API,yes,yes,[All devices with uManager drivers and more](https://micro-manager.org/Device_Support),https://github.com/pymmcore-plus/pymmcore-gui, 
 Navigate,open source,GUI and API,yes,yes,[All devices with uManager drivers and more](https://thedeanlab.github.io/navigate/user_guide/hardware/hardware_home.html), ,[link](http://dx.doi.org/10.1038/s41592-024-02413-4)
 [ImSwitch](https://imswitch.readthedocs.io/en/stable/),open source, , , , ,https://github.com/ImSwitch/ImSwitch,[link](https://doi.org/10.21105/joss.03394)
 [Pycro-Manager](https://pycro-manager.readthedocs.io/en/latest/),open source,API,Integrates with Micro-Manager,,[All devices with uManager drivers](https://micro-manager.org/Device_Support),https://github.com/micro-manager/pycro-manager,[link](https://doi.org/10.1038/s41592-021-01087-6)
