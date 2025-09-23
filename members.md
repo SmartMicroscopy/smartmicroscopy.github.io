@@ -5,6 +5,7 @@ We are in the process of updating the website, the following is not a complete l
 * Abramo, J. - Leibniz Institute of Photonic Technology, Jena, Germany
 * Balazs, B. - Luxendo GmbH, Bruker NANO, Heidelberg, Germany
 * Bischof, J. - Euro-BioImaging ERIC Bio-Hub, European Molecular Biology Laboratory, EMBL Heidelberg, Germany
+* [Brooks, S.](./members/profiles/BrooksS.md) - University of Warwick, Intelligent Imaging Innovations (3i)
 * [Camacho, R.](./members/profiles/CamachoR.md) - Center for Cellular Imaging, Core Facilities, The Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden
 * Cosenza, M. - European Molecular Biology Laboratory, EMBL Heidelberg, Germany
 * [Demeautis, C](./members/profiles/DemeautisC.md) - INSCOPER SAS, Cesson-Sévigné, France
