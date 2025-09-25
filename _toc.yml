@@ -29,6 +29,8 @@ chapters:
   - file: implementations/academic/uu.md
   - file: implementations/academic/uow.md
   - file: implementations/academic/embl.md
+  - file: implementations/academic/cnrs.md
+  - file: implementations/academic/princeton.md
   - file: implementations/industry/inscoper.md
   - file: implementations/industry/zeiss.md
   - file: implementations/industry/openUC2.md

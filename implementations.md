@@ -17,7 +17,7 @@ This page references smart-microscopy implementations for different manufacturer
   - Repo
   - Institution
   - Contact
-* - [Automated optogenetic targeting](./implementations/academic/unibe.md)
+* - [rtm-pymmcore: Automated optogenetic targeting](./implementations/academic/unibe.md)
   - https://github.com/pertzlab/rtm-pymmcore
   - [UNIBE](https://www.izb.unibe.ch/research/prof_dr_olivier_pertz/index_eng.html)
   - [Lucien Hinderling](./members/profiles/HinderlingL.md)
@@ -37,6 +37,14 @@ This page references smart-microscopy implementations for different manufacturer
   - https://github.com/scott-vision/CelFDrive
   - [UoW](https://warwick.ac.uk), [3i](https://www.intelligent-imaging.com)
   - [Scott Brooks](mailto:S.brooks.2@warwick.ac.uk)
+* - [The EnderScope  as an educational platform for Smart Microscopy](./implementations/academic/cnrs.md)
+  - https://github.com/mutterer/enderscopy
+  - [CNRS](https://www.ibmp.cnrs.fr)
+  - [Jerome Mutterer](mailto:jerome.mutterer@cnrs.fr)
+* - [PyCLM: programming-free, closed-loop microscopy for real-time measurement, segmentation, and optogenetic stimulation](./implementations/academic/princeton.md)
+  - https://github.com/Harrison-Oatman/PyCLM
+  - [Princeton](https://toettcherlab.scholar.princeton.edu)
+  - [Jared Toettcher](mailto:toettcher@princeton.edu)
 ```
 
 ## Industry implementations
