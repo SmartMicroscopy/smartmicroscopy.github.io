@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Automation of optogenetic targeting &#8212; Smart Microscopy Working Group&#39;s Website</title>
+    <title>rtm-pymmcore: Automation of optogenetic targeting &#8212; Smart Microscopy Working Group&#39;s Website</title>
   
   
   
@@ -199,11 +199,13 @@
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../implementations.html">Available implementations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Automation of optogenetic targeting</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">rtm-pymmcore: Automation of optogenetic targeting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cci-ug.html">Smart Microscopy as a Service</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uu.html">Outcome-driven microscopy to guide cell biology</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uow.html">CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events</a></li>
 <li class="toctree-l2"><a class="reference internal" href="embl.html">Modular adaptive feedback microscopy workflows with AutoMicTools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cnrs.html">The EnderScope as an educational platform for Smart Microscopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="princeton.html">PyCLM: programming-free, closed-loop microscopy for optogenetic stimulation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../industry/inscoper.html">Inscoper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../industry/zeiss.html">Open Application Development (OAD) in Zeiss ZEN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../industry/openUC2.html">ImSwitch for openUC2</a></li>
@@ -370,7 +372,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Automation of optogenetic targeting</h1>
+    <h1>rtm-pymmcore: Automation of optogenetic targeting</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -396,8 +398,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="automation-of-optogenetic-targeting">
-<h1>Automation of optogenetic targeting<a class="headerlink" href="#automation-of-optogenetic-targeting" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="rtm-pymmcore-automation-of-optogenetic-targeting">
+<h1>rtm-pymmcore: Automation of optogenetic targeting<a class="headerlink" href="#rtm-pymmcore-automation-of-optogenetic-targeting" title="Link to this heading">#</a></h1>
 <p><strong>Lucien Hinderling, Benjamin Grädel, Alex Landolt, Maciej Dobrzinsky, Olivier Pertz</strong>, University of Bern, Institute of Cell Biology</p>
 <section id="specific-focus-and-scientific-questions-asked">
 <h2>Specific Focus and scientific questions asked<a class="headerlink" href="#specific-focus-and-scientific-questions-asked" title="Link to this heading">#</a></h2>
@@ -422,7 +424,7 @@ document.write(`
 <p>Napari also allows us to create custom microscope control widgets (e.g., for previewing image analysis, calibrating the DMD, setting experimental parameters). This setup enables even complex smart microscopy experiments to be run without coding. While commercial microscope control software provides extensive GUIs for standardized experiments, custom experiments usually require scripting. With Napari, we can build GUIs to streamline accessibility even for highly customized experiments and technically complex setups. Recently a plugin has been developed (<a class="reference external" href="https://github.com/pymmcore-plus/napari-micromanager%5D">napari-micromanager</a>) that provides a GUI for all (non-smart) microscope operations.</p>
 <p>Each experiment is documented in a <a class="reference external" href="https://jupyter.org">Jupyter notebook</a>, detailing algorithms and experiment variables like the stimulation logic. This practically provides automated documentation. Re-running an experiment is as simple as re-running the notebook.</p>
 <p>To maximize experimental throughput, we use a main thread for scheduling hardware control events (move stage, acquire image, stimulate region), while image processing runs on separate threads for different fields of view.</p>
-<p>All image data and processing results are continuously stored, allowing inspection at any time during the experiment and faster iteration time when troubleshooting. From the extracted data,  we also automatically generate quality control plots (segmentation overlays, tracking statistics). At the end of each experiment, plots can be created from the microscope output data with no further processing.</p>
+<p>All image data and processing results are continuously stored, allowing inspection at any time during the experiment and faster iteration time when troubleshooting. From the extracted data,  we also automatically generate quality control plots (segmentation overlays, tracking statistics). At the end of each experiment, plots can be created from the microscope output data with no further processing. All code is available on <a class="reference external" href="https://github.com/pertzlab/rtm-pymmcore">github</a>, more details and application examples can be found in the paper <span id="id2">[<a class="reference internal" href="../../markdown.html#id20">Hinderling <em>et al.</em>, 2025</a>]</span>.</p>
 </section>
 <section id="contributions-to-interoperability">
 <h2>Contributions to Interoperability<a class="headerlink" href="#contributions-to-interoperability" title="Link to this heading">#</a></h2>
@@ -435,11 +437,15 @@ We define acquisition events in an abstract format using <a class="reference ext
 Currently, we rely on custom data structures to store results. We plan to implement <a class="reference external" href="https://ngff.openmicroscopy.org/latest/">OME-Zarr</a> to standardize metadata storage and processing.
 Although much of our pipeline can be tested in silico, we lack a simulator for photomanipulation. In silico testing is essential for troubleshooting and the implementation of automated testing across our pipelines.</p>
 <hr class="docutils" />
-<div class="docutils container" id="id2">
+<div class="docutils container" id="id3">
 <div role="list" class="citation-list">
-<div class="citation" id="id3" role="doc-biblioentry">
+<div class="citation" id="id4" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>Max Heydasch, Lucien Hinderling, Jakobus van Unen, Maciej Dobrzynski, and Olivier Pertz. Gtpase activating protein dlc1 spatio-temporally regulates rho signaling. <em>eLife</em>, December 2023. URL: <a class="reference external" href="http://dx.doi.org/10.7554/eLife.90305.1">http://dx.doi.org/10.7554/eLife.90305.1</a>, <a class="reference external" href="https://doi.org/10.7554/elife.90305.1">doi:10.7554/elife.90305.1</a>.</p>
+</div>
+<div class="citation" id="id21" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p><strong>missing journal in Hinderling2025-rtm</strong></p>
 </div>
 </div>
 </div>

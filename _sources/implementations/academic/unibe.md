@@ -1,4 +1,4 @@
-#  Automation of optogenetic targeting
+#  rtm-pymmcore: Automation of optogenetic targeting
 **Lucien Hinderling, Benjamin Grädel, Alex Landolt, Maciej Dobrzinsky, Olivier Pertz**, University of Bern, Institute of Cell Biology
 
 ## Specific Focus and scientific questions asked
@@ -33,7 +33,7 @@ Each experiment is documented in a [Jupyter notebook](https://jupyter.org), deta
 
 To maximize experimental throughput, we use a main thread for scheduling hardware control events (move stage, acquire image, stimulate region), while image processing runs on separate threads for different fields of view.
 
-All image data and processing results are continuously stored, allowing inspection at any time during the experiment and faster iteration time when troubleshooting. From the extracted data,  we also automatically generate quality control plots (segmentation overlays, tracking statistics). At the end of each experiment, plots can be created from the microscope output data with no further processing.
+All image data and processing results are continuously stored, allowing inspection at any time during the experiment and faster iteration time when troubleshooting. From the extracted data,  we also automatically generate quality control plots (segmentation overlays, tracking statistics). At the end of each experiment, plots can be created from the microscope output data with no further processing. All code is available on [github](https://github.com/pertzlab/rtm-pymmcore), more details and application examples can be found in the paper {cite:p}`Hinderling2025-rtm`. 
 
 
 ## Contributions to Interoperability
