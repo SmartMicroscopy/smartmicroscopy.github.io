@@ -1,14 +1,5 @@
 #  CelFDrive: Multimodal AI-Assisted Microscopy for Detection of Rare Events
-Scott Brooks [1,2]
-Sara Toral-Pérez [1,2], 
-David S. Corcoran [1,2], 
-Nina Pučeková [1,2],
-Karl Kilborn [3], 
-Brian Bodensteiner [3], 
-Hella Baumann [3], 
-Nigel J. Burroughs [5,2],  
-Andrew D. McAinsh [1,2], 
-Till Bretschneider [6,2] 
+**Scott Brooks [1,2], Sara Toral-Pérez [1,2], David S. Corcoran [1,2], Nina Pučeková [1,2], Karl Kilborn [3], Brian Bodensteiner [3], Hella Baumann [3], Nigel J. Burroughs [5,2], Andrew D. McAinsh [1,2], Till Bretschneider [6,2]**
 
 [1]: Warwick Biomedical Sciences, Warwick Medical School, University of Warwick, Coventry, CV47AL  
 [2]: Centre for Mechanochemical Cell Biology, University of Warwick, Coventry, United Kingdom  
