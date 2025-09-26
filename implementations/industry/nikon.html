@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Open Application Development (OAD) in Zeiss ZEN &#8212; Smart Microscopy Working Group&#39;s Website</title>
+    <title>Visual programming for Smart Microscopy with NIS-Elements (Nikon) &#8212; Smart Microscopy Working Group&#39;s Website</title>
   
   
   
@@ -58,11 +58,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'implementations/industry/zeiss';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'implementations/industry/nikon';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ImSwitch for openUC2" href="openUC2.html" />
-    <link rel="prev" title="Inscoper" href="inscoper.html" />
+    <link rel="next" title="Public Notes" href="../../notes.html" />
+    <link rel="prev" title="Automation of spatial single-cell analysis with Cytely" href="cytely.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -207,7 +207,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../academic/cnrs.html">The EnderScope as an educational platform for Smart Microscopy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../academic/princeton.html">PyCLM: programming-free, closed-loop microscopy for optogenetic stimulation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inscoper.html">Inscoper</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Open Application Development (OAD) in Zeiss ZEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zeiss.html">Open Application Development (OAD) in Zeiss ZEN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="openUC2.html">ImSwitch for openUC2</a></li>
 
 
@@ -215,7 +215,7 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="cytely.html">Automation of spatial single-cell analysis with Cytely</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nikon.html">Visual programming for Smart Microscopy with NIS-Elements (Nikon)</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Visual programming for Smart Microscopy with NIS-Elements (Nikon)</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes.html">Public Notes</a></li>
@@ -289,7 +289,7 @@
       
       
       
-      <li><a href="../../_sources/implementations/industry/zeiss.md" target="_blank"
+      <li><a href="../../_sources/implementations/industry/nikon.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -373,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Open Application Development (OAD) in Zeiss ZEN</h1>
+    <h1>Visual programming for Smart Microscopy with NIS-Elements (Nikon)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,12 +383,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approaches-to-smart-microscopy">Approaches to smart microscopy</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guided-acquisition-automated-photomanipulation">Guided Acquisition / Automated Photomanipulation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-feedback">Experiment Feedback</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macro-editor-simple-api-object-model">Macro Editor / Simple API / Object Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach-to-smart-microscopy">Approach to smart microscopy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-and-key-features">Implementation and key features</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jobs-module">JOBS module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-analysis-module-ga3">General Analysis module (GA3)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#current-bottlenecks-and-roadmap">Current bottlenecks and roadmap</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figures-and-video-screencasts">Figures and video screencasts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation-and-references">Documentation and references</a></li>
 </ul>
             </nav>
         </div>
@@ -400,63 +403,110 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="open-application-development-oad-in-zeiss-zen">
-<h1>Open Application Development (OAD) in Zeiss ZEN<a class="headerlink" href="#open-application-development-oad-in-zeiss-zen" title="Link to this heading">#</a></h1>
-<p><strong>Philipp Seidel</strong>, Carl Zeiss Microscopy GmbH</p>
-<section id="approaches-to-smart-microscopy">
-<h2>Approaches to smart microscopy<a class="headerlink" href="#approaches-to-smart-microscopy" title="Link to this heading">#</a></h2>
-<p>The user base of ZEN is diverse both in terms of research / application focus and technical expertise. Hence, we aim at offering Smart Imaging interfaces at different levels of integration with ZEN’s main user interface. In the following sections I aim at illustrating these different tools and, their key features, their key applications, limitations and if available, references to further material.</p>
-<section id="guided-acquisition-automated-photomanipulation">
-<h3>Guided Acquisition / Automated Photomanipulation<a class="headerlink" href="#guided-acquisition-automated-photomanipulation" title="Link to this heading">#</a></h3>
-<div class="figure-like docutils">
-<p><img alt="Guided_Acquisition_UI" src="../../_images/Guided_Acquisition_UI.png" /></p>
-<p>Fig. 1: <strong>Guided Acquisition / Automated Photomanipulation</strong></p>
-</div>
-<p>These GUI-based tools offer a simplified entry into typical Smart Imaging workflows addressing imaging novices and scientists without access to coding expertise.</p>
-<p>The <strong>Guided Acquisition (GA)</strong> user interface is shown in Fig. 1. It follows a fixed workflow, where an overview scan is followed by an image analysis block and several detailed scans. Positions (FOVs) of the detailed scans are derived from the image analysis. To keep the user interface simple, the user plugs in pre-configure experimental and image analysis settings for the three main steps. The user can furthermore add certain optional components, e.g. additional processing steps for the raw overview image, or manually adjust the number of detailed scans. Time-lapse acquisitions can be defined to allow for detection of sparse events.</p>
-<p>GA builds modular on top of generic ZEN functionality like Acquisition Tab and Image Analysis Wizard. Besides simplifying usability, this comes with the benefit that other built-in features (like Deep Learning segmentations) also seamlessly work with GA. GA also is compatible with image data correlation via ZEN Connect, or high throughput well plate experiments.</p>
-<p>Typical applications are high-resolution 3D imaging of sparse samples like embryos or organoids. Here, via Smart Imaging, the main workflow improvements are reduced data sizes and time-to-result. Follow the links at the end of this section for more details on such use cases.</p>
-<p>Automated Photomanipulation follows a very similar approach. In a dedicated UI, the user assigns a pre-configured acquisition experiment and image analysis scheme. The notable difference is that instead of defining FOVs for subsequent high-resolution scans, the workflow defines image sub-regions that are subsequently bleached and tracked (by time-lapse acquisitions) to determine fluorescence recovery (FRAP) or similar read-outs. Besides, this tool could also serve simple opto-genetics experiments.</p>
-<p>Links:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/zeiss-microscopy/OAD/tree/master/Guided_Acquisition">Guided Acquisition OAD documentation</a></p></li>
-<li><p><a class="reference external" href="https://www.zeiss.com/microscopy/en/resources/insights-hub/life-sciences/automate-your-experiments-with-image-analysis-and-guided-acquisition.html">Guided Acquisition Webinar</a></p></li>
-<li><p><a class="reference external" href="https://www.zeiss.com/microscopy/en/resources/insights-hub/life-sciences/the-smart-microscope-for-automated-workflows-celldiscoverer-7-with-lsm-900.html">Smart Workflows with Celldiscoverer 7</a></p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="visual-programming-for-smart-microscopy-with-nis-elements-nikon">
+<h1>Visual programming for Smart Microscopy with NIS-Elements (Nikon)<a class="headerlink" href="#visual-programming-for-smart-microscopy-with-nis-elements-nikon" title="Link to this heading">#</a></h1>
+<p><strong>Nelda Antonovaite, Andrii Rogov</strong>, Nikon Europe B.V.</p>
+<section id="approach-to-smart-microscopy">
+<h2>Approach to smart microscopy<a class="headerlink" href="#approach-to-smart-microscopy" title="Link to this heading">#</a></h2>
+<p>NIS-Elements is a comprehensive software platform designed for all Nikon microscopes, supporting a wide array of imaging modalities such as upright and inverted widefield, confocal (AX and NSPARC), multiphoton, STORM, and SIM. Beyond Nikon hardware, NIS-Elements allows seamless integration with numerous third-party devices, including spinning-disks, deepSIM modules, cameras, light sources, stages, and modular illumination devices such as photostimulation, TIRF, and FRAP. Additionally, the software natively supports NI DAQ boards, enabling low-latency control of almost any external device. With the release of NIS-Elements version 6.10, a Python package was introduced, further expanding device control capabilities and workflow customization.</p>
+<p>This extensive compatibility empowers users to perform sophisticated experiments, including advanced feedback microscopy. In addition to robust device control, developers of feedback microscopy require software that is flexible enough to enable customized and automated acquisition workflows, as well as the integration of real-time, on-the-fly analysis. NIS-Elements addresses these requirements by allowing full automation of decision-making in complex experiments, reducing human error and bias, increasing throughput, and freeing microscopists from repetitive tasks.</p>
+<p>Within NIS-Elements, the JOBS module enables users to create custom acquisition workflows that incorporate on-the-fly analysis through the General Analysis module (GA3). JOBS utilizes a visual programming interface, where users can drag and drop various tasks into a sequence.These tasks come with prebuilt parameter options and support advanced features like loops, phases, and wizards. This approach ensures that every step of the acquisition process can be fully customized and automated, with analysis results dynamically guiding subsequent acquisition steps.</p>
+<p>The advanced GA3 image analysis module also employs visual programming, with a key distinction: its interconnected, branched architecture is designed to handle multiple channels, binary masks, measurement results, and graphs in parallel, rather than in a simple sequential order.  GA3 leverages the full suite of image processing tools in NIS-Elements, including AI-based denoising, deblurring, deconvolution, and user-trained deep learning models for segmentation and signal-to-noise ratio enhancement (<a class="reference external" href="http://NIS.ai">NIS.ai</a> module), all of which can improve the speed and quality of analysis.</p>
+<p>Both JOBS and GA3 are designed to be intuitive, allowing users to create sophisticated acquisition and analysis workflows with minimal training. They offer substantial flexibility, supporting tasks such as wellplate and slide scanning, multi-pass acquisitions (e.g., low magnification followed by high magnification, or combinations of widefield and confocal imaging), conditional imaging (e.g., stopping when a certain number of cells are imaged or when rare events are detected), and tracking.</p>
+<p>For advanced applications, Python scripting is available both within JOBS (for external device control) and GA3 (for open-source analysis tools, e.g., CellPose-SAM). Together, NIS-Elements with JOBS and GA3 bridges the gap between limited, easy-to-use preconfigured software and complex, highly flexible scripting-based solutions.</p>
 </section>
-<section id="experiment-feedback">
-<h3>Experiment Feedback<a class="headerlink" href="#experiment-feedback" title="Link to this heading">#</a></h3>
-<div class="figure-like docutils">
-<p><img alt="Experiment_Feedback" src="../../_images/Experiment_Feedback.png" /></p>
-<p>Fig. 2: <strong>Experiment Feedback</strong></p>
-</div>
-<p>This is basically an advanced scripting tool directly integrated into a ZEN acquisition setup. It does require coding but is simpler to set up and in certain situations more powerful than OAD scripts.</p>
-<p>The crucial feature of Experiment Feedback is the possibility to tune many experimental parameters “on-the-fly” during an ongoing acquisition. This includes parameters like exposure time, lamp intensity, time series intervals, objectives, stage positions and many more. It features (like GA) a pre-configured image analysis to measure sample parameters and automatically respond to them.</p>
-<p>Some use cases become very easy to implement with Experiment Feedback, e.g. tracking objects during acquisition. Please find more examples in the linked Github page.</p>
-<p>Links:</p>
+<section id="implementation-and-key-features">
+<h2>Implementation and key features<a class="headerlink" href="#implementation-and-key-features" title="Link to this heading">#</a></h2>
+<section id="jobs-module">
+<h3>JOBS module<a class="headerlink" href="#jobs-module" title="Link to this heading">#</a></h3>
+<p>The JOBS editor features an intuitive graphical interface that is easy to learn and requires no programming experience. Users can drag and drop over 180 available tasks to create custom image acquisition workflows (see Figure 1 and Video 1). These tasks include:</p>
 <ul class="simple">
-<li><p><a class="github reference external" href="https://github.com/zeiss-microscopy/OAD/tree/master/Experiment_Feedback">zeiss-microscopy/OAD</a></p></li>
-<li><p><a class="reference external" href="https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-developer-toolkit.html">ZEN Developer Toolkit</a></p></li>
+<li><p>Defining and manipulating wellplates and scanning areas for various types of holders</p></li>
+<li><p>Creating imaging loops, phases, and conditional branches (if/else)</p></li>
+<li><p>Setting acquisition parameters such as objective, channels, timelapses, Z-stacks, triggering, image capture, and saving</p></li>
+<li><p>Defining focusing procedures</p></li>
+<li><p>Performing on-the-fly image analysis and interactive functions, such as prompting the user with questions</p></li>
+<li><p>Device control, Python scripting, macros, and more</p></li>
 </ul>
+<p>Each JOBS function also has a panel where optional parameters can be selected (see Figure 2 and Video 1). Furthermore, software commands are recorded in Command History and can be used as macro commands. You can edit or extend them using macro command library. If any specific software function for device control or handling of images is not available within JOBS editor, it can be included as a macro command. Similarly, Python editor allows to control devices that are not integrated within the NIS-Elements software or NI DAQ board. Once a JOBS workflow is created, a wizard interface can be configured by simply marking JOBS tasks that should be added to the wizard. Additional descriptions, remarks, recommendations or even images can be added to explain to the user the purpose of the settings and guide through the selection. When launched, the user only needs to select variables that fit their experiment (see Figure 3 and Video 2). This way, even less experienced users can run complicated imaging experiments.</p>
+<p>Finally, JOBS execution can be monitored by showing captured images as well as plotting analysis results (see Video 2). Additional interactions can be set up to ask the user to make the decision on the go or make the decision automatically based on conditions or analysis results.</p>
 </section>
-<section id="macro-editor-simple-api-object-model">
-<h3>Macro Editor / Simple API / Object Model<a class="headerlink" href="#macro-editor-simple-api-object-model" title="Link to this heading">#</a></h3>
-<div class="figure-like docutils">
-<p><img alt="Macro Editor" src="../../_images/Macro_Editor.png" /></p>
-<p>Fig. 3: <strong>Macro Editor</strong></p>
-</div>
-<p>The main feature of OAD, as of today, is the scripting interface called “Simple API”. Most importantly, it comes with a small macro editor integrated in ZEN, and it offers interfaces for external applications written e.g. in Python (see links below for more details).</p>
-<p>Internally, the Simple API uses IronPython, which is a C# implementation of Python with the purpose to serve .NET applications. Most noteworthy, this allows for implicit use of ZEN’s object model, hence, direct access to experimental setups, processing functions or czi image, and their respective methods. The macro editor is equipped with debugging, code-completion, recording (of a user’s interaction with ZEN) and documentation, simplifying onboarding and troubleshooting.</p>
-<p>For external applications, COM and TCP-IP interfaces can be used. This allows tackling more complex use cases that requires a more refined code structure or additional libraries.</p>
-<p>Simple API is most useful for integrating standard ZEN functionality into custom workflows for the purpose of process automation. Standard smart microscopy is covered by accessibility of basic HW functions like stage movements and objectives. However, it is not designed to change deeper acquisition parameters dynamically (like Experiment Feedback), and therefore has limitations for advanced smart imaging approaches.</p>
-<p>Links:</p>
+<section id="general-analysis-module-ga3">
+<h3>General Analysis module (GA3)<a class="headerlink" href="#general-analysis-module-ga3" title="Link to this heading">#</a></h3>
+<p>Similar to JOBS, GA3 uses a visual programming approach, where prebuilt image analysis functions—covering processing, segmentation, measurement, data handling, and more—can be dragged and dropped into a dynamically connected analysis sequence (see Figure 4). GA3 offers over 400 functions, organized into twelve categories, with tools available for both 2D and 3D data:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/zeiss-microscopy/OAD/tree/master/Scripts_IronPython2">Various scripts</a></p></li>
-<li><p><a class="reference external" href="https://github.com/zeiss-microscopy/OAD/tree/master/Interfaces">Interfaces</a></p></li>
-<li><p><a class="reference external" href="https://github.com/zeiss-microscopy/OAD/tree/master/SmartMicroscopy/Detecting%20Mitosis">Application</a></p></li>
-<li><p><a class="reference external" href="https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/zen-developer-toolkit.html">Developer Toolkit</a></p></li>
+<li><p>Image Processing</p></li>
+<li><p>Image Operations</p></li>
+<li><p>Multi-Dimensional Processing &amp; Conversions</p></li>
+<li><p>Segmentation</p></li>
+<li><p>Binary Processing</p></li>
+<li><p>Binary Operations</p></li>
+<li><p>Measurement</p></li>
+<li><p>Data Management</p></li>
+<li><p>Results &amp; Graphs</p></li>
+<li><p>Sources &amp; Reference</p></li>
+<li><p><a class="reference external" href="http://NIS.ai">NIS.ai</a></p></li>
 </ul>
+<p>If a specific function is missing or if an open-source tool is required, the GA3 Python editor provides further extensibility.</p>
+<p>Analyses can be previewed live on selected regions of interest, allowing users to inspect and quickly adjust settings while building workflows. The interactive graphs and tables make it easy to explore analysis data in relation to the image and generated binaries.</p>
+<p>Any GA3 workflow can be incorporated into a JOBS workflow, using the captured image as input and producing outputs such as tables (with points, regions, wells, etc.) or binary masks. These outputs can then be used within JOBS to drive decisions based on analysis results (see examples in Figure 5 and Video 3).</p>
 </section>
+</section>
+<section id="current-bottlenecks-and-roadmap">
+<h2>Current bottlenecks and roadmap<a class="headerlink" href="#current-bottlenecks-and-roadmap" title="Link to this heading">#</a></h2>
+<p>A primary limitation is the speed of image analysis for very large datasets. This can be improved through the use of more powerful computers, development of GPU implementations for computationally intensive tasks and ensuring that only relevant data - excluding empty frames - is being acquired. Additionally, parallel computing solutions are being explored. While GA3 and JOBS are designed for usability, there remains a learning curve, so additional improvements are planned to streamline workflow creation. Importantly, the integration of Python in both GA3 and JOBS has opened the door to utilizing open-source Python packages and community-developed resources—a direction that continues to be actively developed.</p>
+</section>
+<section id="figures-and-video-screencasts">
+<h2>Figures and video screencasts<a class="headerlink" href="#figures-and-video-screencasts" title="Link to this heading">#</a></h2>
+<div class="figure-like docutils">
+<p><img alt="JOBs editor" src="../../_images/fig1.PNG" />
+Figure 1. <strong>JOBS editor.</strong> Acquisition and analysis functions can be dragged into the sequence to create a custom acquisition workflow for feedback microscopy.</p>
+</div>
+<div class="figure-like docutils">
+<p><img alt="Optional parameters" src="../../_images/fig2.PNG" />
+Figure 2. <strong>Example of optional parameters for „generate points“ function within JOBS editor.</strong></p>
+</div>
+<div class="figure-like docutils">
+<p><img alt="Wizard" src="../../_images/fig3.PNG" />
+Figure 3. <strong>JOBS workflow can be converted into a simple wizard enabling users that are not experienced with microscopy, device control and image analysis, to run feedback microscopy experiments.</strong></p>
+</div>
+<div class="figure-like docutils">
+<p><img alt="GA3" src="../../_images/fig4.PNG" />
+Figure 4. <strong>GA3 editor is a visual programming-based interface where completely customized image analysis workflows can be created and then integrated into JOBS editor enabling feedback microscopy experiments within NIS-Elements.</strong></p>
+</div>
+<div class="figure-like docutils">
+<p><img alt="Feedback microscopy" src="../../_images/fig5.PNG" />
+Figure 5. <strong>Example of the feedback microscopy experiment workflow within NIS-Elements software using JOBS and GA3 modules.</strong></p>
+</div>
+<p>Video 1 : <a class="reference external" href="https://youtu.be/33tWSQ_-luQ">Simple Wellplate acquisition</a></p>
+<p>Video 2 : <a class="reference external" href="https://youtu.be/vDSK1nE8fok">Target Cell Count Python Plot</a></p>
+<p>Video 3: <a class="reference external" href="https://youtu.be/mKebRqE7rUk">Automated Feedback Microscopy</a></p>
+</section>
+<section id="documentation-and-references">
+<h2>Documentation and references<a class="headerlink" href="#documentation-and-references" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>A lot of information about the use of GA3, JOBS and other preprocessing tools (deconvolution, <a class="reference external" href="http://NIS.ai">NIS.ai</a>) are included in the NIS-Elements help files. Some examples are also included.</p></li>
+<li><p>A GitHub page is available that include JOBS, GA3 and Python examples:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/Laboratory-Imaging/JOBS-examples">JOBs examples</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Laboratory-Imaging/GA3-examples">GA3 and Python examples</a></p></li>
+</ul>
+</li>
+<li><p>NIS-Elements tutorials are continuously being updated on Nikon’s e-learning platform which is available to all Nikon customers by submitting a request at <a class="reference external" href="https://www.microscope.healthcare.nikon.com/en_EU/resources/e-learning#e-learning-signup">Nikon e-learning</a></p></li>
+<li><p>Some examples of publications that have implemented feedback microscopy are listed below:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://link.springer.com/protocol/10.1007/978-1-0716-1811-0_4">High-Throughput Microenvironment Microarray (MEMA) High-Resolution Imaging | SpringerLink</a></p></li>
+<li><p><a class="reference external" href="https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00030-9?uuid=uuid%3Afb81aa22-2014-4674-b2c7-98969dc7bf7d">Data-driven microscopy allows for automated context-specific acquisition of high-fidelity image data: Cell Reports Methods</a></p></li>
+<li><p><a class="reference external" href="https://www.pnas.org/doi/epub/10.1073/pnas.2210283120">Robotic data acquisition with deep learning enables cell image–based prediction of transcriptomic phenotypes</a></p></li>
+</ul>
+</li>
+<li><p>Other Nikon resources can be found here: Resources | Nikon Europe B.V., including application notes featuring feedback microscopy:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://downloads.microscope.healthcare.nikon.com/phase7/literature/Application-Notes/20250227_High-content-screening-lifetime-data_-A-feedback-mic-Exp-WF.pdf">High content screening lifetime data_ A feedback mic Exp WF </a></p></li>
+<li><p><a class="reference external" href="https://downloads.microscope.healthcare.nikon.com/phase7/literature/Application-Notes/2416E_Feedback_microscopy_using_Nikon_AX_confocal_microscopy_and_JOBS_software_to_bridge_mm_to_%C2%B5m_structures.pdf">Feedback microscopy using Nikon AX confocal microscopy and JOBS software to bridge mm to µm structures </a></p></li>
+</ul>
+</li>
+</ol>
 </section>
 </section>
 
@@ -491,20 +541,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="inscoper.html"
+       href="cytely.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Inscoper</p>
+        <p class="prev-next-title">Automation of spatial single-cell analysis with Cytely</p>
       </div>
     </a>
     <a class="right-next"
-       href="openUC2.html"
+       href="../../notes.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ImSwitch for openUC2</p>
+        <p class="prev-next-title">Public Notes</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -524,12 +574,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approaches-to-smart-microscopy">Approaches to smart microscopy</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guided-acquisition-automated-photomanipulation">Guided Acquisition / Automated Photomanipulation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-feedback">Experiment Feedback</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#macro-editor-simple-api-object-model">Macro Editor / Simple API / Object Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach-to-smart-microscopy">Approach to smart microscopy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-and-key-features">Implementation and key features</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jobs-module">JOBS module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-analysis-module-ga3">General Analysis module (GA3)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#current-bottlenecks-and-roadmap">Current bottlenecks and roadmap</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#figures-and-video-screencasts">Figures and video screencasts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation-and-references">Documentation and references</a></li>
 </ul>
   </nav></div>
 

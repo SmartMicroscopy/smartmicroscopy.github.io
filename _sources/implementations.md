@@ -74,6 +74,10 @@ This page references smart-microscopy implementations for different manufacturer
   - 
   - [Cytely](https://www.cytely.io/product)
   - [Karl Johansson](mailto:info@cytely.com)
+* - [Visual programming for Smart Microscopy with NIS-Elements (Nikon)](./implementations/industry/nikon.md)
+  - [Customer E-learning](https://www.microscope.healthcare.nikon.com/en_EU/resources/e-learning#e-learning-signup)
+  - [Nikon](https://www.microscope.healthcare.nikon.com/en_EU/)
+  - [Andrii Rogov](mailto:Andrii.Rogov@nikon.com)
 ```
 
 ## Hardware / Software compatibility
