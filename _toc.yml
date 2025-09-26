@@ -35,5 +35,6 @@ chapters:
   - file: implementations/industry/zeiss.md
   - file: implementations/industry/openUC2.md
   - file: implementations/industry/cytely.md
+  - file: implementations/industry/nikon.md
 - file: notes
 - file: publications
