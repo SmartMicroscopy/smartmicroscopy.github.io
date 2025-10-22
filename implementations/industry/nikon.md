@@ -48,7 +48,7 @@ Similar to JOBS, GA3 uses a visual programming approach, where prebuilt image an
 - Data Management 
 - Results & Graphs 
 - Sources & Reference 
-- NIS.ai 
+- `NIS.ai` 
 
 If a specific function is missing or if an open-source tool is required, the GA3 Python editor provides further extensibility. 
 
@@ -93,7 +93,7 @@ Video 2 : [Target Cell Count Python Plot](https://youtu.be/vDSK1nE8fok)
 Video 3: [Automated Feedback Microscopy](https://youtu.be/mKebRqE7rUk)
 
 ## Documentation and references 
-1. A lot of information about the use of GA3, JOBS and other preprocessing tools (deconvolution, NIS.ai) are included in the NIS-Elements help files. Some examples are also included.
+1. A lot of information about the use of GA3, JOBS and other preprocessing tools (deconvolution, `NIS.ai`) are included in the NIS-Elements help files. Some examples are also included.
 
 2. A GitHub page is available that include JOBS, GA3 and Python examples: 
    - [JOBs examples](https://github.com/Laboratory-Imaging/JOBS-examples) 
