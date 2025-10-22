@@ -106,6 +106,6 @@ Video 3: [Automated Feedback Microscopy](https://youtu.be/mKebRqE7rUk)
    -  [Data-driven microscopy allows for automated context-specific acquisition of high-fidelity image data: Cell Reports Methods](https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00030-9?uuid=uuid%3Afb81aa22-2014-4674-b2c7-98969dc7bf7d)
    -  [Robotic data acquisition with deep learning enables cell image–based prediction of transcriptomic phenotypes](https://www.pnas.org/doi/epub/10.1073/pnas.2210283120)
 
-5. Other Nikon resources can be found here: Resources | Nikon Europe B.V., including application notes featuring feedback microscopy: 
+5. Other Nikon resources can be found here: [Resources | Nikon Europe B.V.](https://www.microscope.healthcare.nikon.com/en_EU/resources), including application notes featuring feedback microscopy: 
    - [High content screening lifetime data_ A feedback mic Exp WF ](https://downloads.microscope.healthcare.nikon.com/phase7/literature/Application-Notes/20250227_High-content-screening-lifetime-data_-A-feedback-mic-Exp-WF.pdf)
    - [Feedback microscopy using Nikon AX confocal microscopy and JOBS software to bridge mm to µm structures ](https://downloads.microscope.healthcare.nikon.com/phase7/literature/Application-Notes/2416E_Feedback_microscopy_using_Nikon_AX_confocal_microscopy_and_JOBS_software_to_bridge_mm_to_%C2%B5m_structures.pdf)
