@@ -8,7 +8,7 @@ This extensive compatibility empowers users to perform sophisticated experiments
 
 Within NIS-Elements, the JOBS module enables users to create custom acquisition workflows that incorporate on-the-fly analysis through the General Analysis module (GA3). JOBS utilizes a visual programming interface, where users can drag and drop various tasks into a sequence.These tasks come with prebuilt parameter options and support advanced features like loops, phases, and wizards. This approach ensures that every step of the acquisition process can be fully customized and automated, with analysis results dynamically guiding subsequent acquisition steps. 
 
-The advanced GA3 image analysis module also employs visual programming, with a key distinction: its interconnected, branched architecture is designed to handle multiple channels, binary masks, measurement results, and graphs in parallel, rather than in a simple sequential order.  GA3 leverages the full suite of image processing tools in NIS-Elements, including AI-based denoising, deblurring, deconvolution, and user-trained deep learning models for segmentation and signal-to-noise ratio enhancement (NIS.ai module), all of which can improve the speed and quality of analysis. 
+The advanced GA3 image analysis module also employs visual programming, with a key distinction: its interconnected, branched architecture is designed to handle multiple channels, binary masks, measurement results, and graphs in parallel, rather than in a simple sequential order.  GA3 leverages the full suite of image processing tools in NIS-Elements, including AI-based denoising, deblurring, deconvolution, and user-trained deep learning models for segmentation and signal-to-noise ratio enhancement (`NIS.ai` module), all of which can improve the speed and quality of analysis. 
 
 Both JOBS and GA3 are designed to be intuitive, allowing users to create sophisticated acquisition and analysis workflows with minimal training. They offer substantial flexibility, supporting tasks such as wellplate and slide scanning, multi-pass acquisitions (e.g., low magnification followed by high magnification, or combinations of widefield and confocal imaging), conditional imaging (e.g., stopping when a certain number of cells are imaged or when rare events are detected), and tracking. 
 
@@ -48,7 +48,7 @@ Similar to JOBS, GA3 uses a visual programming approach, where prebuilt image an
 - Data Management 
 - Results & Graphs 
 - Sources & Reference 
-- NIS.ai 
+- `NIS.ai` 
 
 If a specific function is missing or if an open-source tool is required, the GA3 Python editor provides further extensibility. 
 
@@ -93,7 +93,7 @@ Video 2 : [Target Cell Count Python Plot](https://youtu.be/vDSK1nE8fok)
 Video 3: [Automated Feedback Microscopy](https://youtu.be/mKebRqE7rUk)
 
 ## Documentation and references 
-1. A lot of information about the use of GA3, JOBS and other preprocessing tools (deconvolution, NIS.ai) are included in the NIS-Elements help files. Some examples are also included.
+1. A lot of information about the use of GA3, JOBS and other preprocessing tools (deconvolution, `NIS.ai`) are included in the NIS-Elements help files. Some examples are also included.
 
 2. A GitHub page is available that include JOBS, GA3 and Python examples: 
    - [JOBs examples](https://github.com/Laboratory-Imaging/JOBS-examples) 
@@ -106,6 +106,6 @@ Video 3: [Automated Feedback Microscopy](https://youtu.be/mKebRqE7rUk)
    -  [Data-driven microscopy allows for automated context-specific acquisition of high-fidelity image data: Cell Reports Methods](https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00030-9?uuid=uuid%3Afb81aa22-2014-4674-b2c7-98969dc7bf7d)
    -  [Robotic data acquisition with deep learning enables cell image–based prediction of transcriptomic phenotypes](https://www.pnas.org/doi/epub/10.1073/pnas.2210283120)
 
-5. Other Nikon resources can be found here: Resources | Nikon Europe B.V., including application notes featuring feedback microscopy: 
+5. Other Nikon resources can be found here: [Resources | Nikon Europe B.V.](https://www.microscope.healthcare.nikon.com/en_EU/resources), including application notes featuring feedback microscopy: 
    - [High content screening lifetime data_ A feedback mic Exp WF ](https://downloads.microscope.healthcare.nikon.com/phase7/literature/Application-Notes/20250227_High-content-screening-lifetime-data_-A-feedback-mic-Exp-WF.pdf)
    - [Feedback microscopy using Nikon AX confocal microscopy and JOBS software to bridge mm to µm structures ](https://downloads.microscope.healthcare.nikon.com/phase7/literature/Application-Notes/2416E_Feedback_microscopy_using_Nikon_AX_confocal_microscopy_and_JOBS_software_to_bridge_mm_to_%C2%B5m_structures.pdf)
