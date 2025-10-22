@@ -5,7 +5,7 @@ Inscoper,✕,✓,✓,High,✓,✕
 Leica,✓,✕,✕,Low,✕,✕
 Viventis,✕,✓,✓,Medium,✓,✓
 Luxendo,✕,✓,✕,Medium,✓,✓
-Nikon,✓,✓,✕,Medium,✓,✕
+Nikon,✓,✓,✓,Medium,[Scheduler API](https://github.com/Laboratory-Imaging/scheduler-api?tab=readme-ov-file),✕
 openUC2,✓,✓,✓,High,✓,✓
 Zeiss,✓,✓,✓,Medium,[OAD TCP-IP interface](https://github.com/zeiss-microscopy/OAD/tree/master/Interfaces/TCP-IP_interface),✕
 PicoQuant MicroTime 200,✓,✓,✕,High (via  TCP/IP),✓ (not public),✕
