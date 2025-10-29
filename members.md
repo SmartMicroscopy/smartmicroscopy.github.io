@@ -29,5 +29,6 @@ We are in the process of updating the website, the following is not a complete l
 * Tewinkel, M. - Evident Europe GmbH, Germany
 * [Thomas, L.](./members/profiles/ThomasL.md) - ACQUIFER Imaging GmbH, Bruker NANO, Heidelberg, Germany
 * [Torro, R.](./members/profiles/TorroR.md) - INSCOPER SAS, Cesson-Sévigné, France
+* Xia, F. - University of California, Irvine, USA
 
 
