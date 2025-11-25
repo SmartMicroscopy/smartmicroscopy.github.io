@@ -39,5 +39,3 @@ chapters:
 - file: notes
 - file: publications
 - file: training-materials
-  - file: training-materials/guidelines.md
-  - file: training-materials/modules.md
