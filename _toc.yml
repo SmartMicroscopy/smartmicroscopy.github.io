@@ -21,7 +21,6 @@ chapters:
   - file: members/profiles/DiederichB
   - file: members/profiles/BrooksS
 
-
 - file: implementations
   sections:
   - file: implementations/academic/unibe
