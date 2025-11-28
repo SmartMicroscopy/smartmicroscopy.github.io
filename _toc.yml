@@ -38,6 +38,7 @@ chapters:
   - file: implementations/industry/nikon.md
 - file: notes
 - file: publications
+
 - file: trainingMaterials
   sections:
   - file: trainingMaterials/guidelines.md
