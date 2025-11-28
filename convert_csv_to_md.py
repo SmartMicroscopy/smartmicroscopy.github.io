@@ -11,7 +11,7 @@ def csv_to_markdown(csv_file, md_file):
     md_table = df.to_markdown(index=False)
 
     # Write the Markdown table to a file
-    with open(md_file, 'w') as f:
+    with open(md_file, 'w',  encoding="utf-8") as f:
         f.write(md_table)
 
 if __name__ == "__main__":
