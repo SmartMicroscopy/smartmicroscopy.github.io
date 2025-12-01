@@ -4,7 +4,7 @@
 format: jb-book
 root: index
 chapters:
-- file: members
+- file: members.md
   sections:
   - file: members/profiles/CamachoR
   - file: members/profiles/PfanderC
@@ -21,7 +21,7 @@ chapters:
   - file: members/profiles/DiederichB
   - file: members/profiles/BrooksS
 
-- file: implementations
+- file: implementations.md
   sections:
   - file: implementations/academic/unibe.md
   - file: implementations/academic/cci-ug.md
@@ -35,8 +35,8 @@ chapters:
   - file: implementations/industry/openUC2.md
   - file: implementations/industry/cytely.md
   - file: implementations/industry/nikon.md
-- file: notes
-- file: publications
+- file: notes.md
+- file: publications.md
 
 - file: trainingmaterials/index.md
   sections:
