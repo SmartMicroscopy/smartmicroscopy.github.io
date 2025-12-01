@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 
 def csv_to_markdown(csv_file, md_file):
@@ -10,8 +11,11 @@ def csv_to_markdown(csv_file, md_file):
     # Convert the DataFrame to a Markdown table
     md_table = df.to_markdown(index=False)
 
+    # Ensure the directory for the output file exists
+    os.makedirs(os.path.dirname(md_file), exist_ok=True)
+
     # Write the Markdown table to a file
-    with open(md_file, 'w') as f:
+    with open(md_file, 'w', encoding="utf-8") as f:
         f.write(md_table)
 
 if __name__ == "__main__":

@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -U jupyter-book pandas
+          pip install -U jupyter-book pandas tabulate
 
       - name: Run build script
         run: chmod +x ./build_book.sh && ./build_book.sh
