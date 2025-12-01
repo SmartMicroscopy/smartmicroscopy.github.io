@@ -111,7 +111,7 @@ Here’s a structured list of relevant links you should consider including to ma
 
 ---
 
-###  **Core Software Repositories and Documentation**
+##  Core Software Repositories and Documentation
 - **openUC2 GitHub organization** – all related hardware and software repos  [Github](https://github.com/openUC2/)
 - **openUC2 ImSwitch fork** – if customized from the original repo  
 - **Firmware GitHub repository** – ESP32-based controller code  [Github](https://github.com/youseetoo/UC2-ESP32)
@@ -120,14 +120,14 @@ Here’s a structured list of relevant links you should consider including to ma
 
 ---
 
-### **Docker and OS Images**
+## Docker and OS Images
 - **GitHub Container Registry** – Docker images for ImSwitch and drivers  [ARM64 Version](https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-arm64), [AMD64](https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-amd64)
 - **Raspberry Pi OS (ImSwitch version)** – prebuilt image with instructions  [Forklift Repo](https://github.com/openUC2/imswitch-os/tree/main), [Prebuild OS on Zenodo]
 - **Documentation for Forklift Integration** – [GH Pages](https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/#installing-raspberry-pi-os--imswitch)
 
 ---
 
-### **Web-Based Tools**
+## Web-Based Tools
 - **Firmware Flash Tool (WebSerial)** – browser-based firmware upload  [Firmware Flasher](https://youseetoo.github.io/)
 - **Firmware Test Tool** – live hardware interaction in the browser  [Firmware Testing](https://youseetoo.github.io/indexWebSerialTest.html)
 - **Blockly Workflow Editor** – visual workflow editor generating JSON  [Static ImSwitch Frontend](https://youseetoo.github.io/imswitch/index.html)
@@ -135,7 +135,7 @@ Here’s a structured list of relevant links you should consider including to ma
 
 ---
 
-### **Integration and APIs**
+## Integration and APIs
 - **Arkitekt project** – network-based microservice control environment https://github.com/arkitektio
 - **Arkitekt documentation** – node types, setup, integration with ImSwitch https://arkitekt.live/
 - **openUC2 Arkitekt Plugin** – Sample implementation to expose services: https://github.com/openUC2/imswitch-arkitekt-next
@@ -143,12 +143,12 @@ Here’s a structured list of relevant links you should consider including to ma
 
 ---
 
-### **Interfacing and Extensions**
+## Interfacing and Extensions
 - **Jupyter Notebook Examples** – smart microscopy, autofocus, time-lapse [sample implementatoins](https://github.com/openUC2/ImSwitch/tree/master/imswitch/_data/user_defaults/imnotebook)
 - **Hardware Integration Guides** – Opentrons, robotic arms, etc.  (comming soon)
 - **ESP32 WebSerial interface** – for external components (lasers, motors, galvos)  
 - **ESP32 CAN/I2C Extensions** – for adding peripherals  [CAN Interface](https://openuc2.github.io/docs/Electronics/CANInterface/)
 
 
-###  **Community and Support**
+##  Community and Support
 - **openUC2 Forum/Discussions** – GitHub or external forum  [Discourse Forum](https://openuc2.discourse.group/)

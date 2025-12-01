@@ -220,6 +220,11 @@
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notes.html">Public Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../publications.html">Publications &amp; Outreach</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../trainingmaterials/index.html">Training Materials (in development)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../trainingmaterials/guidelines.html">Guidelines for contribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../trainingmaterials/modules.html">Smart microscopy training modules</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -389,12 +394,12 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation-details">Methodology and Implementation Details</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-to-interoperability">Contributions to Interoperability</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-software-repositories-and-documentation"><strong>Core Software Repositories and Documentation</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-and-os-images"><strong>Docker and OS Images</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-based-tools"><strong>Web-Based Tools</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration-and-apis"><strong>Integration and APIs</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfacing-and-extensions"><strong>Interfacing and Extensions</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-and-support"><strong>Community and Support</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-software-repositories-and-documentation">Core Software Repositories and Documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-and-os-images">Docker and OS Images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-based-tools">Web-Based Tools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration-and-apis">Integration and APIs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfacing-and-extensions">Interfacing and Extensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-and-support">Community and Support</a></li>
 </ul>
 </li>
 </ul>
@@ -479,7 +484,7 @@ Documentation remains incomplete, presenting challenges for new users integratin
 <p>Here’s a structured list of relevant links you should consider including to make the post complete and easily navigable for readers:</p>
 <hr class="docutils" />
 <section id="core-software-repositories-and-documentation">
-<h2><strong>Core Software Repositories and Documentation</strong><a class="headerlink" href="#core-software-repositories-and-documentation" title="Link to this heading">#</a></h2>
+<h2>Core Software Repositories and Documentation<a class="headerlink" href="#core-software-repositories-and-documentation" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>openUC2 GitHub organization</strong> – all related hardware and software repos  <a class="reference external" href="https://github.com/openUC2/">Github</a></p></li>
 <li><p><strong>openUC2 ImSwitch fork</strong> – if customized from the original repo</p></li>
@@ -487,38 +492,38 @@ Documentation remains incomplete, presenting challenges for new users integratin
 <li><p><strong>openUC2 Docs</strong> – general documentation including assembly and setup  <a class="reference external" href="https://openuc2.github.io">GH Pages</a></p></li>
 <li><p><strong>ImSwitch documentation</strong> – architecture, modules, API references <a class="reference external" href="https://imswitch.readthedocs.io/en/stable/">Read-The-Docs</a> or <a class="reference external" href="https://openuc2.github.io/docs/ImSwitch/DahengCamera">openUC2 GH Pages</a></p></li>
 </ul>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="docker-and-os-images">
-<h2><strong>Docker and OS Images</strong><a class="headerlink" href="#docker-and-os-images" title="Link to this heading">#</a></h2>
+<h2>Docker and OS Images<a class="headerlink" href="#docker-and-os-images" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>GitHub Container Registry</strong> – Docker images for ImSwitch and drivers  <a class="reference external" href="https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-arm64">ARM64 Version</a>, <a class="reference external" href="https://github.com/openUC2/ImSwitch/pkgs/container/imswitch-noqt-amd64">AMD64</a></p></li>
 <li><p><strong>Raspberry Pi OS (ImSwitch version)</strong> – prebuilt image with instructions  <a class="reference external" href="https://github.com/openUC2/imswitch-os/tree/main">Forklift Repo</a>, [Prebuild OS on Zenodo]</p></li>
 <li><p><strong>Documentation for Forklift Integration</strong> – <a class="reference external" href="https://openuc2.github.io/docs/ImSwitch/ImSwitchOnRaspi/#installing-raspberry-pi-os--imswitch">GH Pages</a></p></li>
 </ul>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="web-based-tools">
-<h2><strong>Web-Based Tools</strong><a class="headerlink" href="#web-based-tools" title="Link to this heading">#</a></h2>
+<h2>Web-Based Tools<a class="headerlink" href="#web-based-tools" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Firmware Flash Tool (WebSerial)</strong> – browser-based firmware upload  <a class="reference external" href="https://youseetoo.github.io/">Firmware Flasher</a></p></li>
 <li><p><strong>Firmware Test Tool</strong> – live hardware interaction in the browser  <a class="reference external" href="https://youseetoo.github.io/indexWebSerialTest.html">Firmware Testing</a></p></li>
 <li><p><strong>Blockly Workflow Editor</strong> – visual workflow editor generating JSON  <a class="reference external" href="https://youseetoo.github.io/imswitch/index.html">Static ImSwitch Frontend</a></p></li>
 <li><p><strong>ImSwitch Web GUI</strong> – hosted or local version (if available for testing/demo)  <a class="reference external" href="https://imswitch.openuc2.com/imswitch/index.html">Live ImSwitch Demo hosted on AWS - it may be down</a></p></li>
 </ul>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="integration-and-apis">
-<h2><strong>Integration and APIs</strong><a class="headerlink" href="#integration-and-apis" title="Link to this heading">#</a></h2>
+<h2>Integration and APIs<a class="headerlink" href="#integration-and-apis" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Arkitekt project</strong> – network-based microservice control environment <a class="github reference external" href="https://github.com/arkitektio">arkitektio</a></p></li>
 <li><p><strong>Arkitekt documentation</strong> – node types, setup, integration with ImSwitch <a class="reference external" href="https://arkitekt.live/">https://arkitekt.live/</a></p></li>
 <li><p><strong>openUC2 Arkitekt Plugin</strong> – Sample implementation to expose services: <a class="github reference external" href="https://github.com/openUC2/imswitch-arkitekt-next">openUC2/imswitch-arkitekt-next</a></p></li>
 </ul>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="interfacing-and-extensions">
-<h2><strong>Interfacing and Extensions</strong><a class="headerlink" href="#interfacing-and-extensions" title="Link to this heading">#</a></h2>
+<h2>Interfacing and Extensions<a class="headerlink" href="#interfacing-and-extensions" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Jupyter Notebook Examples</strong> – smart microscopy, autofocus, time-lapse <a class="reference external" href="https://github.com/openUC2/ImSwitch/tree/master/imswitch/_data/user_defaults/imnotebook">sample implementatoins</a></p></li>
 <li><p><strong>Hardware Integration Guides</strong> – Opentrons, robotic arms, etc.  (comming soon)</p></li>
@@ -527,7 +532,7 @@ Documentation remains incomplete, presenting challenges for new users integratin
 </ul>
 </section>
 <section id="community-and-support">
-<h2><strong>Community and Support</strong><a class="headerlink" href="#community-and-support" title="Link to this heading">#</a></h2>
+<h2>Community and Support<a class="headerlink" href="#community-and-support" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>openUC2 Forum/Discussions</strong> – GitHub or external forum  <a class="reference external" href="https://openuc2.discourse.group/">Discourse Forum</a></p></li>
 </ul>
@@ -604,12 +609,12 @@ Documentation remains incomplete, presenting challenges for new users integratin
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation-details">Methodology and Implementation Details</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-to-interoperability">Contributions to Interoperability</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-software-repositories-and-documentation"><strong>Core Software Repositories and Documentation</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-and-os-images"><strong>Docker and OS Images</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-based-tools"><strong>Web-Based Tools</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration-and-apis"><strong>Integration and APIs</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfacing-and-extensions"><strong>Interfacing and Extensions</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-and-support"><strong>Community and Support</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-software-repositories-and-documentation">Core Software Repositories and Documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker-and-os-images">Docker and OS Images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-based-tools">Web-Based Tools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration-and-apis">Integration and APIs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfacing-and-extensions">Interfacing and Extensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-and-support">Community and Support</a></li>
 </ul>
 </li>
 </ul>
