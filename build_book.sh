@@ -5,4 +5,6 @@ python convert_csv_to_md.py
 
 # Build the Jupyter Book
 jupyter-book clean .
-jupyter-book build .
+jupyter-book build . 2>&1 | sed -E '/WARNING: duplicate (label|citation)/d'
+rc=${PIPESTATUS[0]}
+exit $rc

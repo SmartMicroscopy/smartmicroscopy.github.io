@@ -1,6 +1,6 @@
 # Guidelines for contribution
 
-##Introduction
+## Introduction
 
 Development of this material is a joint effort of the members of the Smart Microscopy Working Group (SMWG). Group members representing both academia and industry organisations are welcome to contribute to these modules in the following ways:
 * Revising existing modules
