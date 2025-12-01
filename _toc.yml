@@ -21,7 +21,6 @@ chapters:
   - file: members/profiles/DiederichB
   - file: members/profiles/BrooksS
 
-
 - file: implementations
   sections:
   - file: implementations/academic/unibe
@@ -38,7 +37,8 @@ chapters:
   - file: implementations/industry/nikon.md
 - file: notes
 - file: publications
-- file: trainingMaterials
+
+- file: training_materials
   sections:
-  - file: trainingMaterials/guidelines.md
-  - file: trainingMaterials/modules.md
+  - file: training_materials/guidelines.md
+  - file: training_materials/modules.md
