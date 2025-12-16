@@ -7,7 +7,7 @@ Development of this material is a joint effort of the members of the Smart Micro
 * Developing new modules.
 * Adding activities and implementations to the existing modules
 
-Below you find guidelines for different kinds of contributions. If you have any questions, please contact *SMWG group admins*.
+Below you find guidelines for different kinds of contributions. If you have any questions, please contact *SMWG group admins* (smwgadmin@eurobioimaging.eu).
 
 :::{note}
 This is the first version of contribution notes developed from the perspective that only a few group members might contribute to this activity in the initial project phase. When more people will contribute to these activities, guidelines are to be revised to simplify the contribution process.
