@@ -35,7 +35,6 @@ chapters:
   - file: implementations/industry/openUC2.md
   - file: implementations/industry/cytely.md
   - file: implementations/industry/nikon.md
-- file: notes.md
 - file: publications.md
 
 - file: trainingmaterials/index.md
