@@ -1,3 +1,4 @@
-jupyter-book
+# Note: This project is only compatible with jupyter-book <2
+jupyter-book<2
 matplotlib
 numpy

@@ -9,8 +9,9 @@ While several software solutions for microscopy control exist and can be used to
 The working group is composed of participants from both academia and industry, meeting regularly online with the support of the Euro-BioImaging Industry Board.
 
 ## Compiling the book locally
-First you need a python installation.  
-Then you need to install jupyter-book, either with `pip install -U jupyter-book` or `conda install -c conda-forge jupyter-book`.  
+**Note:** This project is only compatible with jupyter-book <2.
+First you need a python installation.
+Then you need to install jupyter-book, either with `pip install -U "jupyter-book<2"` or `conda install -c conda-forge "jupyter-book<2"`.  
 Clone this repository locally (or download the repo as a zip from github.com).  
 In the repository root directory, open a command prompt (on windows, type `cmd` in the address bar).  
 In the command prompt, type `./build_book.sh`, to run all the build scripts.
