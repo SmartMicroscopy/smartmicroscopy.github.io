@@ -1,7 +1,7 @@
 # Fei Xia
 
 <p align="center">
-<img src="XiaF.png" alt="drawing" width="100"/>
+<img src="https://raw.githubusercontent.com/smartmicroscopy/smartmicroscopy.github.io/main/members/profiles/XiaF.png" alt="drawing" width="100"/>
 <p/>
 
 
