@@ -6,4 +6,4 @@
 
 
 
-Please feel free to reach out and contact us: [smartmicroscopy@eurobioimaging.eu](mailto:smwgadmin@eurobioimaging.eu)
+Please feel free to reach out and contact us: [smwgadmin@eurobioimaging.eu](mailto:smwgadmin@eurobioimaging.eu)
